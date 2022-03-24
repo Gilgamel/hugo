@@ -5,10 +5,10 @@ date: 2022-03-20T02:17:11-04:00
 image: 
 math: 
 license: 
-tag:
+tags:
 - R
 - ggplot
-category
+categories:
 - TEST
 hidden: false
 comments: true
