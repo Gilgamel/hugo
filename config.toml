@@ -3,3 +3,4 @@ languageCode = "en-us"
 title = "在云端"
 theme = "stack"
 hasCJKLanguage = true
+enableEmoji = true
