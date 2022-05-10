@@ -1,5 +1,5 @@
 ---
-title: "Weekly | Apr.19 - May.9 "
+title: "Weekly | Apr.19 - May.9 樱花正是灿烂时"
 description: 
 date: 2022-05-09T16:25:22-04:00
 image: 
@@ -45,10 +45,6 @@ draft: true
 
 最近越来越觉得我跟任何人之间的联系都存在着一层隔阂，这种隔阂可能源于自己内心真实想法：所有人都不可能与自己一直同行，所以一切随缘。这也导致了我可能不会是任何人最好的朋友，而对于自己而言在想到最紧密的朋友的时候一个字也说不出口。
 
-
-
-
-
 # 学习
 
 ## 关于 MMA801
@@ -86,8 +82,6 @@ MMA841 Operations and Supply China Analytics， 跟 MMA861 算是承上启下的
 MMA867, Predictive Modelling， 中国教授真的老狠老狠了，第一个 assignment 就让人做 kaggle competition，而且还占总成绩 30%。莫名其妙的因为上头，上周一直在熬夜改 model，但还好上头了，不然估计得 GG。
 
 感觉只要不太设计到 tech 方面的知识就相对能够让我好入脑，并且开始对 kaggle 充满了期待。
-
-
 
 # Hugo 相关
 
