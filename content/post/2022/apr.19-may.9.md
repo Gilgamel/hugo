@@ -29,15 +29,11 @@ draft: true
 
 ![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/20220508123123_IMG_1887.JPG)
 
- 
-
 ## 关于她
 
 最近三周在 flomo 关于她的 memo 有 5 条，梦见过她两次。
 
 我想我已经习惯了时不时想起她，仅仅想起她。
-
-
 
 ## 其他
 
@@ -45,13 +41,9 @@ draft: true
 
 ![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220509193648.jpg)
 
-
-
 关于糊糊原本可能来我家最后又被截胡了的事情，有失望但又在清理之中。
 
 最近越来越觉得我跟任何人之间的联系都存在着一层隔阂，这种隔阂可能源于自己内心真实想法：所有人都不可能与自己一直同行，所以一切随缘。这也导致了我可能不会是任何人最好的朋友，而对于自己而言在想到最紧密的朋友的时候一个字也说不出口。
-
-
 
 
 
@@ -94,3 +86,9 @@ MMA841 Operations and Supply China Analytics， 跟 MMA861 算是承上启下的
 MMA867, Predictive Modelling， 中国教授真的老狠老狠了，第一个 assignment 就让人做 kaggle competition，而且还占总成绩 30%。莫名其妙的因为上头，上周一直在熬夜改 model，但还好上头了，不然估计得 GG。
 
 感觉只要不太设计到 tech 方面的知识就相对能够让我好入脑，并且开始对 kaggle 充满了期待。
+
+
+
+# Hugo 相关
+
+为了方便写 blog， 尝试了一下 PicGo + MarkText 的搭配，新建了一个 Github Repo 做图床，希望能缓和一下我对 SM.MS 5G 限量的焦虑感。
