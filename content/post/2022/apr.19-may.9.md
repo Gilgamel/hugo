@@ -15,36 +15,6 @@ draft: true
 
 ---
 
-# 日常
-
-## 又去 High Park 看樱花了
-
-抓住春日的小尾巴在周日（May 8）去了一趟 High Park 看樱花，好多年之前去的时候樱花没开几朵，今年终于再去了一次，挺好看的，就是人比樱花多。在距离 High Park 一公里左右就停车了，慢悠悠的走过去，看到有家养的小猫咪在小花园溜达，被主人看到了就很尴尬哈哈哈哈哈哈
-
-![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/20220508113430_IMG_1871.JPG)
-
-意思意思拍了几张照片，带着皮皮瘦久违的溜达了一圈。
-
-就是挺惊讶的，有朝一日皮皮瘦也有被蹭拍的一天（。
-
-![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/20220508123123_IMG_1887.JPG)
-
-## 关于她
-
-最近三周在 flomo 关于她的 memo 有 5 条，梦见过她两次。
-
-我想我已经习惯了时不时想起她，仅仅想起她。
-
-## 其他
-
-最近挖掘了左手盘珠子，右手写笔记的能力，于是又把驼骨拿出来盘。看看自己的珠子，再看看小红书上的人的图，真的有在怀疑那些人是铁手吗，还是为了让珠子发亮泡了多少油。
-
-![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220509193648.jpg)
-
-关于糊糊原本可能来我家最后又被截胡了的事情，有失望但又在清理之中。
-
-最近越来越觉得我跟任何人之间的联系都存在着一层隔阂，这种隔阂可能源于自己内心真实想法：所有人都不可能与自己一直同行，所以一切随缘。这也导致了我可能不会是任何人最好的朋友，而对于自己而言在想到最紧密的朋友的时候一个字也说不出口。
-
 # 学习
 
 ## 关于 MMA801
@@ -53,7 +23,7 @@ MMA801 Introduction to Management，关于分析前公司的 individual assignme
 
 教授的 feedback 如下：
 
-> Nicely developed and effectively communicated.  You do an excellent job of defining the current situation and challenges which xxx company is experiencing and will need to respond to going forward.  
+> Nicely developed and effectively communicated.  You do an excellent job of defining the current situation and challenges which xxx company is experiencing and will need to respond to going forward. 
 > 
 > Nice application of the Delta Framework in drawing conclusions relating to the analytical competency of xxx company and its underlying position relative to rivals.  Some astute high-level recommendations are offered as well. Again, nice work!
 
@@ -83,6 +53,56 @@ MMA867, Predictive Modelling， 中国教授真的老狠老狠了，第一个 as
 
 感觉只要不太设计到 tech 方面的知识就相对能够让我好入脑，并且开始对 kaggle 充满了期待。
 
-# Hugo 相关
 
-为了方便写 blog， 尝试了一下 PicGo + MarkText 的搭配，新建了一个 Github Repo 做图床，希望能缓和一下我对 SM.MS 5G 限量的焦虑感。
+
+---
+
+
+
+# 日常
+
+## 又去 High Park 看樱花了
+
+抓住春日的小尾巴在周日（May 8）去了一趟 High Park 看樱花，好多年之前去的时候樱花没开几朵，今年终于再去了一次，挺好看的，就是人比樱花多。在距离 High Park 一公里左右就停车了，慢悠悠的走过去，看到有家养的小猫咪在小花园溜达，被主人看到了就很尴尬哈哈哈哈哈哈
+
+![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/20220508113430_IMG_1871.JPG)
+
+意思意思拍了几张照片，带着皮皮瘦久违的溜达了一圈。
+
+就是挺惊讶的，有朝一日皮皮瘦也有被蹭拍的一天（。
+
+![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/20220508123123_IMG_1887.JPG)
+
+## 
+
+## 其他
+
+最近挖掘了左手盘珠子，右手写笔记的能力，于是又把驼骨拿出来盘。看看自己的珠子，再看看小红书上的人的图，真的有在怀疑那些人是铁手吗，还是为了让珠子发亮泡了多少油。
+
+![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220509193648.jpg)
+
+
+
+关于糊糊原本可能来我家最后又被截胡了的事情，有失望但又在清理之中。
+
+最近越来越觉得我跟任何人之间的联系都存在着一层隔阂，这种隔阂可能源于自己内心真实想法：所有人都不可能与自己一直同行，所以一切随缘。这也导致了我可能不会是任何人最好的朋友，而对于自己而言在想到最紧密的朋友的时候一个字也说不出口。 
+
+
+
+# 
+
+
+
+## 关于她
+
+最近三周在 flomo 关于她的 memo 有 5 条，梦见过她两次。
+
+我想我已经习惯了时不时想起她，仅仅想起她。
+
+## 
+
+--- 
+
+
+
+# 
