@@ -5,7 +5,7 @@ date: 2022-06-14T00:48:00-04:00
 image: 
 math: 
 license:
-categories
+categories:
 - 深林人不知
 tags:
 - Weekly
