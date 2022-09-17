@@ -3,6 +3,7 @@ languageCode: en-us
 theme: PaperMod
 title: 在云端
 
+# Add menu
 menu:
   main:
     - identifier: categories
@@ -18,11 +19,16 @@ menu:
       url: /search/
       weight: 30
 
+# Show search output
 outputs:
     home:
         - HTML
         - RSS
         - JSON # is necessary
+
+# Show post reading time
+Params:
+    ShowReadingTime: true
 
 
 
