@@ -2,3 +2,18 @@ baseURL = "http://blog.swihal.com/"
 languageCode = "en-us"
 title = "在云端"
 theme = "PaperMod"
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: example.org
+      url: https://example.org
+      weight: 30
