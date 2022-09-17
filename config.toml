@@ -3,10 +3,5 @@ languageCode = "en-us"
 title = "在云端"
 theme = "PaperMod"
 
-outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON # is necessary
 
 
