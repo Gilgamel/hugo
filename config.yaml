@@ -6,18 +6,22 @@ title: 在云端
 # Add menu
 menu:
   main:
+    - identifier: archive
+      name: Archive
+      url: /archive/
+      weight: 10
     - identifier: categories
       name: Categories
       url: /categories/
-      weight: 10
+      weight: 20
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 20
+      weight: 30
     - identifier: search
       name: Search
       url: /search/
-      weight: 30
+      weight: 40
 
 # Show search output
 outputs:
