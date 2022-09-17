@@ -2,7 +2,13 @@ baseURL: 'https://blog.swihal.com'
 languageCode: en-us
 theme: PaperMod
 title: 在云端
-paginate: 5
+
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
 
 
 
