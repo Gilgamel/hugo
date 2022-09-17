@@ -11,7 +11,7 @@ tags:
 license: 
 hidden: false
 comments: true
-draft: true
+draft: false
 ---
 
 这篇周记其实是延迟补写的，最近总是有一种感觉：
