@@ -1,5 +1,13 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+description: 
 date: {{ .Date }}
-draft: true
+image: 
+math:
+license: 
+categories:
+tags:
+hidden: false
+comments: true
+draft: false
 ---
