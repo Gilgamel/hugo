@@ -13,12 +13,12 @@ comments: true
 draft: false
 ---
 
-# 在 post 添加字数统计
+# 在文章页面添加字数统计
 
 
 
 
-# 自定义 post template
+# 自定义文章模板
 
 找到 hugo 根目录下的 archetypes 文件夹，打开 default.md 并修改成自己想要的模板。
 
@@ -52,5 +52,12 @@ draft: false
 ---
 ```
 
-# 在 footer 添加总字数统计
+# 修改页尾信息
 
+
+
+
+# Ref
+> https://mantyke.icu/posts/2022/stack-theme-mod/
+> https://github.com/adityatelange/hugo-PaperMod
+> 
