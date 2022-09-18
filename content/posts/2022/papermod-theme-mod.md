@@ -17,7 +17,28 @@ draft: false
 
 # 在文章页面添加字数统计
 
+打开任意文章页面，右击选择 “检查” （或 F12），点击 elements。
+利用 Devtools 定位相关位置 （PaperMod 主题在 post-meta 位置）如下图：
 
+![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/20220918012845.png)
+
+用 VS 打开 single.html，目录如下：
+themes - PaperMod - layouts - _default - single.html
+
+![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/20220918012552.png)
+
+CTRL + F 快速搜索 post-meta class 
+
+![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/20220918013200.png)
+
+在 post-meta 内插入以下代码：
+
+``` rust {linenos=table}
+<div class="article-read-time"> 🐈‍ {{ .WordCount }} words</div>
+    </div>
+```
+
+EMOJI 位置可任意修改文字、EMOJI 等
 
 
 # 自定义文章模板
