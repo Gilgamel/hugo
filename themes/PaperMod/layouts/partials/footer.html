@@ -7,9 +7,10 @@
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
     <span>
-    {{$scratch := newScratch}}
-    {{ range (where .Site.Pages "Kind" "page" )}}
-    {{$scratch.Add "total" .WordCount}}
+        {{$scratch := newScratch}}
+        {{ range (where .Site.Pages "Kind" "page" )}}
+            {{$scratch.Add "total" .WordCount}}
+        {{ end }}
     </span>
     
 
