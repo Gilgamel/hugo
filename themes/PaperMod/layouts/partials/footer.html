@@ -133,4 +133,7 @@
         }
     });
 </script>
+
+{{$var :=  $scratch.Get "total"}}{{$var = div $var 100.0}}{{$var = math.Ceil $var}}{{$var = div $var 10.0}}共嘟嘟了{{$var}}k字
+
 {{- end }}
