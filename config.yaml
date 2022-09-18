@@ -45,17 +45,27 @@ TocOpen: true # 自动展开目录
 
 comments: true
 
-# home-info mode
+# profile mode
 params:
-    homeInfoParams:
-        Title: Hi there wave
-        Content: Can be Info, links, about...
+    profileMode:
+        enabled: true
+        title: "<Title>" # optional default will be site title
+        subtitle: "This is subtitle"
+        imageUrl: "<image link>" # optional
+        imageTitle: "<title of image as alt>" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+            - name: Archive
+            url: "/archive"
+            - name: Github
+            url: "https://github.com/"
 
     #socialIcons: # optional
-    #    - name: Github
-    #        url: "https://github.com/"
-    #    - name: Twitter
-    #        url: "https://twitter.com/"
+    #    - name: "<platform>"
+    #        url: "<link>"
+    #    - name: "<platform 2>"
+    #        url: "<link2>"
 
 # Add menu
 menu:
