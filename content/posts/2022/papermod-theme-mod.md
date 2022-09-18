@@ -13,9 +13,44 @@ comments: true
 draft: false
 ---
 
-# Add Word Count
+# 在 post 添加字数统计
 
 
-# Create a Post Template
 
+
+# 自定义 post template
+
+找到 hugo 根目录下的 archetypes 文件夹，打开 default.md 并修改成自己想要的模板。
+
+![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/20220917230200.png)
+
+**Before:**
+``` rust {linenos=table}
+---
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+draft: false
+---
+
+```
+
+**After:**
+
+```rust {linenos=table}
+---
+title: "{{ replace .Name "-" " " | title }}"
+description: 
+date: {{ .Date }}
+image: 
+math:
+license: 
+categories:
+tags:
+hidden: false
+comments: true
+draft: false
+---
+```
+
+# 在 footer 添加总字数统计
 
