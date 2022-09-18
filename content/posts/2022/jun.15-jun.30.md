@@ -13,6 +13,7 @@ hidden: false
 comments: true
 draft: false
 ---
+<!--more-->
 
 这篇周记其实是延迟补写的，最近总是有一种感觉：
 啊，这就一周了，好忙啊，那下一周再写周记吧……
