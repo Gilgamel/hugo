@@ -46,26 +46,21 @@ TocOpen: true # 自动展开目录
 comments: true
 
 # profile mode
-params:
-    profileMode:
+      profileMode:
         enabled: true
-        title: "<Title>" # optional default will be site title
-        subtitle: "This is subtitle"
-        imageUrl: "<image link>" # optional
-        imageTitle: "<title of image as alt>" # optional
-        imageWidth: 120 # custom size
-        imageHeight: 120 # custom size
+        title: (〃'▽'〃)
+        subtitle: ""
+        imageUrl: ""
+        imageTitle: 
+        imageWidth: 150
+        imageHeight: 150
         buttons:
-          - name: Archive
-            url: "/archives"
-          - name: Github
-            url: "https://github.com/"
-
-    socialIcons: # optional
-        - name: "<platform>"
-            url: "<link>"
-        - name: "<platform 2>"
-            url: "<link2>"
+          - name: 👨🏻‍💻技术
+            url: posts/tech
+          - name: 📕阅读
+            url: posts/read
+          - name: 🏖生活
+            url: posts/life
 
 # Add menu
 menu:
