@@ -61,11 +61,11 @@ params:
         - name: Github
           url: "https://github.com/"
 
-    #socialIcons: # optional
-    #    - name: "<platform>"
-    #        url: "<link>"
-    #    - name: "<platform 2>"
-    #        url: "<link2>"
+    socialIcons: # optional
+        - name: Github
+            url: "https://github.com/Gilgamel"
+        #- name: 
+        #    url: "<link2>"
 
 # Add menu
 menu:
