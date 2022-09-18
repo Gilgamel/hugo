@@ -3,17 +3,59 @@ languageCode: en-us
 theme: PaperMod
 title: 在云端
 
+
+
+enableInlineShortcodes: true
+enableEmoji: true # 允许使用 Emoji 表情，建议 true
+enableRobotsTXT: false # 允许爬虫抓取到搜索引擎，建议 true
+
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage: true
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+paginate: 10 # 首页每页显示的文章数
+
+permalinks:
+  post: "/:title/"
+  # post: "/:year/:month/:day/:title/"
+
+
+defaultTheme: auto  # defaultTheme: light or  dark 
+disableThemeToggle: false
+DateFormat: "2006-01-02"
+ShowShareButtons: true
+ShowReadingTime: true
+# disableSpecialistPost: true
+displayFullLangName: true
+ShowPostNavLinks: true
+ShowBreadCrumbs: true
+ShowCodeCopyButtons: true
+hideFooter: false # 隐藏页脚
+ShowWordCounts: true
+VisitCount: true
+
+ShowLastMod: true #显示文章更新时间
+
+ShowToc: true # 显示目录
+TocOpen: true # 自动展开目录
+
+comments: true
+
 # home-info mode
 params:
     homeInfoParams:
         Title: Hi there wave
         Content: Can be Info, links, about...
 
-    #socialIcons: # optional
-    #    - name: "<platform>"
-    #        url: "<link>"
-    #    - name: "<platform 2>"
-    #        url: "<link2>"
+    socialIcons: # optional
+        - name: Github
+            url: "https://github.com/"
+        - name: Twitter
+            url: "https://twitter.com/"
 
 # Add menu
 menu:
@@ -42,13 +84,8 @@ outputs:
         - RSS
         - JSON # is necessary
 
-# Show post reading time
-Params:
-    ShowReadingTime: false
 
-# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
-# This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: true
+
 
 
 
