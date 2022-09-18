@@ -8,7 +8,7 @@ license:
 categories:
 tags:
 - Hugo
-hidden: false
+hidden: true
 comments: true
 draft: false
 ---
@@ -54,6 +54,8 @@ draft: false
 
 # 修改页尾信息
 
+
+# Home-Info Mode
 
 
 
