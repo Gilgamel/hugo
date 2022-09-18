@@ -45,9 +45,9 @@ params:
         Content: Can be Info, links, about...
 
     socialIcons: # optional
-        - name: "<platform>"
+        - name: "Github"
             url: "<link>"
-        - name: "<platform 2>"
+        - name: "Github"
             url: "<link2>"
 
 
