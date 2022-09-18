@@ -18,7 +18,7 @@
       {{- partial "translation_list.html" . -}}
       {{- partial "edit_post.html" . -}}
       {{- partial "post_canonical.html" . -}}
-      {{ .WordCount }} words
+      <span class="post-word-count">, {{ .WordCount }} words</span>
     </div>
     {{- end }}
     
