@@ -86,4 +86,5 @@ draft: false
 > https://mantyke.icu/posts/2022/stack-theme-mod/
 > https://github.com/adityatelange/hugo-PaperMod
 > https://333rd.net/posts/tech/hugo%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A22/
+> https://mogeko.me/posts/zh-cn/033/
 > 
