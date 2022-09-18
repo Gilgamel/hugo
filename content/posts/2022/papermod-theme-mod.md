@@ -9,11 +9,11 @@ categories:
 tags:
 - Hugo
   # summary->在列表页展现的摘要内容，自动生成，内容默认前70个字符，可通过此参数自定义，一般无需专门设置
-summary: ""
 hidden: false
 comments: true
 draft: false
 ---
+<!--more-->
 
 # 在文章页面添加字数统计
 
@@ -64,4 +64,5 @@ draft: false
 # Ref
 > https://mantyke.icu/posts/2022/stack-theme-mod/
 > https://github.com/adityatelange/hugo-PaperMod
+> https://333rd.net/posts/tech/hugo%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A22/
 > 
