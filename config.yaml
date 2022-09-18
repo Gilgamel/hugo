@@ -32,7 +32,7 @@ outputs:
 
 # Show post reading time
 Params:
-    ShowReadingTime: true
+    ShowReadingTime: false
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
