@@ -56,16 +56,16 @@ params:
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons: 
-        - name: Archive
-          url: "/archives"
+        #- name: Archive
+        #  url: "/archives"
         - name: Github
-          url: "https://github.com/"
+          url: "https://github.com/Gilgamel"
 
-    socialIcons: # optional
-        - name: Github
-            url: "https://github.com/Gilgamel"
-        #- name: 
-        #    url: "<link2>"
+    #socialIcons: # optional
+    #    - name: "<platform>"
+    #        url: "<link>"
+    #    - name: "<platform 2>"
+    #        url: "<link2>"
 
 # Add menu
 menu:
