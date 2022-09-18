@@ -56,16 +56,10 @@ params:
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons:
-            name: Archive
-            url: "/archive"
-            name: Github
+            - name: Archive
+            url: "/archives"
+            - name: Github
             url: "https://github.com/"
-
-    #socialIcons: # optional
-    #    - name: "<platform>"
-    #        url: "<link>"
-    #    - name: "<platform 2>"
-    #        url: "<link2>"
 
 # Add menu
 #menu:
