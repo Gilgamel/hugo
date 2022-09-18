@@ -9,7 +9,7 @@
     <span>
         {{$scratch := newScratch}}
         {{ range (where .Site.Pages "Kind" "page" )}}
-            {{$scratch.Add "total" .WordCount}}
+        {{$scratch.Add "total" .WordCount}}
         {{ end }}
     </span>
     
