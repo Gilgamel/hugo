@@ -18,7 +18,8 @@
       {{- partial "translation_list.html" . -}}
       {{- partial "edit_post.html" . -}}
       {{- partial "post_canonical.html" . -}}
-      <span class="post-word-count">, {{ .WordCount }} words</span>
+      ::before
+      <span class="fa-fa-car">, {{ .WordCount }} words</span>
     </div>
     {{- end }}
     
