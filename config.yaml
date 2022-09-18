@@ -38,5 +38,16 @@ Params:
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: true
 
+# change to home-info mode (for paper-mod only)
+params:
+    homeInfoParams:
+        Title: Hi there wave
+        Content: Can be Info, links, about...
+
+    socialIcons: # optional
+        - name: "<platform>"
+            url: "<link>"
+        - name: "<platform 2>"
+            url: "<link2>"
 
 
