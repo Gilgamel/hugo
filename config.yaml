@@ -44,10 +44,10 @@ params:
         Title: Hi there wave
         Content: Can be Info, links, about...
 
-    socialIcons: # optional
-        - name: "Github"
-            url: "<link>"
-        - name: "Github"
-            url: "<link2>"
+    #socialIcons: # optional
+    #    - name: "<platform>"
+    #        url: "<link>"
+    #    - name: "<platform 2>"
+    #        url: "<link2>"
 
 
