@@ -77,14 +77,77 @@ draft: false
 
 # 修改页尾信息
 
+打开相关主题文件下的 footer.html 进行修改
 
-# Home-Info Mode
+themes - PaperMod - layouts - partials - footer.html
 
+找到 class = "footer"，如下：
+
+**Before**
+
+``` rust {linenos=table}
+<footer class="footer">
+
+    {{- if site.Copyright }}
+    <span>{{ site.Copyright | markdownify }}</span>
+    {{- else }}
+    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+    {{- end }}
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    <span>
+
+    </span>
+</footer>
+{{- end }}
+```
+
+复制黏贴以下代码：
+
+``` rust {linenos=table}
+
+
+{{$scratch := newScratch}}
+{{ range (where .Site.Pages "Kind" "page" )}}
+{{$scratch.Add "total" .WordCount}}
+{{ end }}
+
+
+    {{- if site.Copyright }}
+    <span>{{ site.Copyright | markdownify }}</span>
+    {{- else }}
+    <span>&copy; 2022 - {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a> · 
+        <i class="fas fa-bell"></i> <a id="days">0</a>Days</br></span>
+    {{- end }}
+    {{$var :=  $scratch.Get "total"}}{{$var = div $var 100.0}}{{$var = math.Ceil $var}}{{$var = div $var 10.0}}共书写了{{$var}}k字 · 共 {{ len (where .Site.RegularPages "Section" "post") }}篇文章</br><span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></br>
+    </span>
+
+    <script>
+        var s1 = '2022-04-05';//设置为建站时间
+        s1 = new Date(s1.replace(/-/g, "/"));
+        s2 = new Date();
+        var days = s2.getTime() - s1.getTime();
+        var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+        document.getElementById('days').innerHTML = number_of_days;
+    </script>
+
+
+```
+
+最终效果如下：
+
+![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/20220920171617.png)
 
 
 # Ref
-> https://mantyke.icu/posts/2022/stack-theme-mod/
-> https://github.com/adityatelange/hugo-PaperMod
-> https://333rd.net/posts/tech/hugo%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A22/
-> https://mogeko.me/posts/zh-cn/033/
-> 
+> [stack theme mod](https://mantyke.icu/posts/2022/stack-theme-mod/)
+> [hugo papermod](https://github.com/adityatelange/hugo-PaperMod)
+> [hugo 部署个人博客 2 (config.yaml 设置)](https://333rd.net/posts/tech/hugo%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A22/)
+> [字数统计](https://mogeko.me/posts/zh-cn/033/)
