@@ -104,6 +104,7 @@ themes - PaperMod - layouts - partials - footer.html
 </footer>
 {{- end }}
 ```
+**After**
 
 复制黏贴以下代码：
 
