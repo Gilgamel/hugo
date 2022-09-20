@@ -6,17 +6,6 @@
 {{$scratch.Add "total" .WordCount}}
 {{ end }}
 
-    <script>
-    (function(u, c) {
-      var d = document, t = 'script', o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function(e) { c(e); }); }
-      s.parentNode.insertBefore(o, s);
-    })('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function() {
-      pangu.spacingPage();
-    });
-    </script>
 
     {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
@@ -24,7 +13,7 @@
     <span>&copy; 2022 - {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a> · 
         <i class="fas fa-bell"></i> <a id="days">0</a>Days</br></span>
     {{- end }}
-    {{$var :=  $scratch.Get "total"}}{{$var = div $var 100.0}}{{$var = math.Ceil $var}}{{$var = div $var 10.0}}共书写了{{$var}}k字·共 {{ len (where .Site.RegularPages "Section" "post") }}篇文章</br><span>
+    {{$var :=  $scratch.Get "total"}}{{$var = div $var 100.0}}{{$var = math.Ceil $var}}{{$var = div $var 10.0}}共书写了{{$var}}k字 · 共 {{ len (where .Site.RegularPages "Section" "post") }}篇文章</br><span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
