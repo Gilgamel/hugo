@@ -5,10 +5,7 @@
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
-    {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
-    {{ .Site.Params.footer.since }} - 
-    {{ end }}
-{   { now.Format "2006" }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a>·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>
+    <a href="{{ "" | absLangURL }}">{{ site.Title }}</a>·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>
     {{- end }}
     <span>
         Powered by
