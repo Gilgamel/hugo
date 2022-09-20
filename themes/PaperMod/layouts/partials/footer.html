@@ -2,10 +2,12 @@
 <footer class="footer">
 
     {{- if site.Copyright }}
-    &copy; 
+    <span>
+        &copy; 
     {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
         {{ .Site.Params.footer.since }} - 
     {{ end }}
+    </span>
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
