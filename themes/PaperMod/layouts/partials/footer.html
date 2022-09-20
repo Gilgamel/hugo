@@ -8,7 +8,7 @@
     {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
     {{ .Site.Params.footer.since }} - 
     {{ end }}
-{   { now.Format "2006" }} <a href="https://stack-theme-mod.vercel.app/">Example Site</a>·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>
+{   { now.Format "2006" }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a>·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>
     {{- end }}
     <span>
         Powered by
@@ -18,7 +18,7 @@
     </span>
 
     <script>
-        var s1 = '2022-02-12';//设置为建站时间
+        var s1 = '2022-04-05';//设置为建站时间
         s1 = new Date(s1.replace(/-/g, "/"));
         s2 = new Date();
         var days = s2.getTime() - s1.getTime();
