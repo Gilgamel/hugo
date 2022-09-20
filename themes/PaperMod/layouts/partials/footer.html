@@ -2,16 +2,21 @@
 <footer class="footer">
 
     {{- if site.Copyright }}
+    &copy; 
+    {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
+        {{ .Site.Params.footer.since }} - 
+    {{ end }}
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
     <i class="fas fa-bell"></i> <a id="days">0</a>Days<br>
     {{- end }}
+
+
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></br>
-
     </span>
 
     <script>
