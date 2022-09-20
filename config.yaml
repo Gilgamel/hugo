@@ -20,7 +20,9 @@ buildExpired: false
 paginate: 10 # 首页每页显示的文章数
 
 permalinks:
-  post: "/:title/"
+    post: /:year/:slug/
+    page: /:slug/
+  # post: "/:title/"
   # post: "/:year/:month/:day/:title/"
 
 
