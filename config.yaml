@@ -49,15 +49,19 @@ comments: true
 
 # Home-info mode
 params:
-    homeInfoParams:
-        Title: Hi there wave
-        Content: Can be Info, links, about...
-
-      socialIcons: # optional
-          - name: "Github"
-            url: "https://github.com/Gilgamel"
-        #- name: "<platform 2>"
-        #    url: "<link2>"
+    profileMode:
+        enabled: true
+        title: "<Title>" # optional default will be site title
+        subtitle: "This is subtitle"
+        imageUrl: "<image link>" # optional
+        imageTitle: "<title of image as alt>" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+            - name: Archive
+            url: "/archive"
+            - name: Github
+            url: "https://github.com/"
 
 # Add menu
 menu:
