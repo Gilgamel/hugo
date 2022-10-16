@@ -53,6 +53,11 @@ params:
         Title: Hi there wave
         Content: Can be Info, links, about...
 
+      socialIcons: # optional
+          - name: "Github"
+              url: "https://github.com/Gilgamel"
+        #- name: "<platform 2>"
+        #    url: "<link2>"
 
 # Add menu
 menu:
