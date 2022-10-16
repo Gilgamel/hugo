@@ -45,16 +45,13 @@ Params:
   TocOpen: true # 自动展开目录
   comments: true
 
-# Home-info mode
-
-params:
-    homeInfoParams:
-        Title: Hi there wave
-        Content: Can be Info, links, about...
-
-    socialIcons: # optional
-    - name: Github
-      url: "https://github.com/Gilgamel"
+  # Home-info mode
+  homeInfoParams:
+      Title: Hi there wave
+      Content: Can be Info, links, about...
+  socialIcons: # optional
+  - name: Github
+    url: "https://github.com/Gilgamel"
         #- name: "<platform 2>"
         #-   url: "<link2>"
 
