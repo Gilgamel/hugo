@@ -48,7 +48,7 @@ TocOpen: true # 自动展开目录
 comments: true
 
 # profile mode
-params:
+#params:
     profileMode:
         enabled: true
         title: "<Title>" # optional default will be site title
