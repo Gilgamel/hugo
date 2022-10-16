@@ -30,7 +30,7 @@ Params:
   defaultTheme: auto  # defaultTheme: light or  dark 
   disableThemeToggle: false
   DateFormat: "2006-01-02"
-  ShowShareButtons: true
+# ShowShareButtons: true
   ShowReadingTime: true
 # disableSpecialistPost: true
   displayFullLangName: true
