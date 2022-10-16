@@ -55,8 +55,8 @@ params:
         Content: Can be Info, links, about...
 
     socialIcons: # optional
-        -  name: Github
-            url: "https://github.com/Gilgamel"
+      name: Github
+      url: "https://github.com/Gilgamel"
         #- name: "<platform 2>"
         #-   url: "<link2>"
 
