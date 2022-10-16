@@ -47,7 +47,8 @@ TocOpen: true # 自动展开目录
 
 comments: true
 
-# Home-info mode
+
+# profile mode
 params:
     profileMode:
         enabled: true
