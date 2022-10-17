@@ -12,8 +12,9 @@ tags:
 hidden: false
 comments: true
 draft: false
+summary: 从未想过去农场玩是一件这么让我觉得开心的事情……
 ---
-<!--more-->
+
 
 # 游玩
 

@@ -12,8 +12,9 @@ tags:
 hidden: false
 comments: true
 draft: false
+summary: 第一次给修猫咪洗澡耶！
 ---
-<!--more-->
+
 
 # 日常
 
