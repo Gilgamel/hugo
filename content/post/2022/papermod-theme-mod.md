@@ -12,8 +12,10 @@ tags:
 hidden: false
 comments: true
 draft: false
+summary: 将 Hugo 主题换成 PaperMod 并进行相关修改
 ---
-<!--more-->
+
+
 
 # 在文章页面添加字数统计
 
