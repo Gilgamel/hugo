@@ -47,8 +47,8 @@ Params:
 
   # Home-info mode
   homeInfoParams:
-      Title: Hi there wave
-      Content: Can be Info, links, about...
+      Title: Hi there 👋
+      Content: 
   socialIcons: # optional
   - name: Github
     url: "https://github.com/Gilgamel"
