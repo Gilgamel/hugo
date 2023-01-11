@@ -34,34 +34,34 @@ summary: 想尝试一些对于来说自己很新的原琴，给她一份足够�
 谱子开头的数字代表曲子的速度，数字越小速度越快，通过音盲的调试，发现0.7左右比较符合个人要求。
 再根据实际弹奏修改了后续 DFF 的牌子，从原本的一节连弹，变成几个拍子。
 
-> 0.7
-> GG / /
-> (HZ)B /(GA)S /(QD) /
-> (JBM)X /BN /(GM)G /
-> (HBM)X /(GB)N /(WM) /
-> (QZ)B /AS /(GD)G /
-> (TZ)B /(EA)S /(QD) /
-> (JX)N /(HS)D /(RF)R /
-> (EBM)X /(QB)N /(WM) /
-> (QZ)B /AS /D /GG / 
-> (HZ)B /(GA)S /(QD) /
-> (JBM)X /BN /(GM)G /
-> (HBM)X /(GB)N /(WM) /
-> (QZ)B /AS /(GD)G /
-> (TZ)B /(EA)S /(QD) /
-> (JX)N /(HS)D /(RF)R /
-> (EBM)X /(QB)N /(WM) /
-> (QZ)B /AS /(GBD)(GB) /
-> (HNZX)B /(GBA)S /(QAD) /
-> (JMB)X /BN /(GBM)(GB) /
-> (HNBM)X /(GB)N /(WSM) /
-> (QAZX)B /AS /(GBD)(GB) /
-> (TGZX)B /(EDA)S /(QAD) /
-> (JMX)N /(HNS)D /(RFV)(RF) /
-> (EDBM)X /(QAB)N /(WSM) /
-> (QAZX)B /AS /D /F /F /
-> (DB)M /(AF)S /
-> DG /(AZ) /
+> 0.7  
+> GG / /  
+> (HZ)B /(GA)S /(QD) /  
+> (JBM)X /BN /(GM)G /  
+> (HBM)X /(GB)N /(WM) /  
+> (QZ)B /AS /(GD)G /  
+> (TZ)B /(EA)S /(QD) /  
+> (JX)N /(HS)D /(RF)R /  
+> (EBM)X /(QB)N /(WM) /  
+> (QZ)B /AS /D /GG /   
+> (HZ)B /(GA)S /(QD) /  
+> (JBM)X /BN /(GM)G /  
+> (HBM)X /(GB)N /(WM) /  
+> (QZ)B /AS /(GD)G /  
+> (TZ)B /(EA)S /(QD) /  
+> (JX)N /(HS)D /(RF)R /  
+> (EBM)X /(QB)N /(WM) /  
+> (QZ)B /AS /(GBD)(GB) /  
+> (HNZX)B /(GBA)S /(QAD) /  
+> (JMB)X /BN /(GBM)(GB) /  
+> (HNBM)X /(GB)N /(WSM) /  
+> (QAZX)B /AS /(GBD)(GB) /  
+> (TGZX)B /(EDA)S /(QAD) /  
+> (JMX)N /(HNS)D /(RFV)(RF) /  
+> (EDBM)X /(QAB)N /(WSM) /  
+> (QAZX)B /AS /D /F /F /  
+> (DB)M /(AF)S /  
+> DG /(AZ) /  
 
 
 到此，谱子修改已经完成了。
