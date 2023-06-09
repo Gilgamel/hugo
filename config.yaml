@@ -54,6 +54,8 @@ Params:
     url: "https://github.com/Gilgamel"
         #- name: "<platform 2>"
         #-   url: "<link2>"
+  - name: Tumblr
+    url: "https://gilgamel.tumblr.com"
 
 
 # profile mode (CTRL+/ 批量comment)
