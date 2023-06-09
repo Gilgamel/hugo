@@ -1,5 +1,5 @@
 ---
-title: " | 云遇从云，花遇和风，今晚夜色很美"
+title: " Genshin | 云遇从云，花遇和风，今晚夜色很美"
 description: 
 date: 2023-01-10T03:27:10-05:00
 image: 
