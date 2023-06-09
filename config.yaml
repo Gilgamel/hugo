@@ -50,7 +50,7 @@ Params:
       Title: Hi there 👋
       Content: 
   socialIcons: # optional
-  - name: Github
+  - name: 
     url: "https://github.com/Gilgamel"
         #- name: "<platform 2>"
         #-   url: "<link2>"
