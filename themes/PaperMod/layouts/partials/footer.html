@@ -10,7 +10,7 @@
         {{- if site.Copyright }}
         <span>{{ site.Copyright | markdownify }}</span>
         {{- else }}
-        <span>&copy; 2022 - {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a> · 
+        <span>&copy; 2019 - {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a> · 
             <i class="fas fa-bell"></i> <a id="days">0</a>Days</br></span>
         {{- end }}
         {{$var :=  $scratch.Get "total"}}{{$var = div $var 100.0}}{{$var = math.Ceil $var}}{{$var = div $var 10.0}}共书写了{{$var}}k字 · 共 {{ len (where .Site.RegularPages "Section" "post") }}篇文章</br><span>
