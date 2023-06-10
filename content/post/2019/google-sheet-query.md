@@ -1,5 +1,5 @@
 ---
-title: "Google | 在Google Sheets 上使用query、if、isna将符合条件的分表数据汇总到总表"
+title: "Google Sheets | 在Google Sheets 上使用query、if、isna将符合条件的分表数据汇总到总表"
 description: 
 date: 2019-08-18T12:35:27-04:00
 image: 
