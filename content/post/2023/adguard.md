@@ -30,8 +30,7 @@ curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/s
 
 ```
 
-在显示安装完成后（如下图），直接启动 AdGuard 
-![](https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2023/20230702004621.png)
+在显示安装完成后，输入以下代码启动 AdGuard 
 
 ```
 sudo /opt/AdGuardHome/AdGuardHome -s start
