@@ -6,6 +6,7 @@ image:
 math:
 license: 
 categories:
+- 新建就是成功
 tags:
 - Github
 - SSL

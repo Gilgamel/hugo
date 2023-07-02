@@ -6,6 +6,7 @@ image:
 math:
 license: 
 categories:
+- 新建就是成功
 tags:
 - Hugo
   # summary->在列表页展现的摘要内容，自动生成，内容默认前70个字符，可通过此参数自定义，一般无需专门设置

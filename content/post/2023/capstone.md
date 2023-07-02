@@ -1,5 +1,5 @@
 ---
-title: "Capstone"
+title: "Capstone | "
 description: 
 date: 2023-06-09T02:19:56-04:00
 image: 
