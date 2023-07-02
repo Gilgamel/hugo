@@ -26,6 +26,11 @@ sudo apt-get install python3.8
 
 ```
 
+安装 pip in python 
+
+
 
 # Ref
-> [Installing Python 3 on Linux](https://docs.python-guide.org/starting/install3/linux/)
+> [Installing Python 3 on Linux](https://docs.python-guide.org/starting/install3/linux/)  
+> [Install the Compose plugin](https://docs.docker.com/compose/install/linux/)  
+> 
