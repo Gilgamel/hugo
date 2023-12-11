@@ -12,7 +12,7 @@ tags:
 hidden: false
 comments: true
 draft: false
-summary:
+summary: 在坚持写周记做规划方面，我这个J人P得过分……
 ---
 
 这一篇 blog 的标题为：屡战屡败，屡败屡战。
