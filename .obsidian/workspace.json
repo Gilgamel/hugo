@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/2023/dec.4-dec.10-test.md",
+                "file": "content/post/2023/dec.4-dec.10.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2023/dec.4-dec.10-test.md",
+                "file": "content/post/2023/dec.4-dec.10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/post/2023/dec.4-dec.10-test.md",
+                "file": "content/post/2023/dec.4-dec.10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/2023/dec.4-dec.10-test.md"
+                "file": "content/post/2023/dec.4-dec.10.md"
               }
             }
           }
@@ -146,8 +146,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "474fa9be6ba043fd",
+  "active": "6e37b905c406deb8",
   "lastOpenFiles": [
+    "content/post/2023/adguard.md",
+    "content/post/2023/hugo_papermod_socialicons.md",
+    "content/post/2023/jun.12-jun.30.md",
+    "content/post/2023/yuan-qin-happy-birthday.md",
     "content/post/2023/dec.4-dec.10-test.md",
     "content/posts/2023/2023m12d10h21m35s12.md",
     "content/posts/2023",
