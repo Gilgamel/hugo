@@ -1,0 +1,47 @@
+{
+  "choices": [
+    {
+      "id": "c6ae1169-83e4-4cb9-a35d-33d82e2fbba8",
+      "name": "create new post",
+      "type": "Macro",
+      "command": false,
+      "macroId": "f4031c18-f1ea-42a7-a54a-34d6f67b5510"
+    }
+  ],
+  "macros": [
+    {
+      "name": "create new post",
+      "id": "f4031c18-f1ea-42a7-a54a-34d6f67b5510",
+      "commands": [
+        {
+          "name": "create_new_post",
+          "type": "UserScript",
+          "id": "0eae3449-3d46-4606-bb03-4a1f045a1fc9",
+          "path": "obs_sctipts/create_new_post.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": true
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "",
+  "announceUpdates": true,
+  "version": "1.6.1",
+  "disableOnlineFeatures": true,
+  "ai": {
+    "OpenAIApiKey": "",
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true
+  }
+}
