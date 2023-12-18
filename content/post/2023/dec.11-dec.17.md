@@ -108,3 +108,5 @@ summary:
 [根据这个帖子的讨论](https://github.com/orgs/community/discussions/30261)，试着打开了 google research console，再通过了狗爹的域名验证，然后在 request 说明里写上是学习用途，以及表明 hugo 是 open source 内容，因此不涉及侵权；希望去掉标记。
 
 需要等几天才能有结果，等待后续。
+
+BTW，这篇 blog 是直接复制黏贴之前的 markdown 文件修改而成，下周尝试一下在 macbook 安装hugo 以及 git，然后用 hugo new 命令创建。
