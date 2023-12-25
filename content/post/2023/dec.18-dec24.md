@@ -12,7 +12,7 @@ tags:
 hidden: false
 comments: true
 draft: false
-summary: 
+summary: 去看了超级好看的圣诞灯饰！
 ---
 
 恭喜我自己！终于把《以色列》这本书读完辣！并且开始读起了《太白金星有点烦》
