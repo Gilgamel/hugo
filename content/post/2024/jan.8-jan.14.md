@@ -1,7 +1,7 @@
 ---
-title: "Weekly | Jan.8 - Jan.14 终于去申请中国签证了"
+title: "Weekly | Jan.8 - Jan.14 新的一年新的迷茫"
 description: 
-date: 2024-01-014T23:55:00-08:00
+date: 2024-01-14T23:55:00-08:00
 image: 
 math:
 license: 
