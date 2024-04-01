@@ -11,7 +11,7 @@ tags:
 hidden: false
 comments: true
 draft: false
-summary: 
+summary: 心理学 TOP 10 有 TOP 10 的道理，因为的确简单易懂
 ---
 
 这是一篇补写的周记，回家以后所有人的作息都是跟随着三班倒的JING而改变了，因为上班时间不固定，也因此无法规划其他事情，也因此非常容易失去对时间的掌控。
