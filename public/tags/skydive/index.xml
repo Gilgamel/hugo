@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skydive on </title>
+    <link>//localhost:1313/tags/skydive/</link>
+    <description>Recent content in Skydive on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Sep 2021 11:35:29 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/skydive/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FIRST JUMP — SKYDIVE IN TORONTO</title>
+      <link>//localhost:1313/post/2021/first-jump-skydive-in-trt/</link>
+      <pubDate>Sat, 04 Sep 2021 11:35:29 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/first-jump-skydive-in-trt/</guid>
+      <description>距离跳伞已经过了一个多月了，拖延症晚期终于开始写下关于这次跳伞的 blog。 地址选择 在准备跳伞之前问了一下身边跳过伞的朋友以及在网上做了一些搜索，初步定下来两间距离多伦多相对较近的两间 Skydive，分别是：&#xA;位于 Barrie 附近的 Skydive Toronto https://www.skydivetoronto.com/ 以及号称能够看到瀑布的 Niagara Skydive Centre https://niagaraskydive.com/ Location Pkg Option Pkg Price Pkg Feature Note Skydive Toronto Barrie 10500 FT $328 +HST. Approximately 35 seconds of freefall before a five-minute parachute ride down to the ground. 车程约 60分钟 Camera Pkg inside $150+HST, outside $185+HST, both $295+HST Skydive Toronto Barrie 12250 FT $372 +HST. Approximately 45 seconds of freefall before a five-minute parachute ride down to the ground.</description>
+    </item>
+  </channel>
+</rss>

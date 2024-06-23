@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on </title>
+    <link>//localhost:1313/tags/github/</link>
+    <description>Recent content in Github on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Feb 2021 05:25:53 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gridea | 为 Gridea Github Page 自定义域名并开启 https</title>
+      <link>//localhost:1313/post/2021/gridea-github-page-ssl/</link>
+      <pubDate>Sun, 21 Feb 2021 05:25:53 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/gridea-github-page-ssl/</guid>
+      <description>最近发现了 Gridea 这个静态博客，感觉十分方便，重新将持续性写 blog 提上日程&#xA;就算是2021年立一个 flag 吧。&#xA;Gridea 真的是一个非常方便的静态博客，连自定义域名的方式都非常的傻瓜。&#xA;具体操作 在 Gridea 左侧选择远程，然后直接在 CNAME 输入自己的域名，点击保存同步即可。&#xA;登陆 GITHUB，看到多了一个 CNAME 文件即代表同步成功。&#xA;点击 Setting 拖到下方，确认域名已经被填写进去，并且 ENFORCE HTTPS 已被勾选成功。&#xA;其他 其实一开始有在搜了很多教程，包括在 github page 直接 create new file CNAME， 然后输入域名。&#xA;后来发现这个操作在 Gridea 更新同步后，CNAME file 会被删除，因此作罢。&#xA;其后试过直接在 Gridea 源目录下新建 CNAME file，但发现同步不成功。&#xA;最后发现 Gridea 十分贴心的在客户端已经自带了设置。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 18 Jun 2024 05:15:04 -0700</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare Hugo</title>
+      <link>//localhost:1313/post/2024/cloudflare-hugo/</link>
+      <pubDate>Tue, 18 Jun 2024 05:15:04 -0700</pubDate>
+      <guid>//localhost:1313/post/2024/cloudflare-hugo/</guid>
+      <description>@jmooring&#xA;--- cascade: _build: render: always list: always _build: render: never list: never --- Ref: Cloudflare Framework Guide - Hugo 将Hugo博客部署到Cloudflare Pages上的体验与踩坑小记 Hugo Page bundles Hugo URL management Creating a Layout for Content with multiple Subfolders? Trying to get rid of some index pagesSubpages without _index.md file</description>
+    </item>
+    <item>
+      <title>Weekly | Mar.25 - Mar.31 坚持真的很不容易</title>
+      <link>//localhost:1313/post/2024/mar.25-mar.31/</link>
+      <pubDate>Sat, 30 Mar 2024 22:19:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2024/mar.25-mar.31/</guid>
+      <description>懒散了两周，发现好像每天读书对于自己来说是一种超负荷（在需要写blog跟笔记的情况下）。&#xA;最近两周开始去走trail，如下：&#xA;Mystic Vale Trail 2.56km Swan Lake Trail 2.6km Cuthbert Holmes Park Loop 2.3km Colquitz River Trail Royal Oak Trail 3.9km Beacon Hill Park Loop Trail 4.07km 走着走着渐入佳境，最近体重也开始慢慢掉下来。有的时候觉得挺离谱的，之前天天游泳却似乎没有吃了二甲以后瘦的速度快。不过也罢也罢。&#xA;她这周生日，好想她。 无意中跟学姐就不婚这个事情说起来，她以为我早就forward了，而我似乎除了她以外的确都在forward。用之前的形容就是有一种摆烂式的forward，想这个人，但也容许生活继续。&#xA;崩铁这周出了新的剧情，关于一些虚无主义跟砂金的种族被迫害的剧情。查了一下，砂金的原型是吉普赛人，感觉挺有意思，有时间找找相关书籍看看。&#xA;这周还尝试了一下用腾讯文档的form手动输入外婆在iwatch上AFIB的数据，并根据发作频率，发作周期做了图表，更加方便跟家庭医生沟通。&#xA;更新 BLOG BUG，日期写3-31则无法显示（。离谱&#xA;阅读 上周把《卡片笔记》看完了，觉得翻译有点问题，这样单纯的工具书有点看不进去，可能因为是基于写作上，而我本身并没有任何的输出热情。&#xA;《翦商》看完了第一章，得到一些关于缩写的小知识：&#xA;“K” 代表坑 “H” 代表灰坑 “F” 代表房子 “M” 代表墓葬 “J” 代表井 其次则是距今7000-6000年的村落是集中化的，防御力MAX；而距今6000-5000年的村落则发展为部落，并有专门的仪事中心和领头人。&#xA;南方水患频发倒逼南方文明部落联合，而北方则因为环境相对稳定，没有更大的外在（自然）威胁逼着人去联合，因此冲突更多。</description>
+    </item>
+    <item>
+      <title>Weekly | Mar.3 - Mar.10 人类简史完成</title>
+      <link>//localhost:1313/post/2024/mar.3-mar.10/</link>
+      <pubDate>Sun, 10 Mar 2024 21:39:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2024/mar.3-mar.10/</guid>
+      <description>这周把《人类简史》完结了，还顺带被道长安利了一些将要绝版的书。原神方面这周奋起直追，将4.2大部分世界任务都完成了，除了需要打章鱼刷掉落的，以及4.0还是4.1需要打传奇怪的。&#xA;沉玉谷的主线剧情尊嘟十分百合，我永远会站灵渊左！&#xA;阅读 关于《人类简史》，在日程本上开始记录每天读的章节小笔记，果然十分有用。&#xA;这周主要从以下几个方面对于这个世界更加了解了：&#xA;欧洲国家的帝国主义和先前的帝国主义的区别在于他们征服是为了新学士，新的未知；而后者则是认为自己已经了解了整个世界，而征服世界知识为了利用及传播他们对世界的看法。比方说哥伦布不肯承认自己发现了大陆的那块大陆并不是他以为的大陆，就是一种拒绝承认人类会有不知道的情况。因此自省才能谦虚，承认自己的不足，才能有不满足，从而拥有驱动力。某些程度上，科学是帝国主义的遮羞布，因为可以打着科学的旗号去征服别的土地，以一种我拥有高科技所以需要来落后的人进步的傲慢感。&#xA;当今社会存在的信贷系统基于人们对未来的信任。而自由市场的逻辑其实错漏百出，原因在于过于相信人性。而我们其实无法确定资本家会增加人手从而增大利润，而非节省成本压榨人力。同时，这个世界上不存在无限大的饼。而当大家都不相信市场上有无限大的饼，那么自然不会所有人都愿意加大成本去投入。&#xA;工业革命的核心是能源转换的革命（过去以来植物转换能源，例如从植物 -&amp;gt; 食物 -&amp;gt; 能源），而人类总担心资源不够的原因并不是因为世界上真的缺乏能源，而是担心人类不能够掌握转换符合他们需求的知识。与此同时，工业革命带来的是将动物、植物的机械化，且人类对于非人生物变得越发冷漠。这何尝不是一种人类的傲慢。&#xA;现代所兴起的两大想象社群就是“民族”和“消费大众”（什么时候人数多到一定程度就需要用民族来凝结，而家庭社群的力量减弱）。而现代和平的原因是战争成本大幅提升的情况下，利润下降了（财富的形式变成了人力资本，科技知识等半实体形态）&#xA;家庭和社群对快乐与否的影响比金钱和健康重要，而现代国家让家庭和社群的影响力下降，因此很难讲科技时代进步了，但人类是否像以前一样快乐。</description>
+    </item>
+    <item>
+      <title>Weekly | Feb.19 - Feb.25 为什么《我可能不会爱你》</title>
+      <link>//localhost:1313/post/2024/feb.19-feb.25/</link>
+      <pubDate>Sun, 25 Feb 2024 20:39:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2024/feb.19-feb.25/</guid>
+      <description>因为 QQ 社会树功能，跟旧友聊了一段时间的天。也得知了一些关于天天的“罗生门”事件，中途有过纠结，但不管怎么样都已经过去了。也有一点理解了为什么有的人会说希望前任过得很好，但有得时候也希望她过得不要那么好。希望她过得好是因为曾经有过很美好的过往，虽然最后并没有在一起；但也不希望她过得很好，因为她的很好与自己无关。后者的感觉应该是遗憾当时的感情投入了，但能够一起创造未来的不是这两个人吧。就一瞬间理解了一些人类奇怪的情绪。&#xA;除此以外还聊了一下 mbti，认真地看了一下mbti后面的ni、te、fi、se等等，觉得有点意思。可能下周会继续看看。就像我对旧友说的，对于我不怎么在乎的人，我只需要大概分类然后知道要怎么沟通就可以了，而对于在意的人才会想从不同的方面入手去更加了解、理解这个人。但mbti仅仅是一个方面，一个人却有很多个不同的方面，所以路还非常的远。&#xA;跟啾啾这周还因为“你感觉被暴力了可能只是你主观感觉”类似的话而有了争论，在那之前也因为前任聊了一下程又青，更加让我清楚地意识到人跟人之间的感觉真的非常不一样，所以当遇到多元化的时候要如何磨合？暂时不知道这个的答案是什么，但我可能会去重新看程又青。&#xA;阅读 上周已经看完了《应许之地》这周随机开始看起了《灿烂敦煌》并且已经看完了。看完这本书更加了解了一些关于敦煌的相关知识，例如有殿堂窟，柱窟，禅窟等等；也大概了解了一下不同类型的窟的代表性窟是什么（虽然主打一个看完就忘）；但起码认真看过。&#xA;而从中能够提取到的重点有几个方便：&#xA;敦煌非常重要的一个原因是考古学家可以从敦煌的经书手稿里面研究各个时代的审美是如何改变的，书法是如何改变的（因为抄书人的书法功底有门槛，且字体等必须符合当时的人的审美）；而从宋代开始书稿为机器拓印稿，失去了研究的意义。这不得不说是一些科技带来的利与弊。让更多的人能够以低廉的价格看书的同时，也让后代失去了研究的机会。（类似的道理在《人类简史》简单提过，对于目前大家都习惯性用电子产品传输信息，那么对于我们后面的人来说很难研究，因为这并不存在一个实体。 佛教不愧是从印度来的，很多东西都无法脱离印度社会观念（OR 印度教传统观念），例如在佛经里会有佛陀转生到婆罗门的故事，可见早起佛教仍然收到了印度教思想的影响，即婆罗门为洁净的（佛罗至高无上转生到世俗认为的洁净之家，很合理）。除此以外也能够看出来是受到了父权社会的影响，例如国王知道老婆是鹿女求娶，见老婆生下来莲花就将老婆贬为普通妻子。在见到莲花其实有500个孩子以后又将老婆“官复原位”，而随后这500个孩子帮他打下了邻国领土之类的。从现代的眼光看来，这简直是一个渣男物化女性的典型故事。 佛教分小乘佛教以及大乘佛教，小乘佛教的理念为需要累积三辈子才能成佛，而大乘佛教则坚信所有人都能成佛。前者明显跟印度教中的这辈子积福，下辈子种姓能够更加高尚，最终能到达修行最重点是有异曲同工之妙的。（感谢堂弟女友让我对印度教感兴趣而读了《印度教与印度社会》这本书） 周六日则开始看《人类简史》这本书，据说墨墨看了一年没看完，所以我要悄咪咪地看完然后秀她一脸，嘿嘿。&#xA;最后的最后，昨晚又梦见她了，真的好想她啊。 就像《我可能不会爱你》里面说的，拥有是失去的开始。 那么如果不开始是否是因为没有足够的勇气？</description>
+    </item>
+    <item>
+      <title>Weekly | Jan.5 - Feb.11 历史总是相似的</title>
+      <link>//localhost:1313/post/2024/feb.5-feb.11/</link>
+      <pubDate>Sun, 11 Feb 2024 23:08:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2024/feb.5-feb.11/</guid>
+      <description>好消息：二甲对于自己来说没有副作用。 坏消息：没瘦</description>
+    </item>
+    <item>
+      <title>Weekly | Jan.29 - Feb.4 可能需要寻找更加便利的记录方法</title>
+      <link>//localhost:1313/post/2024/jan.29-feb.4/</link>
+      <pubDate>Sun, 04 Feb 2024 23:08:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2024/jan.29-feb.4/</guid>
+      <description>由小糖人引发的焦虑症</description>
+    </item>
+    <item>
+      <title>Weekly | Jan.22 - Jan.28 维多利亚岛急诊等待时长平均为6小时&#43;</title>
+      <link>//localhost:1313/post/2024/jan.22-jan.28/</link>
+      <pubDate>Sun, 28 Jan 2024 23:19:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2024/jan.22-jan.28/</guid>
+      <description>心理学 TOP 10 有 TOP 10 的道理，因为的确简单易懂</description>
+    </item>
+    <item>
+      <title>Weekly | Jan.15 - Jan.21 柴米油盐会将一个人蹉跎得失去原来的模样</title>
+      <link>//localhost:1313/post/2024/jan.15-jan.21/</link>
+      <pubDate>Sun, 21 Jan 2024 23:19:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2024/jan.15-jan.21/</guid>
+      <description>家庭存在的意义是什么？</description>
+    </item>
+    <item>
+      <title>Weekly | Jan.8 - Jan.14 终于去办中国签证啦！</title>
+      <link>//localhost:1313/post/2024/jan.8-jan.14/</link>
+      <pubDate>Sun, 14 Jan 2024 23:55:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2024/jan.8-jan.14/</guid>
+      <description>签证中心的小姐姐真的人美心善！</description>
+    </item>
+    <item>
+      <title>Weekly | Jan.1 - Jan.7 新的一年新的迷茫</title>
+      <link>//localhost:1313/post/2024/jan.1-jan.7/</link>
+      <pubDate>Sun, 07 Jan 2024 23:55:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2024/jan.1-jan.7/</guid>
+      <description>新的一年，新的健康隐忧</description>
+    </item>
+    <item>
+      <title>Weekly | Dec.18 - Dec.24 圣诞快乐 🎅</title>
+      <link>//localhost:1313/post/2023/dec.18-dec24/</link>
+      <pubDate>Sun, 24 Dec 2023 23:55:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2023/dec.18-dec24/</guid>
+      <description>去看了超级好看的圣诞灯饰！</description>
+    </item>
+    <item>
+      <title>Weekly | Dec.25 - Dec.31 像平常一样度过跨年</title>
+      <link>//localhost:1313/post/2023/dec.25-dec.31/</link>
+      <pubDate>Sun, 24 Dec 2023 23:55:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2023/dec.25-dec.31/</guid>
+      <description>年度关键词：健康，习惯，以及坚持</description>
+    </item>
+    <item>
+      <title>Weekly | Dec.11 - Dec.17 立个 CFOP 的 flag</title>
+      <link>//localhost:1313/post/2023/dec.11-dec.17/</link>
+      <pubDate>Sun, 17 Dec 2023 19:55:00 -0800</pubDate>
+      <guid>//localhost:1313/post/2023/dec.11-dec.17/</guid>
+      <description>快乐不知时日过，很快就到周日了（。回家做猪的日子真开心 而本周日程本的最大作用是写下了回家收拾行李用的 todo list以及继续制作游戏用的 todo list（。 制作游戏 todo list的好处是最近两周原神的任务都准时完成了，甚至偶尔能够多做一点，希望按照这样的速度可以保持到阿老师的池子到来&#xA;除此以外由于这周回家的缘故，没怎么运动，最后终于在今天（周日）在 commonwealth 游泳！这个泳池真的是太豪华辣！！！！&#xA;不过看书进度目前还保持着一周五看的习惯，《以色列》这本书已经看完11章了，今晚能看完12章，甚至13章。但可能高估了自己的阅读速度，一个月内看完三本书的目标可能需要更改一下。&#xA;关于目标管理 app 由于之前一直没将 sim 卡换到 iphone 上，所以下载下来的 goal map 跟进度条都没怎么用，用得最多的依然是日程本。不过这周已经将主力手机换成 iphone，希望下周能够对比出来使用效果。&#xA;《消失的古国 —— 南越国》 周一看完了央视出品的《消失的古国 —— 南越国》，算是一些迟来补习（几年前去过南越王博物馆却只顾着拍照跟各种好奇，问一些奇怪的问题导致工作人员一阵无语）&#xA;南越国一共有五个帝王，分别是赵陀、赵胡、赵婴齐、赵兴以及赵建德。其中赵兴跟赵建德由于在位时间不足一年，因此没有足够的时间给自己造墓，等同于现在留存的南越国帝王墓只有三座。&#xA;何时，何地被发现了没被挖掘过的南越国古墓？ 1983年6月8日在象岗山上被施工队发现，发现古墓的地方距离山顶18米。&#xA;如何确定是哪个朝代的墓 初判断：由于在广州发现用石头来砌墓的是明朝，因此初判断墓主为明朝人物 汉代的墓葬多为木椁墓或砖石墓结构；到了明朝才有石室墓 后通过石板缝隙看到汉代造型的铜鼎，因此又认为可能是汉代石室墓（然而在广州没有发现过汉代的石室墓） 经参与过700多个墓挖掘的麦英豪判断铜鼎与几个陶器均为西汉早期的器物 南越国历代帝王背景 赵陀 秦始皇贴身侍卫，后被委以重任平定岭南 在平定岭南中推荐新任的主帅采取归顺照旧的政策，兵不血刃打下岭南 后在陈胜吴广起义时，第二任主将（后来管岭南的头子任嚣）谎称接到诏书让赵陀担任南海郡尉移交权力 秦朝覆灭后封锁所有通往中原的通道，局兵自守控制住南海郡局势，而后建国 赵胡（赵眜） 赵陀的孙子；在位期间被闽越王打，请求汉武帝帮助，兵还没到，闽越王弟弟就造反了 赵胡喜，想去朝见汉武帝，辰劝诫避免被扣押，赵胡派太子赵婴齐去做宿卫，为南越国之乱埋下伏笔 赵婴齐、赵兴、赵建德 （南岳之乱） 在位10年嘎嘎杀人 赵婴齐的老婆跟使臣安国少季谈过恋爱，在赵兴继位后旧情复炽，说服赵兴归顺大汉，引起权臣吕嘉不满 太后设鸿门宴想借刀杀人，让安国少季把吕嘉杀了，安国少季怂，太后想自己动手，被害怕被报复的赵兴阻止 吕嘉逃离后号召全国除奸，带着兵就冲进宫把三个人嘎了，拥立了赵建德，不到一年又被汉武帝反噶了 关于打开墓遇到什么困难？ 铜门生锈了（门斗转轴是铁的已经生锈，用了去绣的也没用）；后发现门槛底是泥，没有铺装，于是在底下挖了个孔，从孔躺着挪进去 在门后发现防盗机关：顶门器，由5块石头组成，两块固定，中间三块可移动，当门关闭时，石头翘起将石门顶住，外人再也进不去 最后请了园林局的打石师傅在保证墓门完整的情况下，打开了墓 这部纪录片讲述了在墓地里发现了 在将整个墓道挖掘出来时（长方形的斜坡墓道，长10.46米，宽2.5米，里面填满了大小不等的大石块用于防盗），但由于石头太大太多太重，将第一道石门逼开了 左耳室（用于存放乐器的地方）：大概20多组编钟和编磬；这是在广州历史上首次发现。而由于编钟是上层社会专用的乐器，是等级和权力的象征，所以从初探墓地就证明了墓室主人身份不凡（必定是王侯级别）。除此以外还有大通提桶以及另外一套编钟，铜方，铜壶。 右耳室：两具殉人以及一些陶具。 前室：大玉璧（典型的王者陪葬品） 距离墓室4米左右开始转为平底的竖坑，在竖坑中发现了棺椁及两个殉葬人的灰痕；这种在墓室外就藏棺椁殉人的墓，在广州乃至岭南属首次发现 椁内下层排列了17件大陶瓮，其中三个上面有印文：长乐宫器，汉代有长乐宫，广州也有。表明了南越国宫室百官同制京师 —— 南越国的一切都效仿汉朝的政治体制 丝缕玉衣： 2200多枚，全长1.37米 特制玉片：方形，长4厘米，宽3厘米，质地圆润，四个边角的位置都有圆孔；地面上还有许多散落的玉片，推测为玉衣 —— 这是岭南第一套玉衣 随葬玉衣是最高等级的葬礼，没有朝廷的许可，即使地位再高的官员，也没法享受这特殊待遇（一般只有帝王才拥有玉衣的资格） 汉代的玉衣分为金缕、银缕、铜缕三种，分别用金、银、铜线连缀，用于区分主人不同的身份等级 金钩玉饰放在墓主头部 透雕龙纹玉璧、透雕龙凤纹重环玉佩在玉衣的面罩上 许多精美的玉器放置在棺椁内 有一方玉印，上面写着赵眜两个字 玉印旁有黄金色印章（龙钮印章），为帝印，上印着：文帝行玺 —— 武帝时赵陀，文帝是赵胡，从此墓主人身份确认；推翻了在东山龟岗发现赵胡墓地的推断 赵胡这人可能是马甲祖宗，上书汉朝时披个马甲 头顶部位有青绿色玉壁，又称玄壁，汉代先人认为玉壁中的圆孔是死者灵魂升天的通道，可让灵魂出入玄壁 枕头用一袋珍珠做成，古人看来珍珠和玉器一样具有神性，保佑着墓主人的尸身不朽 承盘高足杯，学者认为杯子有着特殊用途；据说汉代先人用这种杯子盛接露水；人间的露水是神仙施降的，饮甘露则可以不朽（汉武帝在长安弄了一个一个超级大的仙人盛露盘）；可以用来服用仙药。秦汉时期推崇服用仙药，有人用玉屑（即玉碾压的粉末）加在甘露中饮用时最好的求仙升天之道 精致盒子里有黑色物质，专家推断时赵胡的长生不老药 墓室的后藏室友五色药石，用于制药厂（紫水晶，硫磺，雄黄，赭石，绿松石）古人认为服用后可使人长生不老 —— 少量服用有祛湿等功效，大量混合使用则中毒（丹毒原来是这样产生的，以及祛湿从南越国开始） 杵臼，南越王当年加工仙药的工具 墓中发现的殉人有陪葬印章，从而得知殉人是墓主人的陪葬夫人（龟钮金印，右夫人玺） 秦汉时期的礼制规定诸侯王级别的人用印不能称玺，只有皇帝皇后用印才能称玺，而文帝行玺，右夫人玺的发现表明赵胡有僭越称帝之举 烤肉用的烤具（烤炉还有轮子能推！），煲汤用的铜罐，各种饮食工具一应俱全（墓中发现100+件） 平时吃烧烤，吃海产，正规场合就弄牛羊肉 墓中还有各种家禽家畜和海产品（猪牛羊鱼甲贝类）20余种；在三个陶罐中还发现了200只去头去爪的禾花雀 其余随葬品2000多套1万多件，数量多，品种全，价值珍贵 美签 最近帮老妈填表申请美签，结果在预约面签时傻了眼，已经排队到了2026年1月。通过一番搜索，发现了 tuixue.</description>
+    </item>
+    <item>
+      <title>Weekly | Dec.4 - Dec.10 屡战屡败，屡败屡战</title>
+      <link>//localhost:1313/post/2023/dec.4-dec.10/</link>
+      <pubDate>Sun, 10 Dec 2023 19:05:00 -0500</pubDate>
+      <guid>//localhost:1313/post/2023/dec.4-dec.10/</guid>
+      <description>在坚持写周记做规划方面，我这个J人P得过分……</description>
+    </item>
+    <item>
+      <title>Adguard | VPS 安装 AdGuard Home 为全屋设备过滤广告</title>
+      <link>//localhost:1313/post/2023/adguard/</link>
+      <pubDate>Sat, 01 Jul 2023 02:32:27 -0400</pubDate>
+      <guid>//localhost:1313/post/2023/adguard/</guid>
+      <description>楼下的电视APP更新以后开始出现广告了，于是一直在思考着有没有什么办法能够过滤全屋设备的广告，做了一番搜索以后再次将 AdGuard 翻了出来。之前已经购买过 AdGuard Ad Blocker，这次看上的是开源的 AdGuard Home。AdGuard Home 作为一款全网广告拦截与反跟踪软件，可以在一次安装完成后，通过修改路由DNS从而让连接上特定网络的设备均受到保护。&#xA;关于安装 AdGuard Home 的位置，一开始选择的是在 QNAP NAS 上进行，但后来反复试了很多次均失败。于是趁着美国独立日，在 RackNerd 上购入年费约为 $16 加币的廉价 VPS。&#xA;安装 根据 AdGuard Home Github 的教程，在连接 VPS 以后直接输入以下代码：&#xA;curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v 在显示安装完成后，输入以下代码启动 AdGuard&#xA;sudo /opt/AdGuardHome/AdGuardHome -s start 接着就可以在浏览器输入 VPS IP:3000 进行配置&#xA;配置 AdGuard Home 将网页监听端口改成3000，或许是其他自己喜欢的端口。比较重要的是 DNS 服务器端口。DNS 服务器端口默认是 53，如果想要设置双 AdGuard 进行国内外分流的话，需要用两个端口。但由于家里使用的是 BELL 自带的路由，无法修改具体端口，因此只创建一个 AdGuard，使用默认端口 53。&#xA;而在使用默认端口 53时，经常会出现“validating ports: listen tcp 0.0.0.0:53: bind: address already in use” 的情况（如下图）</description>
+    </item>
+    <item>
+      <title>Weekly | Jun.12 Jun.30 终于毕业啦</title>
+      <link>//localhost:1313/post/2023/jun.12-jun.30/</link>
+      <pubDate>Fri, 30 Jun 2023 23:46:04 -0400</pubDate>
+      <guid>//localhost:1313/post/2023/jun.12-jun.30/</guid>
+      <description>test</description>
+    </item>
+    <item>
+      <title>Weekly | Jun.5 - Jun.11 重头再来 </title>
+      <link>//localhost:1313/post/2023/jun.5-jun.11/</link>
+      <pubDate>Sun, 11 Jun 2023 17:48:56 -0400</pubDate>
+      <guid>//localhost:1313/post/2023/jun.5-jun.11/</guid>
+      <description>由于自己的拖延症，再加上最近一年好像已经不怎么喜欢发朋友圈了，所以尝试一下用PBLOG的形式去记录一下日常吧。在这个基础上尽量多记录记录。&#xA;好久不见的学姐周二来家里做客啦！作为主人家的我对于学姐给我送吃的，送茶叶，给银耳送零食以及还要给我买麦当劳心里毫无波动，并且全然接受。嘿嘿.jpg&#xA;周四的时候车车终于到多伦多了，心里老激动了。&#xA;游戏 最近疯狂沉迷崩铁两个号，外加原神。在游戏每天像上班一样。不过每天花费的时间也不大多，不经一个长草期，一个打不过（。&#xA;然后剑三送的镜子也开了扶摇九天，上剑三的时候是真真切切地体会到了加速器的好用啊！奈何囊中羞涩上得又不多，罢了罢了&#xA;Waston Farm 今年去了 Durham 那块摘草莓，周四跟队友聊完恍然发现距离去年摘草莓已经过去将近一年了。&#xA;Durham 的这个农场入门票 $5，1L 的篮子是 $7, 3L 的篮子是 $21。我们走的时候开玩笑说下次把篮子塞到包里，这样就省了14刀了。再加上进门牌子上写着 “no sampling when were picking”，但事实上是我们一边摘一边吃，吃饱了，嗝 （发往狂徒石锤）</description>
+    </item>
+    <item>
+      <title>Hugo | 升级博客及主体版本，解决一些小 bug</title>
+      <link>//localhost:1313/post/2023/hugo_papermod_socialicons/</link>
+      <pubDate>Fri, 09 Jun 2023 02:20:40 -0400</pubDate>
+      <guid>//localhost:1313/post/2023/hugo_papermod_socialicons/</guid>
+      <description>一些个修复了 vercel 错误提醒之后，想更新主题做做装修，从而发现主题版本太高跟 hugo version 不匹配，于是更新 hugo 的故事</description>
+    </item>
+    <item>
+      <title>Capstone | </title>
+      <link>//localhost:1313/post/2023/capstone/</link>
+      <pubDate>Fri, 09 Jun 2023 02:19:56 -0400</pubDate>
+      <guid>//localhost:1313/post/2023/capstone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title> Genshin | 云遇从云，花遇和风，今晚夜色很美</title>
+      <link>//localhost:1313/post/2023/yuan-qin-happy-birthday/</link>
+      <pubDate>Tue, 10 Jan 2023 03:27:10 -0500</pubDate>
+      <guid>//localhost:1313/post/2023/yuan-qin-happy-birthday/</guid>
+      <description>想尝试一些对于来说自己很新的原琴，给她一份足够用心的生日礼物，想让她喜欢的原神小男孩给她弹奏生日歌。</description>
+    </item>
+    <item>
+      <title>Weekly | Nov.22-Dec.24 社交含量爆棚的三周且拖延</title>
+      <link>//localhost:1313/post/2022/nov.22-dec.3/</link>
+      <pubDate>Sat, 24 Dec 2022 00:21:40 -0500</pubDate>
+      <guid>//localhost:1313/post/2022/nov.22-dec.3/</guid>
+      <description>一年网（课课）友终于面基，以半好半坏的状态</description>
+    </item>
+    <item>
+      <title>Weekly | Oct.20 - Nov.22 是荒废的一个月呀</title>
+      <link>//localhost:1313/post/2022/oct.20-nov.21/</link>
+      <pubDate>Tue, 22 Nov 2022 16:48:05 -0500</pubDate>
+      <guid>//localhost:1313/post/2022/oct.20-nov.21/</guid>
+      <description>听了很多歌，看了很多电视剧，肝了很久的游戏，就是逃避着不想找工作</description>
+    </item>
+    <item>
+      <title>Weekly | Oct.1 - Oct 19 好久不写，写到哪儿就算哪儿 </title>
+      <link>//localhost:1313/post/2022/oct.1-oct.19/</link>
+      <pubDate>Wed, 19 Oct 2022 22:54:06 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/oct.1-oct.19/</guid>
+      <description>时隔一年，维多利亚我又来啦！</description>
+    </item>
+    <item>
+      <title>Hugo | Hugo-PaperMod 主题修改</title>
+      <link>//localhost:1313/post/2022/papermod-theme-mod/</link>
+      <pubDate>Sat, 17 Sep 2022 22:24:59 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/papermod-theme-mod/</guid>
+      <description>将 Hugo 主题换成 PaperMod 并进行相关修改</description>
+    </item>
+    <item>
+      <title>Weekly | Jul.16-Aug.1 如愿</title>
+      <link>//localhost:1313/post/2022/jul.16-aug.1/</link>
+      <pubDate>Tue, 02 Aug 2022 14:31:14 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/jul.16-aug.1/</guid>
+      <description>第一次去她家……</description>
+    </item>
+    <item>
+      <title>Weekly | Jul.1 - Jul.15 这个盛夏开满了花</title>
+      <link>//localhost:1313/post/2022/jul.1-jul.15/</link>
+      <pubDate>Sat, 16 Jul 2022 14:30:53 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/jul.1-jul.15/</guid>
+      <description>从未想过去农场玩是一件这么让我觉得开心的事情……</description>
+    </item>
+    <item>
+      <title>Weekly | June.15 - June.30 Project Management 我真的会谢</title>
+      <link>//localhost:1313/post/2022/jun.15-jun.30/</link>
+      <pubDate>Thu, 30 Jun 2022 14:30:30 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/jun.15-jun.30/</guid>
+      <description>Project Management 跟我想象中完全不一样……学完以后更加不会做PM了</description>
+    </item>
+    <item>
+      <title>Weekly | May.10 - June.14 记十梦四</title>
+      <link>//localhost:1313/post/2022/may.10-jun.14/</link>
+      <pubDate>Tue, 14 Jun 2022 00:48:00 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/may.10-jun.14/</guid>
+      <description>啾某人终于来多伦多看我啦！还带着我的ZESPA！</description>
+    </item>
+    <item>
+      <title>Weekly | Apr.19 - May.9 樱花正是灿烂时</title>
+      <link>//localhost:1313/post/2022/apr.19-may.9/</link>
+      <pubDate>Mon, 09 May 2022 16:25:22 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/apr.19-may.9/</guid>
+      <description>Hello High Park 以及我爱学习……</description>
+    </item>
+    <item>
+      <title>Weekly | Apr.5 - Apr.18 又大一岁啦</title>
+      <link>//localhost:1313/post/2022/apr.5-apr.18/</link>
+      <pubDate>Mon, 18 Apr 2022 13:06:50 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/apr.5-apr.18/</guid>
+      <description>祝自己生日快乐耶</description>
+    </item>
+    <item>
+      <title>Project Debrief | Workcation Recommandation via Analytic Hierarchy Process</title>
+      <link>//localhost:1313/post/2022/ahp/</link>
+      <pubDate>Thu, 14 Apr 2022 12:34:02 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/ahp/</guid>
+      <description>APH 复盘</description>
+    </item>
+    <item>
+      <title>Weekly | Mar.21 - Apr.4 忽然就一年了</title>
+      <link>//localhost:1313/post/2022/mar.21-apr.4/</link>
+      <pubDate>Mon, 04 Apr 2022 16:07:46 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/mar.21-apr.4/</guid>
+      <description>第一次给修猫咪洗澡耶！</description>
+    </item>
+    <item>
+      <title>Excel | 用 Excel 进行时间、分类统计</title>
+      <link>//localhost:1313/post/2021/excel-da-001/</link>
+      <pubDate>Mon, 25 Oct 2021 01:57:05 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/excel-da-001/</guid>
+      <description>在分析过程中使用到的相关函数及功能 Pivottable Split Cells Date 函数 DATEDIF 函数 IF 函数 分析需求 根据要求，需要针对数据提供以下几项分析：&#xA;Submit 时间分析：每个月的数据量，分析出来高峰期在什么时候 Shipment 时间分析：可以关注下 submit-shipment 直接的时间先后顺序 lead time 区域分析：区域数据量 患者年龄段： genz：1997 之后 sophiscated：1986 - 1997 之间 senior：1986 之前 客户性别比例 治疗步数分析： 20步 20-40 40-60 60以上 EXCEL 操作 Submit Date 时间分析 根据提供的算法，在 RAW DATA 里找到 submit date，并发现已提供了 submit year &amp;amp; submit month，不需要再做任何的数据处理，直接即可应用&#xA;submit month value 每出现一次，则代表一次订单产生，因此要知道每个月的订单数量，只需要通过 pivottable 统计 submit month 出现的次数即可。&#xA;方法如下：&#xA;选中 submit month &amp;amp; submit year 两列 选择菜单栏上的 插入 → 数据透视表 （英文版则为 Insert → PivotTable） 弹出“来自表格或区域的数据透视表”框后，选择新工作表，然后点确定 （见下图） 在新建工作表上点击“数据透视表”，右侧会出现数据透视表字段，将 submit year &amp;amp; submit month 拖拽到相应位置即可 此时新的工作表上即出现了关于 submit date 的相关统计数据 Shipment Date 时间分析 根据提出的需求，关于 shipment date 的时间分析有两个方面：</description>
+    </item>
+    <item>
+      <title>Google Analytics | Advanced Assessment 2</title>
+      <link>//localhost:1313/post/2021/advanced-google-analytics-assessment-2/</link>
+      <pubDate>Mon, 04 Oct 2021 08:26:35 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/advanced-google-analytics-assessment-2/</guid>
+      <description>limits of numbers of custom dimensions&#xA;stadnard: 20 analytics 360: 200 Ref https://support.google.com/analytics/answer/7165564?hl=en</description>
+    </item>
+    <item>
+      <title>Google Analytics | Advanced Assessment 1</title>
+      <link>//localhost:1313/post/2021/advanced-google-analytics-assessment-1/</link>
+      <pubDate>Sat, 02 Oct 2021 01:08:05 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/advanced-google-analytics-assessment-1/</guid>
+      <description>If default Google Analytics tracking code is installed on pages with different domains, Analytics will count these users and sessions separately. True False What does Google Analytics call a URL that passes data parameters for reporting? A tag A hit A dimension A metric When does the Google Analytics tracking code send a pageview hit to Analytics? Every time a user clicks a video Every time a user adds an item to a shopping cart Every time a user performs a search on a website Every time a user loads a webpage When does the Google Analytics tracking code send an event hit to Analytics?</description>
+    </item>
+    <item>
+      <title>Google Analytics | Beginners Assessment 4</title>
+      <link>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-4/</link>
+      <pubDate>Tue, 14 Sep 2021 00:18:26 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-4/</guid>
+      <description>Which three tags does Google Analytics require for accurate campaign tracking? Medium, Source, and Content Medium, Source, and Campaign Campaign, Content, and Term Source, Content, and Term Which tags are standard Google Analytics campaign parameters? utm_adgroup utm_source utm_medium utm_content To quickly generate campaign tags, what tool should be used? The Measurement Protocol The Segment Builder The URL Builder The Goal Selector Which formats may be used to add a custom campaign parameter to a URL?</description>
+    </item>
+    <item>
+      <title>Google Analytics | Beginners Assessment 3</title>
+      <link>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-3/</link>
+      <pubDate>Mon, 13 Sep 2021 22:37:36 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-3/</guid>
+      <description>What setting must be enabled to view data in Demographics and Interests Reports? Content Grouping Advertising features User permissions on the view In-Page Analytics What report would best help identify potential browser issues with website traffic? The Active Users report The New vs Returning report The Browser &amp;amp; OS report The Source/Medium report What report shows what mobile devices were used to view a website? The Exit Pages report under “Site Content” The Landing Page report under “Site Content” The Engagement report under “Behavior” The Devices report under “Mobile” Which Traffic Source dimensions does Google Analytics automatically capture for each user who comes to your site?</description>
+    </item>
+    <item>
+      <title>Google Analytics | Beginners Assessment 2</title>
+      <link>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-2/</link>
+      <pubDate>Mon, 13 Sep 2021 19:45:11 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-2/</guid>
+      <description>What feature would be used to compare two date ranges in a report? Hourly, Day, Week, Month views in the time graph Real-time reports Date range comparison Account selector What does the “Users” metric measure? The total number of visits to your website Users that had at least one session on your site in the given date range Users that landed on the homepage of your website Users who have signed up to an email newsletter on your website What is the “Bounce Rate” in Google Analytics?</description>
+    </item>
+    <item>
+      <title>Google Analytics | Beginners Assessment 1</title>
+      <link>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-1/</link>
+      <pubDate>Sun, 12 Sep 2021 10:53:56 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-1/</guid>
+      <description>Using tracking code, Google Analytics can report on data from which systems? E-commerce platforms Mobile Applications Online point-of-sales systems Systems not connected to the Internet To collect data using Google Analytics, which steps must be completed? Install Google Analytics desktop software Create an Analytics account Add Analytics tracking code to each webpage Download the Analytics app The Analytics tracking code can collect which of the following? Language the browser is set to Type of browser User’s favorite website Device and operating system When will Google Analytics end a session by default?</description>
+    </item>
+    <item>
+      <title>FIRST JUMP — SKYDIVE IN TORONTO</title>
+      <link>//localhost:1313/post/2021/first-jump-skydive-in-trt/</link>
+      <pubDate>Sat, 04 Sep 2021 11:35:29 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/first-jump-skydive-in-trt/</guid>
+      <description>距离跳伞已经过了一个多月了，拖延症晚期终于开始写下关于这次跳伞的 blog。 地址选择 在准备跳伞之前问了一下身边跳过伞的朋友以及在网上做了一些搜索，初步定下来两间距离多伦多相对较近的两间 Skydive，分别是：&#xA;位于 Barrie 附近的 Skydive Toronto https://www.skydivetoronto.com/ 以及号称能够看到瀑布的 Niagara Skydive Centre https://niagaraskydive.com/ Location Pkg Option Pkg Price Pkg Feature Note Skydive Toronto Barrie 10500 FT $328 +HST. Approximately 35 seconds of freefall before a five-minute parachute ride down to the ground. 车程约 60分钟 Camera Pkg inside $150+HST, outside $185+HST, both $295+HST Skydive Toronto Barrie 12250 FT $372 +HST. Approximately 45 seconds of freefall before a five-minute parachute ride down to the ground.</description>
+    </item>
+    <item>
+      <title>Google Sheets | 通过 Query、Importrange、Select、Where 将多张 Google Sheets 合并到一起</title>
+      <link>//localhost:1313/post/2021/google-sheets-merge-multiple-sheets/</link>
+      <pubDate>Sun, 04 Apr 2021 04:20:46 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/google-sheets-merge-multiple-sheets/</guid>
+      <description>背景 公司每个学期所做的 Budget 都放在 Google Sheet，大概每2-4周会出现频繁修改的情况，因此需要实时保持更新并连接到 PBI。&#xA;在之前曾经试过 Custom Goolge Sheet Connector，但由于 Connector 只能在 Desktop 使用，会影响将报表 push 到 PBI Service 后的刷新；也曾经试过将 Power Query 写到 PBI Service 上，但由于 credential 问题，会导致后续无法刷新。&#xA;由于每个分公司的 Budget 都会在一张 spreadsheet 上，基于保密因此需要先将分公司的 Budget 有选择性地抓到同一张表上，再连接到 PBI Service 上。&#xA;总结 基于以上背景，可简单总结为以下两个目的：&#xA;Merge Multiple Sheets into One Sheet Connect Goolge Sheet to PBI Service and Configure Scheduled Refresh STEP 1. Merge Multiple Sheets STEP 1.1 Filter + Importrange，失败的尝试 Filter Synatax FILTER(range, condition1, [condition2, .</description>
+    </item>
+    <item>
+      <title>Gridea | 为 Gridea Github Page 自定义域名并开启 https</title>
+      <link>//localhost:1313/post/2021/gridea-github-page-ssl/</link>
+      <pubDate>Sun, 21 Feb 2021 05:25:53 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/gridea-github-page-ssl/</guid>
+      <description>最近发现了 Gridea 这个静态博客，感觉十分方便，重新将持续性写 blog 提上日程&#xA;就算是2021年立一个 flag 吧。&#xA;Gridea 真的是一个非常方便的静态博客，连自定义域名的方式都非常的傻瓜。&#xA;具体操作 在 Gridea 左侧选择远程，然后直接在 CNAME 输入自己的域名，点击保存同步即可。&#xA;登陆 GITHUB，看到多了一个 CNAME 文件即代表同步成功。&#xA;点击 Setting 拖到下方，确认域名已经被填写进去，并且 ENFORCE HTTPS 已被勾选成功。&#xA;其他 其实一开始有在搜了很多教程，包括在 github page 直接 create new file CNAME， 然后输入域名。&#xA;后来发现这个操作在 Gridea 更新同步后，CNAME file 会被删除，因此作罢。&#xA;其后试过直接在 Gridea 源目录下新建 CNAME file，但发现同步不成功。&#xA;最后发现 Gridea 十分贴心的在客户端已经自带了设置。</description>
+    </item>
+    <item>
+      <title>银河后期</title>
+      <link>//localhost:1313/post/2019/milky-way-editing/</link>
+      <pubDate>Sun, 25 Aug 2019 22:00:40 -0400</pubDate>
+      <guid>//localhost:1313/post/2019/milky-way-editing/</guid>
+      <description>抓住19年拍银河的小尾巴，跟特特还有海王去了 Toronto Barren 拍银河。&#xA;俗话说得好：拍摄一时爽，后期火葬场。&#xA;用来拍摄的单反是 long time ago 的60D，由于是APS-C画幅，所以拍摄时的思路是用 高感 + 大光圈 + 慢快门 尽可能将更多的星星拍摄进去。然而忽略了机子的问题，等看到RAW的时候发现噪点十分多，修起来真的是太难了。在找了好多个preset以后发现颜色出来都不大自然（至少比我目前修出来的还不自然），所以无法偷懒的自己开始不断 google 着。&#xA;用的参数是 3200 ISO + f2.8 + 30s，拍摄6张以后拼接在一起。原图大概是这个亚子的：&#xA;Camera RAW 基修 在LR里将6张图拼接导出以后，用 Camera RAW 打开了图片。由于在LR里已经预先将图片都进行了镜头校对，所以在 Camera RAW 里就省去这一步了。&#xA;直接对对比度、高光、阴影、白色、黑色进行修改，重点是将图片调灰&#xA;高光&#xA;提高高光可以使银心更加明亮，&#xA;阴影&#xA;提高阴影可以使暗部提高一些，显示出细节&#xA;黑色&#xA;提高黑色一样可以显示出细节&#xA;白色&#xA;降低白色可以让图片整体亮度稍微压低一点&#xA;对比度&#xA;适当调低可以方便PS后期修整&#xA;除此以外，还需要适当增加清晰度以及自然饱和度，曝光度根据图片情况选择性加/不加。&#xA;降噪 将 Camera RAW 调到细节，然后开始降噪&#xA;注意蒙版需要稍微调大一点，颜色也需要降噪，否则会出现噪点过多的问题&#xA;Photoshop 修饰 明暗修饰 亮部修饰 利用快捷键 CTRL + ALT + 2 选取高光部位。&#xA;这时画面上会出现闪闪发亮的就是高光部位，然后用调整层工具 曲线 进行修饰&#xA;由于我们现在选取了高光部位，所以操作仅仅会针对亮的部分进行。&#xA;通过拖动曲线，让亮的地方更亮，把比较灰的地方拉下来。&#xA;暗部修饰 按着曲线部分的蒙版（曲线）选区，CTRL + ALT +2 选择高光部位后，然后在菜单栏选择 反选，接着再加曲线。</description>
+    </item>
+    <item>
+      <title>Excel | Remove Duplicate</title>
+      <link>//localhost:1313/post/2019/removedupliate/</link>
+      <pubDate>Tue, 20 Aug 2019 11:25:00 -0400</pubDate>
+      <guid>//localhost:1313/post/2019/removedupliate/</guid>
+      <description>最近一直在做活动，报名方式为麦客单表，但由于经常性会出现重复性报名情况，所以需要在统计之前对数据进行清洗。&#xA;出现重复报名的情况一般如下：&#xA;报名了 A活动&amp;amp;B活动后，又再报名了 B活动&amp;amp;A活动 报名了 A活动&amp;amp;B活动后，又再报名了 C活动 报名了 A活动&amp;amp;B活动后，又再报名了 A活动&amp;amp;B活动&amp;amp;C活动 报名了 A活动&amp;amp;B活动后，又再报名了 A活动&amp;amp;C活动&amp;amp;D活动 思路 合并/去掉重复行 根据报名表的设置，一般都会有 姓名、手机、微信、邮箱、参与活动 这几项，而其中姓名跟手机是大概率是唯一，which means不会重复的，所以将使用姓名/手机作为检测项&#xA;在以姓名作为检测项对齐进行排列后，可以看出这个叫 Ada 的少年一口气重复报名了三次，并且第二、三次报得是完全一样的，现在要做的就是 将同一个姓名的人选择参加的活动全部合并在一起&#xA;在活动后面一列起个小标题 1 写上以下code：&#xA;=if(A2=A1, F1&amp;amp;&amp;#34;;&amp;#34;&amp;amp;E2, E2)&#xD;# 如果 A2=A1，就将F1跟E2内容合并到一块，中间用；来表示，否则就显示E2 完事儿将公式拉完这一列。 在 列1 后面再弄一个 列2，写上以下code：&#xA;=if(A2&amp;lt;&amp;gt;A3, &amp;#34;Merged Value&amp;#34;, &amp;#34; &amp;#34;)&#xD;# 如果 A2 不等于 A3，那么就显示为 Merged Value，否则显示空白 同理，将公式拉满 列2；接着将 列1&amp;amp;列2 都选上，然后 copy &amp;amp; paste value only，将这两列的数值都变为plain text&#xA;接下来将 列2 选中，并且进行 自定义排序&#xA;选择 扩展选定区域，然后将主要关键字选为 2，次序为 降序&#xA;最后将 列2 最下方显示为 空白的几行删掉即可。</description>
+    </item>
+    <item>
+      <title>Google Sheets | 在Google Sheets 上使用query、if、isna将符合条件的分表数据汇总到总表</title>
+      <link>//localhost:1313/post/2019/google-sheet-query/</link>
+      <pubDate>Sun, 18 Aug 2019 12:35:27 -0400</pubDate>
+      <guid>//localhost:1313/post/2019/google-sheet-query/</guid>
+      <description>因为工作的缘故，需要将各个平台的宣传日期都放在一张google sheet上，然后 通过检测关键词，将关键的event自动pop up到总表上。得到这个需求的时候，脑海里立刻想到的是VBA，然而google sheet上压根没VBA啊！ 于是想着是否能用 vlookup/hlookup/index &amp;amp; match解决问题，最后发现果然还是解决不了：）最后在朋友的提醒下，开始摸索着使用 query。&#xA;Query 根据 Google 简陋的说明，query 是对数据运行一项采用 Google Visualization API 查询语言的查询。&#xA;用法示例 QUERY(A2:E6,&amp;#34;select avg(A) pivot B&amp;#34;)&#xD;QUERY(A2:E6,F2,FALSE) 语法 Query（数据，查询，[标题数]）&#xA;数据 - 要执行查询的单元格范围。 每列数据中的数值类型只能是布尔值、数字（包括日期/时间类型）或字符串。 如果有多种数据类型掺杂在单个列中，为便于查询，该列的数据类型由其中大多数数据的类型决定。其他少数数据的类型则被视为空值。 查询 - 要执行的查询操作，以 Google Visualization API查询语言编写。 查询的值必须括在引号中，否则该值必须是指向包含相关文本的单元格的引用。 标题数 - [可选]- 数据上方的标题行的数目。如果省略或设置为-1，将根据数据的内容估算该值。 可以怎么用？ name dept lunchTime salary hireDate age isSenior seniorityStartTime John Eng 12:00:00 1000 3/19/2005 35 TRUE 12/2/2007 15:56:00 Dave Eng 12:00:00 500 4/19/2006 27 FALSE null Sally Eng 13:00:00 600 10/10/2005 30 FALSE null Ben Sales 12:00:00 400 10/10/2002 32 TRUE 3/9/2005 12:30:00 Dana Sales 12:00:00 350 9/8/2004 25 FALSE null Mike Marketing 13:00:00 800 1/10/2005 24 TRUE 12/30/2007 14:40:00 使用Select和Where返回满足指定条件的行。 QUERY(&amp;#39;Example Data&amp;#39;!</description>
+    </item>
+    <item>
+      <title>悬空寺：危楼高百尺</title>
+      <link>//localhost:1313/post/2019/shanxi-day2/</link>
+      <pubDate>Mon, 06 May 2019 13:56:37 -0400</pubDate>
+      <guid>//localhost:1313/post/2019/shanxi-day2/</guid>
+      <description>早上6点30左右在华林新天地靠城墙上车，对比起飞猪上的图案，马蜂窝这个团的车子显得有点一言难尽……例如还有座位是坏了的……&#xA;路上是一路睡过去的，就不多说了。&#xA;悬空寺 一直以来关于悬空寺都流传着这样的俚语：悬空寺，半天高，三根马尾空中吊。&#xA;悬空寺建于公元419年（北魏），是佛、道、儒三教合一的独特寺庙。悬空寺原本叫玄空阁，玄取自于中国传统宗教道教教理，空则来源于佛教的教理。&#xA;在唐开元23年（公元735年），李白留下壮观二字，现存建筑是明清两代时修缮的遗物。悬空寺乃一院两楼布局，楼阁殿宇40间，总长约32米。总体布局有寺院、禅房、佛堂、三佛殿、太乙殿、关帝庙、鼓楼、钟楼、珈蓝殿、送子观音殿、释迦殿、雷音殿、三宫殿、纯阳宫、栈道、三教殿、五佛殿等……&#xA;给皮皮瘦来一张游客照，感觉自从有了皮皮瘦，我对于用嘴唇去对焦这事情已经越发娴熟了……&#xA;去悬空寺的时候由于错开了五一高峰，基本不需要排队。然而真正站在上面时腿都在抖。因为真的很！晃！！！啊！！&#xA;悬空寺全死初看上去只有几十根大约碗口粗的木柱支撑，最高处距离地面50来米；以半插横梁为基础，借助岩石的托付，回廊栏杆上下梁柱左右紧密相连成一整个木质框架式结构。&#xA;一样是跟了一个不大靠谱的导游，一路上半知半解。回来照旧 google 一下你就知道，于是找到了以上解析，而且还来自于导游词稿；互联网万岁。&#xA;楼梯还超级陡的，几乎成90度的楼梯需要手脚并用才得去，上得时候因为背着书包，还差点一个不小心就卡在楼梯口。&#xA;这个也不知道是什么佛像，但是眼睛位置特别明亮，应该是用了琉璃之类的镶嵌上去的。&#xA;这座纯阳宫是去了山西以后第一次看到，当时十分兴奋拍了下来准备发给岚狗看的，到了后来越发审美疲劳。&#xA;对了，悬空寺山下，不对应该是恒山山脚下还有一座小悬空寺，但目前由于路况问题已经暂时关闭了。一路走着的时候宗让我想起某不知名小说就是关于大小悬空寺的。&#xA;恒山 </description>
+    </item>
+    <item>
+      <title>崇善寺：佛香青烟袅袅</title>
+      <link>//localhost:1313/post/2019/shanxi-day1/</link>
+      <pubDate>Sat, 04 May 2019 01:41:06 -0400</pubDate>
+      <guid>//localhost:1313/post/2019/shanxi-day1/</guid>
+      <description>行程安排：&#xA;日期 行程 5.6 广州 - 太原 （崇善寺） - 大同 5.7 悬空寺 - 恒山 - 云冈石窟 - 大同古城墙 5.8 纯阳宫 - 关帝庙 - 九龙壁 - 四牌楼 - 清真大寺 - 华严寺 - 平遥（火车） 5.9 日昇昌&amp;amp;蔚泰厚 - 武林汇 - 古县衙 - 珍奇报纸陈列馆 - 城隍庙 5.10 王家大院 - 平遥古城墙 - 二郎庙 - 庆同协 - 同兴公镖局 - 文庙 - 华北镖局 - 太原 5.11 中国煤炭博物馆 - 山西博物院 - 食品街 5.12 太原工人文化宫 - 广州 太原机场 由于这次机票时间订得不上不下的，于是下了飞机以后上了机场大巴直奔火车站。在这里想吐槽一下机场大巴，终点站叫火车站，但下了车以后还需要坐一站公交车 -_-|||</description>
+    </item>
+    <item>
+      <title>Aga Khan Meseum</title>
+      <link>//localhost:1313/post/2019/aga-khan-meseum/</link>
+      <pubDate>Fri, 12 Apr 2019 10:38:36 -0400</pubDate>
+      <guid>//localhost:1313/post/2019/aga-khan-meseum/</guid>
+      <description>最近经常在INS看到 Aga Khan Meseum （AKM）关于人类登月50周年纪念而设的特展推广，于是就趁着周末跑去刷了一次馆。学生票 $12刀，外加导游讲解 $5，一共 $17。买完票的一瞬间觉得作为一个学生真的是太幸福了。&#xA;去到的时候大概1点，特展导游讲解在1点45开始。所以就趁这段时间在CAFE买了点喝的顺手再翻了一下博物馆的相关情况。&#xA;Aga Khan Meseum&#xA;阿迦汗博物馆成立于2014年，，属于伊斯兰教什叶派伊斯玛仪派领袖阿迦汗四世（Prince Shah Karim Al Husseini）的私人财产。馆内藏品涵盖伊斯兰艺术、伊朗艺术和穆斯林文化等，重要展品包括伊本·西那（Ibn Sina）的《医典》副本、一张「蓝色古兰经」的书页、14世纪西班牙星盘等。&#xA;阿迦汗博物馆的主体建筑于1996年由阿迦汗四世购得。2002年阿迦汗四世买下相邻建筑，并宣布建造阿迦汗博物馆、伊斯兰中心和阿迦汗公园。&#xA;2014年9月，阿迦汗博物馆正式开馆，这座博物馆由普利兹克建筑奖获得者、日本建筑师槙文彦（Fumihiko Maki）设计，占地面积约1万平方米。&#xA;照例先给好久没出现的皮皮瘦来一张照片，右上角的一张 moon lady 很重要，导游还特意带我们到 moon lady 的展品上好好讲解了一番。&#xA;博物馆分为两层，楼上二楼为特展 The Moon，一楼为永久展区。&#xA;The Moon: A Voyage Through Time The Moon 这个展览利用了灯效，在地面上映射出上弦月、半月、满月的灯光效果，在一开始的时候用巨幅照片给游客展览了月亮的各个形态；并且将从月球上掉落的一小片陨石放在地面，放上透明玻璃罩，利用“站在过月球上”作为噱头，作为一个开头特色亮点。&#xA;随后真真正正进入展区后则通过艺术、文化等方面讲述伊斯兰文明与月亮的关联。&#xA;例如：在一副画上描画着蔬果、以及阁楼，在阁楼的顶部有一名占星师对月观察，看是否已经到了蔬果丰收、可以进食的日子。&#xA;又例如在伊斯兰文字里一个像月亮的图案则代表眼睛，而两两结合则代表不知道什么（。 而后两两结合成一个疑似满月的图案，上面除了文字以外，还有着经纬度。从这里可以看出，在当时的伊斯兰文明来说并没有宗教、科学之分。&#xA;除此以外让人印象深刻的是一个叫Astrolabe 的东西。&#xA;Astrolabe，又称为星盘，最早来源自希腊，是平面球与窥管的结合。窥管，（希腊语：διόπτρα）是可以追溯到公元前三世纪的传统]天文和测量工具。窥管是一根两端都可以看或是固定的观测管，如果装有量角器，就可以用来测量角度。&#xA;星盘在中世纪伊斯兰世界进一步发展，穆斯林天文学家在设计中引入了角度尺，在地平线上添加了指示方位角的圆圈。它在整个穆斯林世界被广泛使用，主要是作为航行的辅助手段，以及寻找麦加方向的朝拜方式。八世纪的数学家Muhammad al-Fazari是第一个在伊斯兰世界建造星盘的人。&#xA;星盘正反面均可使用，不仅能用来观星，还能用来看时间（真的感觉很牛逼了），在看到星盘的第一眼不知道为什么首先想到了中国的日晷；大概是因为两个物品有着一些些相同之处吧。除此以外星盘让人感觉到印象深刻的原因大概是源于现代人对于伊斯兰文明、穆斯林的stereotype。当我们想到中东、伊斯兰、穆斯林的时候第一反应想到的是绿绿，却忘了其实在很多年前伊斯兰文明有多棒。&#xA;The Permanent Exhibition This selection of jewelery has been lavishly ornamented using filigree and granulation, displaying the intricate and demanding goldsmithing techniques that showcase the skill and sophistication of craftsmanship during the Fatimid dynasty (973 - 1171).</description>
+    </item>
+    <item>
+      <title>Archive</title>
+      <link>//localhost:1313/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/archives/</guid>
+      <description>archives</description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>//localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/search/</guid>
+      <description>search</description>
+    </item>
+  </channel>
+</rss>

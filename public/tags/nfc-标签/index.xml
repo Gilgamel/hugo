@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NFC 标签 on </title>
+    <link>//localhost:1313/tags/nfc-%E6%A0%87%E7%AD%BE/</link>
+    <description>Recent content in NFC 标签 on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Jan 2023 03:27:10 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/nfc-%E6%A0%87%E7%AD%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Genshin | 云遇从云，花遇和风，今晚夜色很美</title>
+      <link>//localhost:1313/post/2023/yuan-qin-happy-birthday/</link>
+      <pubDate>Tue, 10 Jan 2023 03:27:10 -0500</pubDate>
+      <guid>//localhost:1313/post/2023/yuan-qin-happy-birthday/</guid>
+      <description>想尝试一些对于来说自己很新的原琴，给她一份足够用心的生日礼物，想让她喜欢的原神小男孩给她弹奏生日歌。</description>
+    </item>
+  </channel>
+</rss>

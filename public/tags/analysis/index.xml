@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis on </title>
+    <link>//localhost:1313/tags/analysis/</link>
+    <description>Recent content in Analysis on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Oct 2021 01:57:05 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel | 用 Excel 进行时间、分类统计</title>
+      <link>//localhost:1313/post/2021/excel-da-001/</link>
+      <pubDate>Mon, 25 Oct 2021 01:57:05 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/excel-da-001/</guid>
+      <description>在分析过程中使用到的相关函数及功能 Pivottable Split Cells Date 函数 DATEDIF 函数 IF 函数 分析需求 根据要求，需要针对数据提供以下几项分析：&#xA;Submit 时间分析：每个月的数据量，分析出来高峰期在什么时候 Shipment 时间分析：可以关注下 submit-shipment 直接的时间先后顺序 lead time 区域分析：区域数据量 患者年龄段： genz：1997 之后 sophiscated：1986 - 1997 之间 senior：1986 之前 客户性别比例 治疗步数分析： 20步 20-40 40-60 60以上 EXCEL 操作 Submit Date 时间分析 根据提供的算法，在 RAW DATA 里找到 submit date，并发现已提供了 submit year &amp;amp; submit month，不需要再做任何的数据处理，直接即可应用&#xA;submit month value 每出现一次，则代表一次订单产生，因此要知道每个月的订单数量，只需要通过 pivottable 统计 submit month 出现的次数即可。&#xA;方法如下：&#xA;选中 submit month &amp;amp; submit year 两列 选择菜单栏上的 插入 → 数据透视表 （英文版则为 Insert → PivotTable） 弹出“来自表格或区域的数据透视表”框后，选择新工作表，然后点确定 （见下图） 在新建工作表上点击“数据透视表”，右侧会出现数据透视表字段，将 submit year &amp;amp; submit month 拖拽到相应位置即可 此时新的工作表上即出现了关于 submit date 的相关统计数据 Shipment Date 时间分析 根据提出的需求，关于 shipment date 的时间分析有两个方面：</description>
+    </item>
+  </channel>
+</rss>

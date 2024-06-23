@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PBI on </title>
+    <link>//localhost:1313/tags/pbi/</link>
+    <description>Recent content in PBI on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Apr 2021 04:20:46 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/pbi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Sheets | 通过 Query、Importrange、Select、Where 将多张 Google Sheets 合并到一起</title>
+      <link>//localhost:1313/post/2021/google-sheets-merge-multiple-sheets/</link>
+      <pubDate>Sun, 04 Apr 2021 04:20:46 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/google-sheets-merge-multiple-sheets/</guid>
+      <description>背景 公司每个学期所做的 Budget 都放在 Google Sheet，大概每2-4周会出现频繁修改的情况，因此需要实时保持更新并连接到 PBI。&#xA;在之前曾经试过 Custom Goolge Sheet Connector，但由于 Connector 只能在 Desktop 使用，会影响将报表 push 到 PBI Service 后的刷新；也曾经试过将 Power Query 写到 PBI Service 上，但由于 credential 问题，会导致后续无法刷新。&#xA;由于每个分公司的 Budget 都会在一张 spreadsheet 上，基于保密因此需要先将分公司的 Budget 有选择性地抓到同一张表上，再连接到 PBI Service 上。&#xA;总结 基于以上背景，可简单总结为以下两个目的：&#xA;Merge Multiple Sheets into One Sheet Connect Goolge Sheet to PBI Service and Configure Scheduled Refresh STEP 1. Merge Multiple Sheets STEP 1.1 Filter + Importrange，失败的尝试 Filter Synatax FILTER(range, condition1, [condition2, .</description>
+    </item>
+  </channel>
+</rss>

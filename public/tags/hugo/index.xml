@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on </title>
+    <link>//localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 09 Jun 2023 02:20:40 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo | 升级博客及主体版本，解决一些小 bug</title>
+      <link>//localhost:1313/post/2023/hugo_papermod_socialicons/</link>
+      <pubDate>Fri, 09 Jun 2023 02:20:40 -0400</pubDate>
+      <guid>//localhost:1313/post/2023/hugo_papermod_socialicons/</guid>
+      <description>一些个修复了 vercel 错误提醒之后，想更新主题做做装修，从而发现主题版本太高跟 hugo version 不匹配，于是更新 hugo 的故事</description>
+    </item>
+    <item>
+      <title>Hugo | Hugo-PaperMod 主题修改</title>
+      <link>//localhost:1313/post/2022/papermod-theme-mod/</link>
+      <pubDate>Sat, 17 Sep 2022 22:24:59 -0400</pubDate>
+      <guid>//localhost:1313/post/2022/papermod-theme-mod/</guid>
+      <description>将 Hugo 主题换成 PaperMod 并进行相关修改</description>
+    </item>
+  </channel>
+</rss>

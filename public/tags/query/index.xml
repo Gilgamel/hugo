@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Query on </title>
+    <link>//localhost:1313/tags/query/</link>
+    <description>Recent content in Query on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Apr 2021 04:20:46 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/query/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Sheets | 通过 Query、Importrange、Select、Where 将多张 Google Sheets 合并到一起</title>
+      <link>//localhost:1313/post/2021/google-sheets-merge-multiple-sheets/</link>
+      <pubDate>Sun, 04 Apr 2021 04:20:46 -0400</pubDate>
+      <guid>//localhost:1313/post/2021/google-sheets-merge-multiple-sheets/</guid>
+      <description>背景 公司每个学期所做的 Budget 都放在 Google Sheet，大概每2-4周会出现频繁修改的情况，因此需要实时保持更新并连接到 PBI。&#xA;在之前曾经试过 Custom Goolge Sheet Connector，但由于 Connector 只能在 Desktop 使用，会影响将报表 push 到 PBI Service 后的刷新；也曾经试过将 Power Query 写到 PBI Service 上，但由于 credential 问题，会导致后续无法刷新。&#xA;由于每个分公司的 Budget 都会在一张 spreadsheet 上，基于保密因此需要先将分公司的 Budget 有选择性地抓到同一张表上，再连接到 PBI Service 上。&#xA;总结 基于以上背景，可简单总结为以下两个目的：&#xA;Merge Multiple Sheets into One Sheet Connect Goolge Sheet to PBI Service and Configure Scheduled Refresh STEP 1. Merge Multiple Sheets STEP 1.1 Filter + Importrange，失败的尝试 Filter Synatax FILTER(range, condition1, [condition2, .</description>
+    </item>
+    <item>
+      <title>Google Sheets | 在Google Sheets 上使用query、if、isna将符合条件的分表数据汇总到总表</title>
+      <link>//localhost:1313/post/2019/google-sheet-query/</link>
+      <pubDate>Sun, 18 Aug 2019 12:35:27 -0400</pubDate>
+      <guid>//localhost:1313/post/2019/google-sheet-query/</guid>
+      <description>因为工作的缘故，需要将各个平台的宣传日期都放在一张google sheet上，然后 通过检测关键词，将关键的event自动pop up到总表上。得到这个需求的时候，脑海里立刻想到的是VBA，然而google sheet上压根没VBA啊！ 于是想着是否能用 vlookup/hlookup/index &amp;amp; match解决问题，最后发现果然还是解决不了：）最后在朋友的提醒下，开始摸索着使用 query。&#xA;Query 根据 Google 简陋的说明，query 是对数据运行一项采用 Google Visualization API 查询语言的查询。&#xA;用法示例 QUERY(A2:E6,&amp;#34;select avg(A) pivot B&amp;#34;)&#xD;QUERY(A2:E6,F2,FALSE) 语法 Query（数据，查询，[标题数]）&#xA;数据 - 要执行查询的单元格范围。 每列数据中的数值类型只能是布尔值、数字（包括日期/时间类型）或字符串。 如果有多种数据类型掺杂在单个列中，为便于查询，该列的数据类型由其中大多数数据的类型决定。其他少数数据的类型则被视为空值。 查询 - 要执行的查询操作，以 Google Visualization API查询语言编写。 查询的值必须括在引号中，否则该值必须是指向包含相关文本的单元格的引用。 标题数 - [可选]- 数据上方的标题行的数目。如果省略或设置为-1，将根据数据的内容估算该值。 可以怎么用？ name dept lunchTime salary hireDate age isSenior seniorityStartTime John Eng 12:00:00 1000 3/19/2005 35 TRUE 12/2/2007 15:56:00 Dave Eng 12:00:00 500 4/19/2006 27 FALSE null Sally Eng 13:00:00 600 10/10/2005 30 FALSE null Ben Sales 12:00:00 400 10/10/2002 32 TRUE 3/9/2005 12:30:00 Dana Sales 12:00:00 350 9/8/2004 25 FALSE null Mike Marketing 13:00:00 800 1/10/2005 24 TRUE 12/30/2007 14:40:00 使用Select和Where返回满足指定条件的行。 QUERY(&amp;#39;Example Data&amp;#39;!</description>
+    </item>
+  </channel>
+</rss>
