@@ -1,0 +1,108 @@
+baseURL: 'https://blog.swihal.com'
+languageCode: en-us
+theme: PaperMod
+title: 在云端
+
+
+
+enableInlineShortcodes: true
+enableEmoji: true # 允许使用 Emoji 表情，建议 true
+enableRobotsTXT: false # 允许爬虫抓取到搜索引擎，建议 true
+
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage: true
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+paginate: 7 # 首页每页显示的文章数
+
+permalinks:
+    post: /:year/:slug/
+    page: /:slug/
+  # post: "/:title/"
+  # post: "/:year/:month/:day/:title/"
+
+
+Params:
+  defaultTheme: auto  # defaultTheme: light or  dark 
+  disableThemeToggle: false
+  DateFormat: "2006-01-02"
+# ShowShareButtons: true
+  ShowReadingTime: true
+# disableSpecialistPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShaowCodeCopyButtons: true
+  hideFooter: false # 隐藏页脚
+  ShowWordCounts: true
+  VisitCount: true
+  ShowLastMod: true #显示文章更新时间
+  ShowToc: true # 显示目录
+  TocOpen: true # 自动展开目录
+  comments: true
+
+  # Home-info mode
+  homeInfoParams:
+      Title: Hi there 👋
+      Content: 
+  socialIcons: # optional
+  - name: Github
+    url: "https://github.com/Gilgamel"
+        #- name: "<platform 2>"
+        #-   url: "<link2>"
+  - name: Tumblr
+    url: "https://gilgamel.tumblr.com"
+
+
+# profile mode (CTRL+/ 批量comment)
+# params:
+#     profileMode:
+#         enabled: false
+#         title: "<Title>" # optional default will be site title
+#         subtitle: "This is subtitle"
+#         imageUrl: "<image link>" # optional
+#         imageTitle: "<title of image as alt>" # optional
+#         imageWidth: 120 # custom size
+#         imageHeight: 120 # custom size
+#         #buttons:
+#           #  name: Archive
+#           #  url: "/archive"
+#           #  name: Github
+#           #  url: "https://github.com/"
+
+# Add menu
+menu:
+  main:
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    #- identifier: tags
+    #  name: Tags
+    #  url: /tags/
+    #  weight: 30
+    #- identifier: search
+    #  name: Search
+    #  url: /search/
+    #  weight: 40
+
+# Show search output
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+
+
+
+
+
