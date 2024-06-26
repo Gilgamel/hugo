@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Google Analytics | Beginners Assessment 3 | 在云端</title>
+<meta name="keywords" content="google analytics, assessment">
+<meta name="description" content="What setting must be enabled to view data in Demographics and Interests Reports? Content Grouping Advertising features User permissions on the view In-Page Analytics What report would best help identify potential browser issues with website traffic? The Active Users report The New vs Returning report The Browser &amp; OS report The Source/Medium report What report shows what mobile devices were used to view a website? The Exit Pages report under “Site Content” The Landing Page report under “Site Content” The Engagement report under “Behavior” The Devices report under “Mobile” Which Traffic Source dimensions does Google Analytics automatically capture for each user who comes to your site?">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/2021/google-analytics-beginners-assessment-3/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bf5f9f73cf17311d52cedbcda82c922e91b2f566d88a85ad9f5b5a08b586bd5f.css" integrity="sha256-v1&#43;fc88XMR1SztvNqCySLpGy9WbYioWtn1taCLWGvV8=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/2021/google-analytics-beginners-assessment-3/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="在云端 (Alt + H)">在云端</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <h1 class="post-title">
+      Google Analytics | Beginners Assessment 3
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2021-09-13 22:37:36 -0400 -0400&#39;&gt;2021-09-13&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min
+
+<div class="article-read-time"> 🐈‍ 404 words</div>
+    </div>
+  </header> 
+
+  <div class="post-content"><ol>
+<li>What setting must be enabled to view data in Demographics and Interests Reports?</li>
+</ol>
+<ul>
+<li>Content Grouping</li>
+<li><!-- raw HTML omitted -->Advertising features<!-- raw HTML omitted --></li>
+<li>User permissions on the view</li>
+<li>In-Page Analytics</li>
+</ul>
+<ol start="2">
+<li>What report would best help identify potential browser issues with website traffic?</li>
+</ol>
+<ul>
+<li>The Active Users report</li>
+<li>The New vs Returning report</li>
+<li><!-- raw HTML omitted -->The Browser &amp; OS report<!-- raw HTML omitted --></li>
+<li>The Source/Medium report</li>
+</ul>
+<ol start="3">
+<li>What report shows what mobile devices were used to view a website?</li>
+</ol>
+<ul>
+<li>The Exit Pages report under “Site Content”</li>
+<li>The Landing Page report under “Site Content”</li>
+<li>The Engagement report under “Behavior”</li>
+<li><!-- raw HTML omitted -->The Devices report under “Mobile”<!-- raw HTML omitted --></li>
+</ul>
+<ol start="4">
+<li>Which Traffic Source dimensions does Google Analytics automatically capture for each user who comes to your site?</li>
+</ol>
+<ul>
+<li>Source, Keyword, Campaign name</li>
+<li>Source, Medium, Keyword</li>
+<li><!-- raw HTML omitted -->Source, Medium, Campaign name<!-- raw HTML omitted --></li>
+<li>Medium, Keyword, Campaign name</li>
+</ul>
+<ol start="5">
+<li>Which “sources” are available in Google Analytics?</li>
+</ol>
+<ul>
+<li><!-- raw HTML omitted -->googlemerchandisestore.com</li>
+<li>Email</li>
+<li><!-- raw HTML omitted -->Google</li>
+<li><!-- raw HTML omitted -->(direct)</li>
+</ul>
+<blockquote>
+<p>** Traffic source dimensions**</p>
+<p><strong>Source</strong>: Every referral to a web site has an origin, or source. Possible &gt; sources include: “google” (the name of a search engine), “facebook.com” (the name of a referring site), “spring_newsletter” (the name of one of your newsletters), and “direct” (users that typed your URL directly into their browser, or who had bookmarked your site).</p>
+<p><strong>Medium</strong>: Every referral to a website also has a medium. Possible medium include: “organic” (unpaid search), “cpc” (cost per click, i.e. paid search), “referral” (referral), “email” (the name of a custom medium you have created), “none” (direct traffic has a medium of “none”).</p>
+<p><strong>Keyword</strong>: When SSL search is employed, Keyword will have the value (not provided).</p>
+<p><strong>Campaign</strong> is the name of the referring Google Ads campaign or a custom campaign that you have created.</p>
+<p><strong>Content identifies a specific link or content item in a custom campaign.</strong>
+For example, if you have two call-to-action links within the same email message, you can use different Content values to differentiate them so that you can tell which version is most effective.</p>
+</blockquote>
+<p>Ref: <a href="https://support.google.com/analytics/answer/1033173?hl=en">https://support.google.com/analytics/answer/1033173?hl=en</a></p>
+<ol>
+<li>Which “mediums” are available in Google Analytics?</li>
+</ol>
+<ul>
+<li><!-- raw HTML omitted -->organic<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->cpc<!-- raw HTML omitted --></li>
+<li>mail.google.com</li>
+<li><!-- raw HTML omitted -->referral<!-- raw HTML omitted --></li>
+</ul>
+<ol start="7">
+<li>Which &ldquo;channels&rdquo; are available in the default Channels report?</li>
+</ol>
+<ul>
+<li><!-- raw HTML omitted -->Organic Search<!-- raw HTML omitted --></li>
+<li>Device</li>
+<li><!-- raw HTML omitted -->Display<!-- raw HTML omitted --></li>
+<li><!-- raw HTML omitted -->Direct<!-- raw HTML omitted --></li>
+</ul>
+<ol start="8">
+<li>What report can show how particular sections of website content performed?</li>
+</ol>
+<ul>
+<li>Location</li>
+<li><!-- raw HTML omitted -->Content Drilldown<!-- raw HTML omitted --></li>
+<li>Frequency and Recency</li>
+<li>Top Events</li>
+</ul>
+<ol start="9">
+<li>What report lists the website pages where users first arrived?</li>
+</ol>
+<ul>
+<li>Events &gt; Pages</li>
+<li>All Pages</li>
+<li>Exit Pages</li>
+<li><!-- raw HTML omitted -->Landing Pages<!-- raw HTML omitted --></li>
+</ul>
+<ol start="10">
+<li>What report should be used to check if users are leaving from important pages on your website?</li>
+</ol>
+<ul>
+<li>Landing Pages report</li>
+<li>All Pages report</li>
+<li><!-- raw HTML omitted -->Exit Pages report<!-- raw HTML omitted --></li>
+<li>Pages report under Events</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/google-analytics/">Google Analytics</a></li>
+      <li><a href="http://localhost:1313/tags/assessment/">Assessment</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/2021/google-analytics-beginners-assessment-4/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Google Analytics | Beginners Assessment 4</span>
+  </a>
+  <a class="next" href="http://localhost:1313/2021/google-analytics-beginners-assessment-2/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Google Analytics | Beginners Assessment 2</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <span>&copy; 2019 - 2024 <a href="http://localhost:1313/">在云端</a> · 
+            <i class="fas fa-bell"></i> <a id="days">0</a>Days</br></span>
+        共书写了50.8k字 · 共 49篇文章</br><span>
+        <span>
+            Powered by
+            <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+            <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></br>
+        </span>
+    
+        <script>
+            var s1 = '2019-04-05';
+            s1 = new Date(s1.replace(/-/g, "/"));
+            s2 = new Date();
+            var days = s2.getTime() - s1.getTime();
+            var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+            document.getElementById('days').innerHTML = number_of_days;
+        </script>
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Excel | 用 Excel 进行时间、分类统计 | 在云端</title>
+<meta name="keywords" content="Excel, analysis">
+<meta name="description" content="在分析过程中使用到的相关函数及功能 Pivottable Split Cells Date 函数 DATEDIF 函数 IF 函数 分析需求 根据要求，需要针对数据提供以下几项分析： Submit 时间分析：每个月的数据量，分析出">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/2021/excel-%E7%94%A8-excel-%E8%BF%9B%E8%A1%8C%E6%97%B6%E9%97%B4%E5%88%86%E7%B1%BB%E7%BB%9F%E8%AE%A1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bf5f9f73cf17311d52cedbcda82c922e91b2f566d88a85ad9f5b5a08b586bd5f.css" integrity="sha256-v1&#43;fc88XMR1SztvNqCySLpGy9WbYioWtn1taCLWGvV8=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/2021/excel-%E7%94%A8-excel-%E8%BF%9B%E8%A1%8C%E6%97%B6%E9%97%B4%E5%88%86%E7%B1%BB%E7%BB%9F%E8%AE%A1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="在云端 (Alt + H)">在云端</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <h1 class="post-title">
+      Excel | 用 Excel 进行时间、分类统计
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2021-10-25 01:57:05 -0400 -0400&#39;&gt;2021-10-25&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min
+
+<div class="article-read-time"> 🐈‍ 1717 words</div>
+    </div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%9c%a8%e5%88%86%e6%9e%90%e8%bf%87%e7%a8%8b%e4%b8%ad%e4%bd%bf%e7%94%a8%e5%88%b0%e7%9a%84%e7%9b%b8%e5%85%b3%e5%87%bd%e6%95%b0%e5%8f%8a%e5%8a%9f%e8%83%bd" aria-label="在分析过程中使用到的相关函数及功能">在分析过程中使用到的相关函数及功能</a></li>
+                <li>
+                    <a href="#%e5%88%86%e6%9e%90%e9%9c%80%e6%b1%82" aria-label="分析需求">分析需求</a></li>
+                <li>
+                    <a href="#excel-%e6%93%8d%e4%bd%9c" aria-label="EXCEL 操作">EXCEL 操作</a><ul>
+                        
+                <li>
+                    <a href="#submit-date-%e6%97%b6%e9%97%b4%e5%88%86%e6%9e%90" aria-label="Submit Date 时间分析">Submit Date 时间分析</a></li>
+                <li>
+                    <a href="#shipment-date-%e6%97%b6%e9%97%b4%e5%88%86%e6%9e%90" aria-label="Shipment Date 时间分析">Shipment Date 时间分析</a><ul>
+                        
+                <li>
+                    <a href="#%e6%97%a5%e6%9c%9f%e6%a0%bc%e5%bc%8f%e6%97%a0%e6%b3%95%e4%bf%ae%e6%94%b9" aria-label="日期格式无法修改">日期格式无法修改</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%8c%ba%e5%9f%9f%e5%88%86%e6%9e%90%e6%82%a3%e8%80%85%e6%80%a7%e5%88%ab%e6%af%94%e4%be%8b%e5%88%86%e6%9e%90" aria-label="区域分析、患者性别比例分析">区域分析、患者性别比例分析</a></li>
+                <li>
+                    <a href="#%e6%82%a3%e8%80%85%e5%b9%b4%e9%be%84%e6%ae%b5" aria-label="患者年龄段">患者年龄段</a></li>
+                <li>
+                    <a href="#%e6%b2%bb%e7%96%97%e6%ad%a5%e6%95%b0%e5%88%86%e6%9e%90" aria-label="治疗步数分析">治疗步数分析</a><ul>
+                        
+                <li>
+                    <a href="#%e8%ae%a1%e7%ae%97%e6%95%b4%e4%bd%93%e6%ad%a5%e6%95%b0" aria-label="计算整体步数">计算整体步数</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#ref" aria-label="Ref">Ref</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="在分析过程中使用到的相关函数及功能">在分析过程中使用到的相关函数及功能<a hidden class="anchor" aria-hidden="true" href="#在分析过程中使用到的相关函数及功能">#</a></h2>
+<ol>
+<li>Pivottable</li>
+<li>Split Cells</li>
+<li>Date 函数</li>
+<li>DATEDIF 函数</li>
+<li>IF 函数</li>
+</ol>
+<h2 id="分析需求">分析需求<a hidden class="anchor" aria-hidden="true" href="#分析需求">#</a></h2>
+<p>根据要求，需要针对数据提供以下几项分析：</p>
+<ul>
+<li>Submit 时间分析：每个月的数据量，分析出来高峰期在什么时候</li>
+<li>Shipment 时间分析：可以关注下 submit-shipment 直接的时间先后顺序 lead time</li>
+<li>区域分析：区域数据量</li>
+<li>患者年龄段：
+<ul>
+<li>genz：1997 之后</li>
+<li>sophiscated：1986 - 1997 之间</li>
+<li>senior：1986 之前</li>
+</ul>
+</li>
+<li>客户性别比例</li>
+<li>治疗步数分析：
+<ul>
+<li>20步</li>
+<li>20-40</li>
+<li>40-60</li>
+<li>60以上</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="excel-操作">EXCEL 操作<a hidden class="anchor" aria-hidden="true" href="#excel-操作">#</a></h2>
+<h3 id="submit-date-时间分析">Submit Date 时间分析<a hidden class="anchor" aria-hidden="true" href="#submit-date-时间分析">#</a></h3>
+<p>根据提供的算法，在 RAW DATA 里找到 submit date，并发现已提供了 <strong>submit year &amp; submit month</strong>，不需要再做任何的数据处理，直接即可应用</p>
+<p><img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2021/1635392316886.png" alt=""  />
+</p>
+<p><!-- raw HTML omitted --> submit month value 每出现一次，则代表一次订单产生，因此要知道每个月的订单数量，只需要通过 pivottable 统计 submit month 出现的次数即可。<!-- raw HTML omitted --></p>
+<p>方法如下：</p>
+<ol>
+<li>选中 submit month &amp; submit year 两列</li>
+<li>选择菜单栏上的 插入 → 数据透视表 （英文版则为 Insert → PivotTable）</li>
+<li>弹出“来自表格或区域的数据透视表”框后，选择新工作表，然后点确定 （见下图）
+<img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2021/1635392984103.png" alt=""  />
+</li>
+<li>在新建工作表上点击“数据透视表”，右侧会出现数据透视表字段，将 submit year &amp; submit month 拖拽到相应位置即可
+<img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2021/1635393091985.png" alt=""  />
+</li>
+<li>此时新的工作表上即出现了关于 submit date 的相关统计数据</li>
+</ol>
+<!-- raw HTML omitted -->
+<h3 id="shipment-date-时间分析">Shipment Date 时间分析<a hidden class="anchor" aria-hidden="true" href="#shipment-date-时间分析">#</a></h3>
+<p>根据提出的需求，关于 shipment date 的时间分析有两个方面：</p>
+<ol>
+<li>shipment 高峰期</li>
+<li>submit date - shipment date 的间隔时间 （一般这方面的分析用于研究、衡量公司从接收到订单到出货的时间，从间距时间可以反映出公司内部的流程是否通顺，也可在精细化运营时使用。</li>
+</ol>
+<p>通过 DATEDIF 公式可以计算出两个日期的相差值</p>
+<pre tabindex="0"><code>DATEDIF(submit_date,shipment_date,&#34;d&#34;)
+
+# d = day
+</code></pre><p><img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2021/1635396999931.png" alt=""  />
+</p>
+<h4 id="日期格式无法修改">日期格式无法修改<a hidden class="anchor" aria-hidden="true" href="#日期格式无法修改">#</a></h4>
+<p>针对修改格式但没反应的情况，在确认单元格已经去掉锁定后，<strong>用分列 → 合并的思路进行处理</strong>，具体操作如下；</p>
+<ol>
+<li>
+<p>选择<strong>数据 → 分列</strong>，分隔符选其他，输入“-”，点击下一步
+<img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2021/1635399718240.png" alt=""  />
+</p>
+</li>
+<li>
+<p>列数据格式选择日期，并根据原有的日期格式选择 DMY，目标区域需要选择一个新的空列，然后选择完成
+<img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2021/1635399794604.png" alt=""  />
+</p>
+</li>
+</ol>
+<p>在这个部分处理时，我直接新建了3个空列，避免拆分出来的数据将其他已有数据覆盖掉。</p>
+<ol start="3">
+<li>通过 DATE 函数将拆分出来的日期重新合并。
+<img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2021/1635399883980.png" alt=""  />
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<h3 id="区域分析患者性别比例分析">区域分析、患者性别比例分析<a hidden class="anchor" aria-hidden="true" href="#区域分析患者性别比例分析">#</a></h3>
+<p>这两个部分由于不需要针对数据进行处理，直接插入 pivottable 进行统计即可，方法跟 submit date 部分一样。</p>
+<!-- raw HTML omitted -->
+<h3 id="患者年龄段">患者年龄段<a hidden class="anchor" aria-hidden="true" href="#患者年龄段">#</a></h3>
+<p>根据需求需要将所有客户的年龄分为 3 个种类：
+- genz：1997 之后
+- sophiscated：1986 - 1997 之间
+- senior：1986 之前</p>
+<p>由于 RAW DATE 里客户出生日期是具体到天的，因此需要将出生年份拆分出来。
+这个时候可以直接<strong>用 RIGHT 函数选取客户出生日期的后 4 位。</strong></p>
+<p><img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2021/1635400640771.png" alt=""  />
+
+<strong>记得将公式值复制黏贴为数字格式</strong></p>
+<p>之后可以用 IF 函数对客户的出生年份进行判断，即：</p>
+<ul>
+<li>genz：x &gt; 1997 （因为在1997之后出生的日期，如 1998、1999 均大于 1997）</li>
+<li>sophiscated： 1986 &lt; x &lt; 1997</li>
+<li>senior：x &lt; 1986 （在1986之前出生的日期，加 1985、1984 均小于 1986）</li>
+</ul>
+<p>由于判断条件有3个，因此需要用 IF 函数进行套娃，而 IF 函数是采取递进关系的，因此年龄的判断先后 MATTERS。</p>
+<pre tabindex="0"><code>=IF(X&gt;1997,&#34;genz&#34;,IF(X&gt;1985,&#34;sophiscated&#34;,&#34;senior&#34;))
+
+# 如果 X &gt; 1997，将它命名为 genz；
+# 否则如果 X &gt; 1985，将它命名为 sophiscated；
+# 否则则将它命名为 senior
+</code></pre><p><strong>因为 RAW DATA 中有少量 null 值，在分类后复制黏贴值以后直接将关于 null 的错误种类手动修改，避免疯狂使用 IF函数进行套娃出现错误。</strong></p>
+<p>分类完成后使用 pivottable 进行统计即可。</p>
+<!-- raw HTML omitted -->
+<h3 id="治疗步数分析">治疗步数分析<a hidden class="anchor" aria-hidden="true" href="#治疗步数分析">#</a></h3>
+<p><strong>已知：</strong></p>
+<ol>
+<li>步数后面是单颌，需要*2=上下颌才是整体步数</li>
+<li>RAW DATA 中有上下颌分类说明</li>
+<li>RAW DATA 中的步数为单颌步数 （即非完整步数）</li>
+</ol>
+<p><strong>所以：</strong></p>
+<ol>
+<li>需要将整体的步数通过上下颌计算出来</li>
+<li>针对完整步数对步数进行分类</li>
+</ol>
+<h4 id="计算整体步数">计算整体步数<a hidden class="anchor" aria-hidden="true" href="#计算整体步数">#</a></h4>
+<p>通过 IF 函数将上下颌列为筛选条件：</p>
+<pre tabindex="0"><code>=IF(X=&#34;BOTH&#34;,X*2,X)
+
+# 如果是 BOTH，则步数*2，否则则保持原样
+</code></pre><p><strong>随后将函数值复制黏贴为值即可针对整体步数进行分类。</strong></p>
+<p>根据需求可以将分类逻辑整理如下：
+- 20及以下：x &lt; 20
+- 20-40：19 &lt; x &lt; 41
+- 40-60：39 &lt; x &lt; 61
+- 60以上：x &gt; 60</p>
+<p>再通过 IF 函数疯狂套娃：</p>
+<pre tabindex="0"><code>=IF(X&gt;60,&#34;60以上&#34;,IF(X&gt;39,&#34;40-60&#34;,IF(X&gt;19,&#34;20-40&#34;,&#34;20及以下&#34;)))
+
+# 如果 X &gt; 60，则将它命名为 60以上
+# 如果 X &gt; 39，则将它命名为 40 - 60
+# 如果 X &gt; 19， 则将它命名为 20 - 40
+# 否则将名为 20及以下
+</code></pre><p>同理最后复制黏贴值后，将 null 值手动替换则完成所有分类
+最后再通过 pitvottable 统计即可。</p>
+<!-- raw HTML omitted -->
+<h2 id="ref">Ref<a hidden class="anchor" aria-hidden="true" href="#ref">#</a></h2>
+<blockquote>
+<p><a href="https://support.microsoft.com/en-us/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c">https://support.microsoft.com/en-us/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c</a>
+<a href="https://support.microsoft.com/zh-cn/office/date-%E5%87%BD%E6%95%B0-e36c0c8c-4104-49da-ab83-82328b832349">https://support.microsoft.com/zh-cn/office/date-%E5%87%BD%E6%95%B0-e36c0c8c-4104-49da-ab83-82328b832349</a></p>
+</blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/excel/">Excel</a></li>
+      <li><a href="http://localhost:1313/tags/analysis/">Analysis</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/2022/weekly-mar.21-apr.4-%E5%BF%BD%E7%84%B6%E5%B0%B1%E4%B8%80%E5%B9%B4%E4%BA%86/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Weekly | Mar.21 - Apr.4 忽然就一年了</span>
+  </a>
+  <a class="next" href="http://localhost:1313/2021/google-analytics-advanced-assessment-2/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Google Analytics | Advanced Assessment 2</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <span>&copy; 2019 - 2024 <a href="http://localhost:1313/">在云端</a> · 
+            <i class="fas fa-bell"></i> <a id="days">0</a>Days</br></span>
+        共书写了50.8k字 · 共 49篇文章</br><span>
+        <span>
+            Powered by
+            <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+            <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></br>
+        </span>
+    
+        <script>
+            var s1 = '2019-04-05';
+            s1 = new Date(s1.replace(/-/g, "/"));
+            s2 = new Date();
+            var days = s2.getTime() - s1.getTime();
+            var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+            document.getElementById('days').innerHTML = number_of_days;
+        </script>
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

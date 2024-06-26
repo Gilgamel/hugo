@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>VBA on </title>
-    <link>//localhost:1313/tags/vba/</link>
-    <description>Recent content in VBA on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 20 Aug 2019 11:25:00 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/vba/index.xml" rel="self" type="application/rss+xml" />
+    <title>VBA on 在云端</title>
+    <link>http://localhost:1313/tags/vba/</link>
+    <description>Recent content in VBA on 在云端</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Aug 2019 11:25:00 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/vba/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Excel | Remove Duplicate</title>
-      <link>//localhost:1313/post/2019/removedupliate/</link>
+      <link>http://localhost:1313/2019/excel-remove-duplicate/</link>
       <pubDate>Tue, 20 Aug 2019 11:25:00 -0400</pubDate>
-      <guid>//localhost:1313/post/2019/removedupliate/</guid>
-      <description>最近一直在做活动，报名方式为麦客单表，但由于经常性会出现重复性报名情况，所以需要在统计之前对数据进行清洗。&#xA;出现重复报名的情况一般如下：&#xA;报名了 A活动&amp;amp;B活动后，又再报名了 B活动&amp;amp;A活动 报名了 A活动&amp;amp;B活动后，又再报名了 C活动 报名了 A活动&amp;amp;B活动后，又再报名了 A活动&amp;amp;B活动&amp;amp;C活动 报名了 A活动&amp;amp;B活动后，又再报名了 A活动&amp;amp;C活动&amp;amp;D活动 思路 合并/去掉重复行 根据报名表的设置，一般都会有 姓名、手机、微信、邮箱、参与活动 这几项，而其中姓名跟手机是大概率是唯一，which means不会重复的，所以将使用姓名/手机作为检测项&#xA;在以姓名作为检测项对齐进行排列后，可以看出这个叫 Ada 的少年一口气重复报名了三次，并且第二、三次报得是完全一样的，现在要做的就是 将同一个姓名的人选择参加的活动全部合并在一起&#xA;在活动后面一列起个小标题 1 写上以下code：&#xA;=if(A2=A1, F1&amp;amp;&amp;#34;;&amp;#34;&amp;amp;E2, E2)&#xD;# 如果 A2=A1，就将F1跟E2内容合并到一块，中间用；来表示，否则就显示E2 完事儿将公式拉完这一列。 在 列1 后面再弄一个 列2，写上以下code：&#xA;=if(A2&amp;lt;&amp;gt;A3, &amp;#34;Merged Value&amp;#34;, &amp;#34; &amp;#34;)&#xD;# 如果 A2 不等于 A3，那么就显示为 Merged Value，否则显示空白 同理，将公式拉满 列2；接着将 列1&amp;amp;列2 都选上，然后 copy &amp;amp; paste value only，将这两列的数值都变为plain text&#xA;接下来将 列2 选中，并且进行 自定义排序&#xA;选择 扩展选定区域，然后将主要关键字选为 2，次序为 降序&#xA;最后将 列2 最下方显示为 空白的几行删掉即可。</description>
+      
+      <guid>http://localhost:1313/2019/excel-remove-duplicate/</guid>
+      <description>最近一直在做活动，报名方式为麦客单表，但由于经常性会出现重复性报名情况，所以需要在统计之前对数据进行清洗。 出现重复报名的情况一般如下： 报名了</description>
     </item>
+    
   </channel>
 </rss>

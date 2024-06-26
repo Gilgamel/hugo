@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Google Sheets | 在Google Sheets 上使用query、if、isna将符合条件的分表数据汇总到总表 | 在云端</title>
+<meta name="keywords" content="query, google sheets">
+<meta name="description" content="因为工作的缘故，需要将各个平台的宣传日期都放在一张google sheet上，然后 通过检测关键词，将关键的event自动pop up到总表上。得">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/2019/google-sheets-%E5%9C%A8google-sheets-%E4%B8%8A%E4%BD%BF%E7%94%A8queryifisna%E5%B0%86%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%88%86%E8%A1%A8%E6%95%B0%E6%8D%AE%E6%B1%87%E6%80%BB%E5%88%B0%E6%80%BB%E8%A1%A8/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bf5f9f73cf17311d52cedbcda82c922e91b2f566d88a85ad9f5b5a08b586bd5f.css" integrity="sha256-v1&#43;fc88XMR1SztvNqCySLpGy9WbYioWtn1taCLWGvV8=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/2019/google-sheets-%E5%9C%A8google-sheets-%E4%B8%8A%E4%BD%BF%E7%94%A8queryifisna%E5%B0%86%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%88%86%E8%A1%A8%E6%95%B0%E6%8D%AE%E6%B1%87%E6%80%BB%E5%88%B0%E6%80%BB%E8%A1%A8/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="在云端 (Alt + H)">在云端</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <h1 class="post-title">
+      Google Sheets | 在Google Sheets 上使用query、if、isna将符合条件的分表数据汇总到总表
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2019-08-18 12:35:27 -0400 -0400&#39;&gt;2019-08-18&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min
+
+<div class="article-read-time"> 🐈‍ 1604 words</div>
+    </div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#query" aria-label="Query">Query</a><ul>
+                        
+                <li>
+                    <a href="#%e7%94%a8%e6%b3%95%e7%a4%ba%e4%be%8b" aria-label="用法示例">用法示例</a></li>
+                <li>
+                    <a href="#%e8%af%ad%e6%b3%95" aria-label="语法">语法</a></li>
+                <li>
+                    <a href="#%e5%8f%af%e4%bb%a5%e6%80%8e%e4%b9%88%e7%94%a8" aria-label="可以怎么用？">可以怎么用？</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%88%a9%e7%94%a8-query-wherecontains-%e8%87%aa%e4%bb%8e%e7%ad%9b%e9%80%89%e5%87%ba%e7%ac%a6%e5%90%88%e6%9d%a1%e4%bb%b6%e7%9a%84-event" aria-label="利用 Query 、Where、Contains 自从筛选出符合条件的 Event">利用 Query 、Where、Contains 自从筛选出符合条件的 Event</a><ul>
+                        
+                <li>
+                    <a href="#%e7%94%a8-isna-if-function-%e5%b0%86%e5%9c%a8%e6%b2%a1%e6%9c%89%e5%85%b3%e9%94%ae%e6%80%a7-event-%e7%9a%84%e6%a0%bc%e5%ad%90%e9%87%8c%e4%bc%9a%e5%87%ba%e7%8e%b0-na-%e6%8f%90%e7%a4%ba%e5%8e%bb%e6%8e%89" aria-label="用 isna 、if function 将在没有关键性 Event 的格子里会出现 #N/A 提示去掉">用 isna 、if function 将在没有关键性 Event 的格子里会出现 #N/A 提示去掉</a></li>
+                <li>
+                    <a href="#%e5%85%b6%e4%bb%96" aria-label="其他">其他</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>因为工作的缘故，需要将各个平台的宣传日期都放在一张google sheet上，然后 <strong>通过检测关键词，将关键的event自动pop up到总表上</strong>。得到这个需求的时候，脑海里立刻想到的是VBA，然而google sheet上压根没VBA啊！
+<!-- raw HTML omitted -->
+于是想着是否能用 vlookup/hlookup/index &amp; match解决问题，最后发现果然还是解决不了：）最后在朋友的提醒下，开始摸索着使用 <strong>query</strong>。</p>
+<h2 id="query">Query<a hidden class="anchor" aria-hidden="true" href="#query">#</a></h2>
+<p>根据 Google 简陋的说明，query 是对数据运行一项采用 Google Visualization API 查询语言的查询。</p>
+<h3 id="用法示例">用法示例<a hidden class="anchor" aria-hidden="true" href="#用法示例">#</a></h3>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">QUERY(A2:E6,&#34;select avg(A) pivot B&#34;)
+
+QUERY(A2:E6,F2,FALSE)
+</code></pre><h3 id="语法">语法<a hidden class="anchor" aria-hidden="true" href="#语法">#</a></h3>
+<p><strong>Query（数据，查询，[标题数]）</strong></p>
+<ul>
+<li><strong>数据</strong> - 要执行查询的单元格范围。
+<ul>
+<li>每列<strong>数据</strong>中的数值类型只能是布尔值、数字（包括日期/时间类型）或字符串。</li>
+<li>如果有多种数据类型掺杂在单个列中，为便于查询，该列的数据类型由其中大多数数据的类型决定。其他少数数据的类型则被视为空值。</li>
+</ul>
+</li>
+<li><strong>查询</strong> - 要执行的查询操作，以 <strong>Google Visualization API查询语言</strong>编写。
+<ul>
+<li><strong>查询</strong>的值必须括在<strong>引号</strong>中，否则该值必须是指向包含相关文本的单元格的引用。</li>
+</ul>
+</li>
+<li><strong>标题数</strong> - [可选]- <code>数据</code>上方的标题行的数目。如果省略或设置为<code>-1</code>，将根据<strong>数据</strong>的内容估算该值。</li>
+</ul>
+<h3 id="可以怎么用">可以怎么用？<a hidden class="anchor" aria-hidden="true" href="#可以怎么用">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>dept</th>
+<th>lunchTime</th>
+<th>salary</th>
+<th>hireDate</th>
+<th>age</th>
+<th>isSenior</th>
+<th>seniorityStartTime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>Eng</td>
+<td>12:00:00</td>
+<td>1000</td>
+<td>3/19/2005</td>
+<td>35</td>
+<td>TRUE</td>
+<td>12/2/2007 15:56:00</td>
+</tr>
+<tr>
+<td>Dave</td>
+<td>Eng</td>
+<td>12:00:00</td>
+<td>500</td>
+<td>4/19/2006</td>
+<td>27</td>
+<td>FALSE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Sally</td>
+<td>Eng</td>
+<td>13:00:00</td>
+<td>600</td>
+<td>10/10/2005</td>
+<td>30</td>
+<td>FALSE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Ben</td>
+<td>Sales</td>
+<td>12:00:00</td>
+<td>400</td>
+<td>10/10/2002</td>
+<td>32</td>
+<td>TRUE</td>
+<td>3/9/2005 12:30:00</td>
+</tr>
+<tr>
+<td>Dana</td>
+<td>Sales</td>
+<td>12:00:00</td>
+<td>350</td>
+<td>9/8/2004</td>
+<td>25</td>
+<td>FALSE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Mike</td>
+<td>Marketing</td>
+<td>13:00:00</td>
+<td>800</td>
+<td>1/10/2005</td>
+<td>24</td>
+<td>TRUE</td>
+<td>12/30/2007 14:40:00</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>使用<strong>Select</strong>和<strong>Where</strong>返回满足指定条件的行。</li>
+</ol>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">QUERY(&#39;Example Data&#39;!$A$2:$H$7, &#34;select A where (B&lt;&gt;&#39;Eng&#39; and G=true) or (D &gt; &#34;&amp;A2&amp;&#34;)&#34;)
+</code></pre><ol start="2">
+<li>使用<strong>Select</strong>和<strong>Group by</strong>子句统计所有行的<strong>工资</strong>数据</li>
+</ol>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">QUERY(&#39;Example Data&#39;!$A$2:$H$7, &#34;select B, MAX(D) group by B&#34;)
+</code></pre><ol start="3">
+<li>将各列不重复的值转换到新列中。</li>
+</ol>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">QUERY(&#39;Example Data&#39;!$A$2:$H$7, &#34;select avg(D) pivot B&#34;)
+</code></pre><ol start="4">
+<li>统计各行的<strong>部门</strong>值，并按<strong>工资</strong>的最大值进行排序。</li>
+</ol>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">QUERY(&#39;Example Data&#39;!$A$2:$H$7, &#34;select B, MAX(D) group by B order by MAX(D)&#34;)
+</code></pre><ol start="5">
+<li>指定输入范围中的标题行数目，这让函数能够将带多个标题行的输入转换为单个标题行的输入。</li>
+</ol>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel"># Male
+QUERY(A1:E4, &#34;select B where (D&gt;175 and E&gt;53)&#34;, 1)
+
+# Male height
+QUERY(A1:E4, &#34;select B where (D&gt;175 and E&gt;53)&#34;, 2)
+</code></pre><p>其实以上都不是重点，只是我想Mark一下而已。</p>
+<h2 id="利用-query-wherecontains-自从筛选出符合条件的-event">利用 Query 、Where、Contains 自从筛选出符合条件的 Event<a hidden class="anchor" aria-hidden="true" href="#利用-query-wherecontains-自从筛选出符合条件的-event">#</a></h2>
+<p>由于当时设计timeline只考虑到好看（easy to read）的问题，所以基本上将 Google Sheet 当成了画板使用，这也导致了 timeline 的设计从数据分析的逻辑上来看是十分辣鸡的；但木得办法，老板要“好看”，所以只能基于原有timeline的基础上去做到老板想要的需求。</p>
+<p>以下为“好看”（easy to read) 的timeline示例：</p>
+<p><img loading="lazy" src="https://i.loli.net/2019/08/23/OvHFniK8xLrat4f.png" alt="image.png"  />
+</p>
+<p>考虑到 Google Sheet 只能默认某一列的日期是一致的，所以没办法一口气将所有区域选上并且进行筛选，所以只能用一个笨方法：将range设置为一周。</p>
+<p>举个例子：假设12月23日 - 12月29日的 range 为 C174:I180，Monday 代表C列，我需要在总表上代表12月23日的一格输入以下代码：</p>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">query(xxxx!$C$174:$I$180,&#34;select C where C contains &#39;线下&#39;&#34;)
+
+# 在$C$174:$I$180的范围内，自从标记出在C列里包含着线下这两个关键字的内容
+# 同理线下可以切换为线上或执行
+</code></pre><p>到了这一步，问题得到了解决。</p>
+<p>但新的问题又出现了</p>
+<h3 id="用-isna-if-function-将在没有关键性-event-的格子里会出现-na-提示去掉">用 isna 、if function 将在没有关键性 Event 的格子里会出现 #N/A 提示去掉<a hidden class="anchor" aria-hidden="true" href="#用-isna-if-function-将在没有关键性-event-的格子里会出现-na-提示去掉">#</a></h3>
+<p>这个提示是由 query function 直接产生的，所以无法使用 conditional format 进行标白处理，因此在朋友的提示下，我选择使用 <strong>isna</strong> function.</p>
+<p><strong>isna</strong> function 是用来检查某个值是否为错误值 #N/A 的。</p>
+<ul>
+<li><strong>ISNA（值）</strong>
+<ul>
+<li><strong>值</strong> - 要与错误值 #N/A 进行比较的值</li>
+<li>如果<strong>值</strong>为**#N/A<strong>或指向包含</strong>#N/A<strong>的单元格的引用，则</strong>ISNA**将返回TRUE，否则返回FALSE</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">isna(query(UTSG!$M$4:$S$10,&#34;select O where O contains &#39;线下&#39;&#34;))
+
+# 检测 query(UTSG!$M$4:$S$10,&#34;select O where O contains &#39;线下&#39;&#34;) 的返回值是否为 #N/A， 如果是返回TRUE， 否则返回 FALSE
+</code></pre><p>当 query function 指向 #N/A 时，会自动返回 TRUE， 此时已达到将 #N/A 去掉的目的。之后可配合 <strong>if function</strong> 将TURE值转换为空格。</p>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">if(isna(query(UTSG!$M$4:$S$10,&#34;select O where O contains &#39;线下&#39;&#34;)),&#34; &#34;, query(UTSG!$M$4:$S$10,&#34;select O where O contains &#39;线下&#39;&#34;))
+
+# 如果 ISNA 返回的值为TURE，则将TRUE 变为空格，否则显示qury function 返回值。
+</code></pre><p>至此，老板的需求已经完成。让我大吼一句 Google Sheet 真好玩。</p>
+<h3 id="其他">其他<a hidden class="anchor" aria-hidden="true" href="#其他">#</a></h3>
+<p>在Google Sheet 上可使用 CTRL + ` 来显示出 formula，然后使用 formula replace 一键替换公式里的关键词。</p>
+<p>Ref:</p>
+<blockquote>
+<p><a href="https://support.google.com/docs/answer/3093343?hl=zh-Hans">https://support.google.com/docs/answer/3093343?hl=zh-Hans</a></p>
+<p><a href="https://support.google.com/docs/answer/3093293?hl=zh-Hans">https://support.google.com/docs/answer/3093293?hl=zh-Hans</a></p>
+<p><a href="https://infoinspired.com/google-docs/spreadsheet/contains-substring-match-in-google-sheets-query-for-partial-match/">https://infoinspired.com/google-docs/spreadsheet/contains-substring-match-in-google-sheets-query-for-partial-match/</a></p>
+</blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/query/">Query</a></li>
+      <li><a href="http://localhost:1313/tags/google-sheets/">Google Sheets</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/2019/excel-remove-duplicate/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Excel | Remove Duplicate</span>
+  </a>
+  <a class="next" href="http://localhost:1313/2019/%E6%82%AC%E7%A9%BA%E5%AF%BA%E5%8D%B1%E6%A5%BC%E9%AB%98%E7%99%BE%E5%B0%BA/">
+    <span class="title">Next »</span>
+    <br>
+    <span>悬空寺：危楼高百尺</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <span>&copy; 2019 - 2024 <a href="http://localhost:1313/">在云端</a> · 
+            <i class="fas fa-bell"></i> <a id="days">0</a>Days</br></span>
+        共书写了50.8k字 · 共 49篇文章</br><span>
+        <span>
+            Powered by
+            <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+            <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></br>
+        </span>
+    
+        <script>
+            var s1 = '2019-04-05';
+            s1 = new Date(s1.replace(/-/g, "/"));
+            s2 = new Date();
+            var days = s2.getTime() - s1.getTime();
+            var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+            document.getElementById('days').innerHTML = number_of_days;
+        </script>
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

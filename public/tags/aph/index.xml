@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>APH on </title>
-    <link>//localhost:1313/tags/aph/</link>
-    <description>Recent content in APH on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 14 Apr 2022 12:34:02 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/aph/index.xml" rel="self" type="application/rss+xml" />
+    <title>APH on 在云端</title>
+    <link>http://localhost:1313/tags/aph/</link>
+    <description>Recent content in APH on 在云端</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Apr 2022 12:34:02 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/aph/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Project Debrief | Workcation Recommandation via Analytic Hierarchy Process</title>
-      <link>//localhost:1313/post/2022/ahp/</link>
+      <link>http://localhost:1313/2022/project-debrief-workcation-recommandation-via-analytic-hierarchy-process/</link>
       <pubDate>Thu, 14 Apr 2022 12:34:02 -0400</pubDate>
-      <guid>//localhost:1313/post/2022/ahp/</guid>
+      
+      <guid>http://localhost:1313/2022/project-debrief-workcation-recommandation-via-analytic-hierarchy-process/</guid>
       <description>APH 复盘</description>
     </item>
+    
   </channel>
 </rss>

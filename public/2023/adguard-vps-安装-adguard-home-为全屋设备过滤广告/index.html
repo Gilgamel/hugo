@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Adguard | VPS 安装 AdGuard Home 为全屋设备过滤广告 | 在云端</title>
+<meta name="keywords" content="adguard home">
+<meta name="description" content="楼下的电视APP更新以后开始出现广告了，于是一直在思考着有没有什么办法能够过滤全屋设备的广告，做了一番搜索以后再次将 AdGuard 翻了出来。之前已经购买">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/2023/adguard-vps-%E5%AE%89%E8%A3%85-adguard-home-%E4%B8%BA%E5%85%A8%E5%B1%8B%E8%AE%BE%E5%A4%87%E8%BF%87%E6%BB%A4%E5%B9%BF%E5%91%8A/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bf5f9f73cf17311d52cedbcda82c922e91b2f566d88a85ad9f5b5a08b586bd5f.css" integrity="sha256-v1&#43;fc88XMR1SztvNqCySLpGy9WbYioWtn1taCLWGvV8=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/2023/adguard-vps-%E5%AE%89%E8%A3%85-adguard-home-%E4%B8%BA%E5%85%A8%E5%B1%8B%E8%AE%BE%E5%A4%87%E8%BF%87%E6%BB%A4%E5%B9%BF%E5%91%8A/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="在云端 (Alt + H)">在云端</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <h1 class="post-title">
+      Adguard | VPS 安装 AdGuard Home 为全屋设备过滤广告
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2023-07-01 02:32:27 -0400 -0400&#39;&gt;2023-07-01&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min
+
+<div class="article-read-time"> 🐈‍ 1362 words</div>
+    </div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%ae%89%e8%a3%85" aria-label="安装">安装</a></li>
+                <li>
+                    <a href="#%e9%85%8d%e7%bd%ae-adguard-home" aria-label="配置 AdGuard Home">配置 AdGuard Home</a><ul>
+                        
+                <li>
+                    <a href="#%e5%b8%b8%e8%a7%84%e8%ae%be%e7%bd%ae" aria-label="常规设置">常规设置</a></li>
+                <li>
+                    <a href="#dns-%e8%ae%be%e7%bd%ae" aria-label="DNS 设置">DNS 设置</a></li>
+                <li>
+                    <a href="#%e8%bf%87%e6%bb%a4%e8%a7%84%e5%88%99" aria-label="过滤规则">过滤规则</a></li>
+                <li>
+                    <a href="#%e8%ae%be%e5%a4%87%e8%ae%be%e7%bd%ae" aria-label="设备设置">设备设置</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e9%81%87%e5%88%b0%e7%9a%84%e9%97%ae%e9%a2%98" aria-label="遇到的问题">遇到的问题</a></li>
+                <li>
+                    <a href="#ref" aria-label="Ref">Ref</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>楼下的电视APP更新以后开始出现广告了，于是一直在思考着有没有什么办法能够过滤全屋设备的广告，做了一番搜索以后再次将 AdGuard 翻了出来。之前已经购买过 AdGuard Ad Blocker，这次看上的是开源的 <a href="https://adguard.com/en/adguard-home/overview.html">AdGuard Home</a>。AdGuard Home 作为一款全网广告拦截与反跟踪软件，可以在一次安装完成后，通过修改路由DNS从而让连接上特定网络的设备均受到保护。</p>
+<!-- raw HTML omitted -->
+<p>关于安装 AdGuard Home 的位置，一开始选择的是在 QNAP NAS 上进行，但后来反复试了很多次均失败。于是趁着美国独立日，在 RackNerd 上购入年费约为 $16 加币的廉价 VPS。</p>
+<h1 id="安装">安装<a hidden class="anchor" aria-hidden="true" href="#安装">#</a></h1>
+<p>根据 AdGuard Home Github 的教程，在连接 VPS 以后直接输入以下代码：</p>
+<pre tabindex="0"><code>curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
+</code></pre><p>在显示安装完成后，输入以下代码启动 AdGuard</p>
+<pre tabindex="0"><code>sudo /opt/AdGuardHome/AdGuardHome -s start
+</code></pre><p>接着就可以在浏览器输入 VPS IP:3000 进行配置</p>
+<h1 id="配置-adguard-home">配置 AdGuard Home<a hidden class="anchor" aria-hidden="true" href="#配置-adguard-home">#</a></h1>
+<p>将网页监听端口改成3000，或许是其他自己喜欢的端口。比较重要的是 DNS 服务器端口。DNS 服务器端口默认是 53，如果想要设置双 AdGuard 进行国内外分流的话，需要用两个端口。但由于家里使用的是 BELL 自带的路由，无法修改具体端口，因此只创建一个 AdGuard，使用默认端口 53。</p>
+<p>而在使用默认端口 53时，经常会出现“validating ports: listen tcp 0.0.0.0:53: bind: address already in use” 的情况（如下图）</p>
+<p><img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2023/20230702004938.png" alt=""  />
+</p>
+<p>此时只需要输入以下代码即可：</p>
+<pre tabindex="0"><code>systemctl stop systemd-resolved  
+systemctl disable systemd-resolved  
+
+#删除后重新创建resolv.conf
+rm -rf /etc/resolv.conf
+</code></pre><!-- raw HTML omitted -->
+<h2 id="常规设置">常规设置<a hidden class="anchor" aria-hidden="true" href="#常规设置">#</a></h2>
+<p>勾选 <strong>使用过滤器和 Hosts 文件以拦截指定域名</strong> 以及 <strong>使用 AdGuard 【浏览安全】网页服务</strong>，查询日志保留时间跟统计保留根据个人喜好，选择了7天。</p>
+<!-- raw HTML omitted -->
+<h2 id="dns-设置">DNS 设置<a hidden class="anchor" aria-hidden="true" href="#dns-设置">#</a></h2>
+<p>查看了很多 AdGuard Home 设置相关的文章，最后由于使劲主场景在国外，因此在上游 DNS 仅设置以下三个：</p>
+<p><img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2023/20230701231409.png" alt=""  />
+</p>
+<!-- raw HTML omitted -->
+<p>海外上游 DNS</p>
+<blockquote>
+<p>1.1.1.1 # Cloudflare<br>
+tls://dns.google<br>
+<a href="https://dns.google/dns-query">https://dns.google/dns-query</a></p>
+</blockquote>
+<p>海外 Bootstrap DNS</p>
+<blockquote>
+<p>9.9.9.10
+149.112.112.10</p>
+</blockquote>
+<p>国内上游 DNS</p>
+<blockquote>
+<p>119.29.29.29<br>
+119.28.28.28<br>
+223.5.5.5<br>
+223.6.6.6</p>
+</blockquote>
+<p>国内 Bootstrap DNS</p>
+<blockquote>
+<p>119.29.29.29<br>
+119.28.28.28<br>
+223.5.5.5<br>
+223.6.6.6</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<h2 id="过滤规则">过滤规则<a hidden class="anchor" aria-hidden="true" href="#过滤规则">#</a></h2>
+<p>过滤规则除了默认的 AdGuard DNS filter 以外，针对中文网站添加了 CHN: anti-AD，以及 Halflife PC 版及移动端版。PC 版合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX&rsquo;sAnnoyance，以及补充了一些规则。而移动端版则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX&rsquo;sAnnoyance，以及补充的一些规则。</p>
+<p>Halflife-list 之前更新在 gitee，而目前则更新在 <a href="https://github.com/sbwml/halflife-list">halflife-list on github</a>，但具体文件在 jsdelivr。</p>
+<p>PC LIST：<br>
+<a href="https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-pc.txt">https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-pc.txt</a></p>
+<p>MOBILE LIST:<br>
+<a href="https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt">https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt</a></p>
+<p>AD EDENTW LIST （合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters）：</p>
+<p><a href="https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-edentw.txt">https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad-edentw.txt</a></p>
+<!-- raw HTML omitted -->
+<h2 id="设备设置">设备设置<a hidden class="anchor" aria-hidden="true" href="#设备设置">#</a></h2>
+<p>为了避免全屋设备挨个设置，最终选择在 BELL 路由器上修改 DNS，方法如下：</p>
+<ol>
+<li>浏览器输入 192.168.2.1 选择 Advanced tools and settings，并输入密码登入 (默认密码是路由上的S/N)</li>
+<li>选择 DNS
+<img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2023/20230701231004.png" alt=""  />
+</li>
+<li>选择 Manually specify DNS information，接着输入自己的 VPS IP 地址，选择 Change
+<img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2023/20230701231039.png" alt=""  />
+</li>
+</ol>
+<p>至此，AdGuard 已经开始运作</p>
+<p><img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2023/20230702011200.png" alt=""  />
+</p>
+<!-- raw HTML omitted -->
+<h1 id="遇到的问题">遇到的问题<a hidden class="anchor" aria-hidden="true" href="#遇到的问题">#</a></h1>
+<p>一开始选择的是利用 docker 安装 Adguard，在前面一切正常，但在新增设备时一直出现 error，搜了一下发现应该版本问题，因此最终还是选择了 github 直接安装。</p>
+<p>另外还会出现一模一样的网页（比方说 google 搜索），电脑能够打开，但 android 无法打开的情况，出现的错误是 QUIC ERR，说是 google 通过 QUIC 推送广告，但 AdGuard 会过滤掉，可在 log 里无法找到 QUIC 相关明细。</p>
+<p>观察一段时间卡看。</p>
+<h1 id="ref">Ref<a hidden class="anchor" aria-hidden="true" href="#ref">#</a></h1>
+<blockquote>
+<p><a href="https://sspai.com/post/63088">AdGuard Home 安装及使用指北</a><br>
+<a href="https://www.jarods.org/2191.html">AdGuard Home 自建 DNS 防污染、去广告教程 #2 – 优化增强设置详解</a><br>
+<a href="https://www.youtube.com/watch?v=z-QdOOR553I&amp;t=1122s">Set Up an AdGuard Home Server to Protect Multiple Locations on Linode</a><br>
+<a href="https://github.com/AdguardTeam/AdGuardHome#getting-started">AdGuard Home Github</a><br>
+<a href="https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-0.html">AdGuard Home 是什么？为什么无法去广告？</a><br>
+<a href="https://www.bujj.org/index.php/2022/01/28/285/">Linux 53 端口被 systemd-resolve 占用</a></p>
+</blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/adguard-home/">Adguard Home</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/2023/weekly-dec.4-dec.10-%E5%B1%A1%E6%88%98%E5%B1%A1%E8%B4%A5%E5%B1%A1%E8%B4%A5%E5%B1%A1%E6%88%98/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Weekly | Dec.4 - Dec.10 屡战屡败，屡败屡战</span>
+  </a>
+  <a class="next" href="http://localhost:1313/2023/weekly-jun.12-jun.30-%E7%BB%88%E4%BA%8E%E6%AF%95%E4%B8%9A%E5%95%A6/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Weekly | Jun.12 Jun.30 终于毕业啦</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <span>&copy; 2019 - 2024 <a href="http://localhost:1313/">在云端</a> · 
+            <i class="fas fa-bell"></i> <a id="days">0</a>Days</br></span>
+        共书写了50.8k字 · 共 49篇文章</br><span>
+        <span>
+            Powered by
+            <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+            <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></br>
+        </span>
+    
+        <script>
+            var s1 = '2019-04-05';
+            s1 = new Date(s1.replace(/-/g, "/"));
+            s2 = new Date();
+            var days = s2.getTime() - s1.getTime();
+            var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+            document.getElementById('days').innerHTML = number_of_days;
+        </script>
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

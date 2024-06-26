@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>崇善寺 on </title>
-    <link>//localhost:1313/tags/%E5%B4%87%E5%96%84%E5%AF%BA/</link>
-    <description>Recent content in 崇善寺 on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 04 May 2019 01:41:06 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E5%B4%87%E5%96%84%E5%AF%BA/index.xml" rel="self" type="application/rss+xml" />
+    <title>崇善寺 on 在云端</title>
+    <link>http://localhost:1313/tags/%E5%B4%87%E5%96%84%E5%AF%BA/</link>
+    <description>Recent content in 崇善寺 on 在云端</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 May 2019 01:41:06 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%B4%87%E5%96%84%E5%AF%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>崇善寺：佛香青烟袅袅</title>
-      <link>//localhost:1313/post/2019/shanxi-day1/</link>
+      <link>http://localhost:1313/2019/%E5%B4%87%E5%96%84%E5%AF%BA%E4%BD%9B%E9%A6%99%E9%9D%92%E7%83%9F%E8%A2%85%E8%A2%85/</link>
       <pubDate>Sat, 04 May 2019 01:41:06 -0400</pubDate>
-      <guid>//localhost:1313/post/2019/shanxi-day1/</guid>
-      <description>行程安排：&#xA;日期 行程 5.6 广州 - 太原 （崇善寺） - 大同 5.7 悬空寺 - 恒山 - 云冈石窟 - 大同古城墙 5.8 纯阳宫 - 关帝庙 - 九龙壁 - 四牌楼 - 清真大寺 - 华严寺 - 平遥（火车） 5.9 日昇昌&amp;amp;蔚泰厚 - 武林汇 - 古县衙 - 珍奇报纸陈列馆 - 城隍庙 5.10 王家大院 - 平遥古城墙 - 二郎庙 - 庆同协 - 同兴公镖局 - 文庙 - 华北镖局 - 太原 5.11 中国煤炭博物馆 - 山西博物院 - 食品街 5.12 太原工人文化宫 - 广州 太原机场 由于这次机票时间订得不上不下的，于是下了飞机以后上了机场大巴直奔火车站。在这里想吐槽一下机场大巴，终点站叫火车站，但下了车以后还需要坐一站公交车 -_-|||</description>
+      
+      <guid>http://localhost:1313/2019/%E5%B4%87%E5%96%84%E5%AF%BA%E4%BD%9B%E9%A6%99%E9%9D%92%E7%83%9F%E8%A2%85%E8%A2%85/</guid>
+      <description>行程安排： 日期 行程 5.6 广州 - 太原 （崇善寺） - 大同 5.7 悬空寺 - 恒山 - 云冈石窟 - 大同古城墙 5.8 纯阳宫 - 关帝庙 - 九龙壁 - 四牌楼 - 清真大寺 - 华严寺 - 平遥（</description>
     </item>
+    
   </channel>
 </rss>

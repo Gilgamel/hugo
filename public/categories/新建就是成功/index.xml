@@ -1,47 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>新建就是成功 on </title>
-    <link>//localhost:1313/categories/%E6%96%B0%E5%BB%BA%E5%B0%B1%E6%98%AF%E6%88%90%E5%8A%9F/</link>
-    <description>Recent content in 新建就是成功 on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 01 Jul 2023 02:32:27 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/categories/%E6%96%B0%E5%BB%BA%E5%B0%B1%E6%98%AF%E6%88%90%E5%8A%9F/index.xml" rel="self" type="application/rss+xml" />
+    <title>新建就是成功 on 在云端</title>
+    <link>http://localhost:1313/categories/%E6%96%B0%E5%BB%BA%E5%B0%B1%E6%98%AF%E6%88%90%E5%8A%9F/</link>
+    <description>Recent content in 新建就是成功 on 在云端</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jul 2023 02:32:27 -0400</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%96%B0%E5%BB%BA%E5%B0%B1%E6%98%AF%E6%88%90%E5%8A%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adguard | VPS 安装 AdGuard Home 为全屋设备过滤广告</title>
-      <link>//localhost:1313/post/2023/adguard/</link>
+      <link>http://localhost:1313/2023/adguard-vps-%E5%AE%89%E8%A3%85-adguard-home-%E4%B8%BA%E5%85%A8%E5%B1%8B%E8%AE%BE%E5%A4%87%E8%BF%87%E6%BB%A4%E5%B9%BF%E5%91%8A/</link>
       <pubDate>Sat, 01 Jul 2023 02:32:27 -0400</pubDate>
-      <guid>//localhost:1313/post/2023/adguard/</guid>
-      <description>楼下的电视APP更新以后开始出现广告了，于是一直在思考着有没有什么办法能够过滤全屋设备的广告，做了一番搜索以后再次将 AdGuard 翻了出来。之前已经购买过 AdGuard Ad Blocker，这次看上的是开源的 AdGuard Home。AdGuard Home 作为一款全网广告拦截与反跟踪软件，可以在一次安装完成后，通过修改路由DNS从而让连接上特定网络的设备均受到保护。&#xA;关于安装 AdGuard Home 的位置，一开始选择的是在 QNAP NAS 上进行，但后来反复试了很多次均失败。于是趁着美国独立日，在 RackNerd 上购入年费约为 $16 加币的廉价 VPS。&#xA;安装 根据 AdGuard Home Github 的教程，在连接 VPS 以后直接输入以下代码：&#xA;curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v 在显示安装完成后，输入以下代码启动 AdGuard&#xA;sudo /opt/AdGuardHome/AdGuardHome -s start 接着就可以在浏览器输入 VPS IP:3000 进行配置&#xA;配置 AdGuard Home 将网页监听端口改成3000，或许是其他自己喜欢的端口。比较重要的是 DNS 服务器端口。DNS 服务器端口默认是 53，如果想要设置双 AdGuard 进行国内外分流的话，需要用两个端口。但由于家里使用的是 BELL 自带的路由，无法修改具体端口，因此只创建一个 AdGuard，使用默认端口 53。&#xA;而在使用默认端口 53时，经常会出现“validating ports: listen tcp 0.0.0.0:53: bind: address already in use” 的情况（如下图）</description>
+      
+      <guid>http://localhost:1313/2023/adguard-vps-%E5%AE%89%E8%A3%85-adguard-home-%E4%B8%BA%E5%85%A8%E5%B1%8B%E8%AE%BE%E5%A4%87%E8%BF%87%E6%BB%A4%E5%B9%BF%E5%91%8A/</guid>
+      <description>楼下的电视APP更新以后开始出现广告了，于是一直在思考着有没有什么办法能够过滤全屋设备的广告，做了一番搜索以后再次将 AdGuard 翻了出来。之前已经购买</description>
     </item>
+    
     <item>
       <title>Hugo | Hugo-PaperMod 主题修改</title>
-      <link>//localhost:1313/post/2022/papermod-theme-mod/</link>
+      <link>http://localhost:1313/2022/hugo-hugo-papermod-%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/</link>
       <pubDate>Sat, 17 Sep 2022 22:24:59 -0400</pubDate>
-      <guid>//localhost:1313/post/2022/papermod-theme-mod/</guid>
-      <description>将 Hugo 主题换成 PaperMod 并进行相关修改</description>
+      
+      <guid>http://localhost:1313/2022/hugo-hugo-papermod-%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/</guid>
+      <description>基于 Hugo-PaperMod 主题上装修</description>
     </item>
+    
     <item>
       <title>Gridea | 为 Gridea Github Page 自定义域名并开启 https</title>
-      <link>//localhost:1313/post/2021/gridea-github-page-ssl/</link>
+      <link>http://localhost:1313/2021/gridea-%E4%B8%BA-gridea-github-page-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%BC%80%E5%90%AF-https/</link>
       <pubDate>Sun, 21 Feb 2021 05:25:53 -0400</pubDate>
-      <guid>//localhost:1313/post/2021/gridea-github-page-ssl/</guid>
-      <description>最近发现了 Gridea 这个静态博客，感觉十分方便，重新将持续性写 blog 提上日程&#xA;就算是2021年立一个 flag 吧。&#xA;Gridea 真的是一个非常方便的静态博客，连自定义域名的方式都非常的傻瓜。&#xA;具体操作 在 Gridea 左侧选择远程，然后直接在 CNAME 输入自己的域名，点击保存同步即可。&#xA;登陆 GITHUB，看到多了一个 CNAME 文件即代表同步成功。&#xA;点击 Setting 拖到下方，确认域名已经被填写进去，并且 ENFORCE HTTPS 已被勾选成功。&#xA;其他 其实一开始有在搜了很多教程，包括在 github page 直接 create new file CNAME， 然后输入域名。&#xA;后来发现这个操作在 Gridea 更新同步后，CNAME file 会被删除，因此作罢。&#xA;其后试过直接在 Gridea 源目录下新建 CNAME file，但发现同步不成功。&#xA;最后发现 Gridea 十分贴心的在客户端已经自带了设置。</description>
+      
+      <guid>http://localhost:1313/2021/gridea-%E4%B8%BA-gridea-github-page-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%BC%80%E5%90%AF-https/</guid>
+      <description>最近发现了 Gridea 这个静态博客，感觉十分方便，重新将持续性写 blog 提上日程 就算是2021年立一个 flag 吧。 Gridea 真的是一个非常方便的静态博客，连自定义域名的方</description>
     </item>
+    
     <item>
       <title>Excel | Remove Duplicate</title>
-      <link>//localhost:1313/post/2019/removedupliate/</link>
+      <link>http://localhost:1313/2019/excel-remove-duplicate/</link>
       <pubDate>Tue, 20 Aug 2019 11:25:00 -0400</pubDate>
-      <guid>//localhost:1313/post/2019/removedupliate/</guid>
-      <description>最近一直在做活动，报名方式为麦客单表，但由于经常性会出现重复性报名情况，所以需要在统计之前对数据进行清洗。&#xA;出现重复报名的情况一般如下：&#xA;报名了 A活动&amp;amp;B活动后，又再报名了 B活动&amp;amp;A活动 报名了 A活动&amp;amp;B活动后，又再报名了 C活动 报名了 A活动&amp;amp;B活动后，又再报名了 A活动&amp;amp;B活动&amp;amp;C活动 报名了 A活动&amp;amp;B活动后，又再报名了 A活动&amp;amp;C活动&amp;amp;D活动 思路 合并/去掉重复行 根据报名表的设置，一般都会有 姓名、手机、微信、邮箱、参与活动 这几项，而其中姓名跟手机是大概率是唯一，which means不会重复的，所以将使用姓名/手机作为检测项&#xA;在以姓名作为检测项对齐进行排列后，可以看出这个叫 Ada 的少年一口气重复报名了三次，并且第二、三次报得是完全一样的，现在要做的就是 将同一个姓名的人选择参加的活动全部合并在一起&#xA;在活动后面一列起个小标题 1 写上以下code：&#xA;=if(A2=A1, F1&amp;amp;&amp;#34;;&amp;#34;&amp;amp;E2, E2)&#xD;# 如果 A2=A1，就将F1跟E2内容合并到一块，中间用；来表示，否则就显示E2 完事儿将公式拉完这一列。 在 列1 后面再弄一个 列2，写上以下code：&#xA;=if(A2&amp;lt;&amp;gt;A3, &amp;#34;Merged Value&amp;#34;, &amp;#34; &amp;#34;)&#xD;# 如果 A2 不等于 A3，那么就显示为 Merged Value，否则显示空白 同理，将公式拉满 列2；接着将 列1&amp;amp;列2 都选上，然后 copy &amp;amp; paste value only，将这两列的数值都变为plain text&#xA;接下来将 列2 选中，并且进行 自定义排序&#xA;选择 扩展选定区域，然后将主要关键字选为 2，次序为 降序&#xA;最后将 列2 最下方显示为 空白的几行删掉即可。</description>
+      
+      <guid>http://localhost:1313/2019/excel-remove-duplicate/</guid>
+      <description>最近一直在做活动，报名方式为麦客单表，但由于经常性会出现重复性报名情况，所以需要在统计之前对数据进行清洗。 出现重复报名的情况一般如下： 报名了</description>
     </item>
+    
     <item>
       <title>Google Sheets | 在Google Sheets 上使用query、if、isna将符合条件的分表数据汇总到总表</title>
-      <link>//localhost:1313/post/2019/google-sheet-query/</link>
+      <link>http://localhost:1313/2019/google-sheets-%E5%9C%A8google-sheets-%E4%B8%8A%E4%BD%BF%E7%94%A8queryifisna%E5%B0%86%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%88%86%E8%A1%A8%E6%95%B0%E6%8D%AE%E6%B1%87%E6%80%BB%E5%88%B0%E6%80%BB%E8%A1%A8/</link>
       <pubDate>Sun, 18 Aug 2019 12:35:27 -0400</pubDate>
-      <guid>//localhost:1313/post/2019/google-sheet-query/</guid>
-      <description>因为工作的缘故，需要将各个平台的宣传日期都放在一张google sheet上，然后 通过检测关键词，将关键的event自动pop up到总表上。得到这个需求的时候，脑海里立刻想到的是VBA，然而google sheet上压根没VBA啊！ 于是想着是否能用 vlookup/hlookup/index &amp;amp; match解决问题，最后发现果然还是解决不了：）最后在朋友的提醒下，开始摸索着使用 query。&#xA;Query 根据 Google 简陋的说明，query 是对数据运行一项采用 Google Visualization API 查询语言的查询。&#xA;用法示例 QUERY(A2:E6,&amp;#34;select avg(A) pivot B&amp;#34;)&#xD;QUERY(A2:E6,F2,FALSE) 语法 Query（数据，查询，[标题数]）&#xA;数据 - 要执行查询的单元格范围。 每列数据中的数值类型只能是布尔值、数字（包括日期/时间类型）或字符串。 如果有多种数据类型掺杂在单个列中，为便于查询，该列的数据类型由其中大多数数据的类型决定。其他少数数据的类型则被视为空值。 查询 - 要执行的查询操作，以 Google Visualization API查询语言编写。 查询的值必须括在引号中，否则该值必须是指向包含相关文本的单元格的引用。 标题数 - [可选]- 数据上方的标题行的数目。如果省略或设置为-1，将根据数据的内容估算该值。 可以怎么用？ name dept lunchTime salary hireDate age isSenior seniorityStartTime John Eng 12:00:00 1000 3/19/2005 35 TRUE 12/2/2007 15:56:00 Dave Eng 12:00:00 500 4/19/2006 27 FALSE null Sally Eng 13:00:00 600 10/10/2005 30 FALSE null Ben Sales 12:00:00 400 10/10/2002 32 TRUE 3/9/2005 12:30:00 Dana Sales 12:00:00 350 9/8/2004 25 FALSE null Mike Marketing 13:00:00 800 1/10/2005 24 TRUE 12/30/2007 14:40:00 使用Select和Where返回满足指定条件的行。 QUERY(&amp;#39;Example Data&amp;#39;!</description>
+      
+      <guid>http://localhost:1313/2019/google-sheets-%E5%9C%A8google-sheets-%E4%B8%8A%E4%BD%BF%E7%94%A8queryifisna%E5%B0%86%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%88%86%E8%A1%A8%E6%95%B0%E6%8D%AE%E6%B1%87%E6%80%BB%E5%88%B0%E6%80%BB%E8%A1%A8/</guid>
+      <description>因为工作的缘故，需要将各个平台的宣传日期都放在一张google sheet上，然后 通过检测关键词，将关键的event自动pop up到总表上。得</description>
     </item>
+    
   </channel>
 </rss>

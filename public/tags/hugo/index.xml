@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hugo on </title>
-    <link>//localhost:1313/tags/hugo/</link>
-    <description>Recent content in Hugo on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 09 Jun 2023 02:20:40 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <title>Hugo on 在云端</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on 在云端</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Jun 2024 05:15:04 -0700</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo | 利用 github 和 cloudflare 创建 portfolio page</title>
+      <link>http://localhost:1313/2024/hugo-%E5%88%A9%E7%94%A8-github-%E5%92%8C-cloudflare-%E5%88%9B%E5%BB%BA-portfolio-page/</link>
+      <pubDate>Tue, 18 Jun 2024 05:15:04 -0700</pubDate>
+      
+      <guid>http://localhost:1313/2024/hugo-%E5%88%A9%E7%94%A8-github-%E5%92%8C-cloudflare-%E5%88%9B%E5%BB%BA-portfolio-page/</guid>
+      <description>萌生创建 portfolio 的想法来自于在 indeed 上投简历后，招聘方（国人）说岗位要求有 coding skill，要求把自己的网站发送给对方看。但在那之前我的日常记录也好，做数</description>
+    </item>
+    
     <item>
       <title>Hugo | 升级博客及主体版本，解决一些小 bug</title>
-      <link>//localhost:1313/post/2023/hugo_papermod_socialicons/</link>
+      <link>http://localhost:1313/2023/hugo-%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%E5%8F%8A%E4%B8%BB%E4%BD%93%E7%89%88%E6%9C%AC%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E5%B0%8F-bug/</link>
       <pubDate>Fri, 09 Jun 2023 02:20:40 -0400</pubDate>
-      <guid>//localhost:1313/post/2023/hugo_papermod_socialicons/</guid>
+      
+      <guid>http://localhost:1313/2023/hugo-%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%E5%8F%8A%E4%B8%BB%E4%BD%93%E7%89%88%E6%9C%AC%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E5%B0%8F-bug/</guid>
       <description>一些个修复了 vercel 错误提醒之后，想更新主题做做装修，从而发现主题版本太高跟 hugo version 不匹配，于是更新 hugo 的故事</description>
     </item>
+    
     <item>
       <title>Hugo | Hugo-PaperMod 主题修改</title>
-      <link>//localhost:1313/post/2022/papermod-theme-mod/</link>
+      <link>http://localhost:1313/2022/hugo-hugo-papermod-%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/</link>
       <pubDate>Sat, 17 Sep 2022 22:24:59 -0400</pubDate>
-      <guid>//localhost:1313/post/2022/papermod-theme-mod/</guid>
-      <description>将 Hugo 主题换成 PaperMod 并进行相关修改</description>
+      
+      <guid>http://localhost:1313/2022/hugo-hugo-papermod-%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/</guid>
+      <description>基于 Hugo-PaperMod 主题上装修</description>
     </item>
+    
   </channel>
 </rss>

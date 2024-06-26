@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Excel | Remove Duplicate | 在云端</title>
+<meta name="keywords" content="Excel, VBA">
+<meta name="description" content="最近一直在做活动，报名方式为麦客单表，但由于经常性会出现重复性报名情况，所以需要在统计之前对数据进行清洗。 出现重复报名的情况一般如下： 报名了">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/2019/excel-remove-duplicate/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bf5f9f73cf17311d52cedbcda82c922e91b2f566d88a85ad9f5b5a08b586bd5f.css" integrity="sha256-v1&#43;fc88XMR1SztvNqCySLpGy9WbYioWtn1taCLWGvV8=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/2019/excel-remove-duplicate/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="在云端 (Alt + H)">在云端</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <h1 class="post-title">
+      Excel | Remove Duplicate
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2019-08-20 11:25:00 -0400 -0400&#39;&gt;2019-08-20&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min
+
+<div class="article-read-time"> 🐈‍ 799 words</div>
+    </div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%80%9d%e8%b7%af" aria-label="思路">思路</a><ul>
+                        
+                <li>
+                    <a href="#%e5%90%88%e5%b9%b6%e5%8e%bb%e6%8e%89%e9%87%8d%e5%a4%8d%e8%a1%8c" aria-label="合并/去掉重复行">合并/去掉重复行</a></li>
+                <li>
+                    <a href="#%e5%8e%bb%e6%8e%89%e9%87%8d%e5%a4%8d%e6%b4%bb%e5%8a%a8remove-duplicate" aria-label="去掉重复活动（Remove Duplicate）">去掉重复活动（Remove Duplicate）</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>最近一直在做活动，报名方式为麦客单表，但由于经常性会出现重复性报名情况，所以需要在统计之前对数据进行清洗。</p>
+<p>出现重复报名的情况一般如下：</p>
+<ol>
+<li>报名了 <strong>A活动&amp;B活动</strong>后，又再报名了 <strong>B活动&amp;A活动</strong></li>
+<li>报名了 <strong>A活动&amp;B活动</strong>后，又再报名了 <strong>C活动</strong></li>
+<li>报名了 <strong>A活动&amp;B活动</strong>后，又再报名了 <strong>A活动&amp;B活动&amp;C活动</strong></li>
+<li>报名了 <strong>A活动&amp;B活动</strong>后，又再报名了 <strong>A活动&amp;C活动&amp;D活动</strong></li>
+</ol>
+<h2 id="思路">思路<a hidden class="anchor" aria-hidden="true" href="#思路">#</a></h2>
+<h3 id="合并去掉重复行">合并/去掉重复行<a hidden class="anchor" aria-hidden="true" href="#合并去掉重复行">#</a></h3>
+<p>根据报名表的设置，一般都会有 <strong>姓名、手机、微信、邮箱、参与活动</strong> 这几项，而其中姓名跟手机是大概率是唯一，which means不会重复的，所以将使用姓名/手机作为检测项</p>
+<p><img loading="lazy" src="https://i.loli.net/2019/08/22/vNIyXZYmdtxBoWS.png" alt="Snipaste_2019-08-21_23-54-49.png"  />
+</p>
+<p>在以姓名作为检测项对齐进行排列后，可以看出这个叫 Ada 的少年一口气重复报名了三次，并且第二、三次报得是完全一样的，现在要做的就是 <strong>将同一个姓名的人选择参加的活动全部合并在一起</strong></p>
+<p>在活动后面一列起个小标题 <strong>1</strong> 写上以下code：</p>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">=if(A2=A1, F1&amp;&#34;;&#34;&amp;E2, E2)
+
+# 如果 A2=A1，就将F1跟E2内容合并到一块，中间用；来表示，否则就显示E2
+</code></pre><p>完事儿将公式拉完这一列。 在 <strong>列1</strong> 后面再弄一个 <strong>列2</strong>，写上以下code：</p>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">=if(A2&lt;&gt;A3, &#34;Merged Value&#34;, &#34; &#34;)
+
+# 如果 A2 不等于 A3，那么就显示为 Merged Value，否则显示空白
+</code></pre><p>同理，将公式拉满 <strong>列2</strong>；接着将 <strong>列1&amp;列2</strong> 都选上，然后 <strong>copy &amp; paste value only</strong>，将这两列的数值都变为plain text</p>
+<p>接下来将 <strong>列2</strong> 选中，并且进行 <strong>自定义排序</strong></p>
+<p><img loading="lazy" src="https://i.loli.net/2019/08/22/rQgEpokvaZxhbYt.png" alt="image.png"  />
+</p>
+<p>选择 <strong>扩展选定区域</strong>，然后将主要关键字选为 <strong>2</strong>，次序为 <strong>降序</strong></p>
+<p><img loading="lazy" src="https://i.loli.net/2019/08/22/NkeDbcPUOSME1xY.png" alt="image.png"  />
+</p>
+<p>最后将 <strong>列2</strong> 最下方显示为 <strong>空白</strong>的几行删掉即可。</p>
+<h3 id="去掉重复活动remove-duplicate">去掉重复活动（Remove Duplicate）<a hidden class="anchor" aria-hidden="true" href="#去掉重复活动remove-duplicate">#</a></h3>
+<p>在VBA上新建Module，输入以下code：</p>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">Function RemoveDupes2(txt As String, Optional delim As String = &#34; &#34;) As String
+    Dim x
+    &#39;Updateby20140924
+    With CreateObject(&#34;Scripting.Dictionary&#34;)
+        .CompareMode = vbTextCompare
+        For Each x In Split(txt, delim)
+            If Trim(x) &lt;&gt; &#34;&#34; And Not .exists(Trim(x)) Then .Add Trim(x), Nothing
+        Next
+        If .Count &gt; 0 Then RemoveDupes2 = Join(.keys, delim)
+    End With
+End Function
+</code></pre><p>Module创建完毕后，在新的空白列上输入以下code：</p>
+<pre tabindex="0"><code class="language-Excel" data-lang="Excel">=removedupes2(E2,&#34;;&#34;)
+
+# remove deplicate from E2, ; is seperator
+</code></pre><p>最后将新列上的数据 <em><em>copy &amp;</em> paste value only</em>*以后，即可删掉之前合并的重复活动列。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/excel/">Excel</a></li>
+      <li><a href="http://localhost:1313/tags/vba/">VBA</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/2019/%E9%93%B6%E6%B2%B3%E5%90%8E%E6%9C%9F/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>银河后期</span>
+  </a>
+  <a class="next" href="http://localhost:1313/2019/google-sheets-%E5%9C%A8google-sheets-%E4%B8%8A%E4%BD%BF%E7%94%A8queryifisna%E5%B0%86%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%88%86%E8%A1%A8%E6%95%B0%E6%8D%AE%E6%B1%87%E6%80%BB%E5%88%B0%E6%80%BB%E8%A1%A8/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Google Sheets | 在Google Sheets 上使用query、if、isna将符合条件的分表数据汇总到总表</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <span>&copy; 2019 - 2024 <a href="http://localhost:1313/">在云端</a> · 
+            <i class="fas fa-bell"></i> <a id="days">0</a>Days</br></span>
+        共书写了50.8k字 · 共 49篇文章</br><span>
+        <span>
+            Powered by
+            <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+            <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></br>
+        </span>
+    
+        <script>
+            var s1 = '2019-04-05';
+            s1 = new Date(s1.replace(/-/g, "/"));
+            s2 = new Date();
+            var days = s2.getTime() - s1.getTime();
+            var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+            document.getElementById('days').innerHTML = number_of_days;
+        </script>
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

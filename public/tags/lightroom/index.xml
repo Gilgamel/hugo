@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Lightroom on </title>
-    <link>//localhost:1313/tags/lightroom/</link>
-    <description>Recent content in Lightroom on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 25 Aug 2019 22:00:40 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/lightroom/index.xml" rel="self" type="application/rss+xml" />
+    <title>Lightroom on 在云端</title>
+    <link>http://localhost:1313/tags/lightroom/</link>
+    <description>Recent content in Lightroom on 在云端</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Aug 2019 22:00:40 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/lightroom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>银河后期</title>
-      <link>//localhost:1313/post/2019/milky-way-editing/</link>
+      <link>http://localhost:1313/2019/%E9%93%B6%E6%B2%B3%E5%90%8E%E6%9C%9F/</link>
       <pubDate>Sun, 25 Aug 2019 22:00:40 -0400</pubDate>
-      <guid>//localhost:1313/post/2019/milky-way-editing/</guid>
-      <description>抓住19年拍银河的小尾巴，跟特特还有海王去了 Toronto Barren 拍银河。&#xA;俗话说得好：拍摄一时爽，后期火葬场。&#xA;用来拍摄的单反是 long time ago 的60D，由于是APS-C画幅，所以拍摄时的思路是用 高感 + 大光圈 + 慢快门 尽可能将更多的星星拍摄进去。然而忽略了机子的问题，等看到RAW的时候发现噪点十分多，修起来真的是太难了。在找了好多个preset以后发现颜色出来都不大自然（至少比我目前修出来的还不自然），所以无法偷懒的自己开始不断 google 着。&#xA;用的参数是 3200 ISO + f2.8 + 30s，拍摄6张以后拼接在一起。原图大概是这个亚子的：&#xA;Camera RAW 基修 在LR里将6张图拼接导出以后，用 Camera RAW 打开了图片。由于在LR里已经预先将图片都进行了镜头校对，所以在 Camera RAW 里就省去这一步了。&#xA;直接对对比度、高光、阴影、白色、黑色进行修改，重点是将图片调灰&#xA;高光&#xA;提高高光可以使银心更加明亮，&#xA;阴影&#xA;提高阴影可以使暗部提高一些，显示出细节&#xA;黑色&#xA;提高黑色一样可以显示出细节&#xA;白色&#xA;降低白色可以让图片整体亮度稍微压低一点&#xA;对比度&#xA;适当调低可以方便PS后期修整&#xA;除此以外，还需要适当增加清晰度以及自然饱和度，曝光度根据图片情况选择性加/不加。&#xA;降噪 将 Camera RAW 调到细节，然后开始降噪&#xA;注意蒙版需要稍微调大一点，颜色也需要降噪，否则会出现噪点过多的问题&#xA;Photoshop 修饰 明暗修饰 亮部修饰 利用快捷键 CTRL + ALT + 2 选取高光部位。&#xA;这时画面上会出现闪闪发亮的就是高光部位，然后用调整层工具 曲线 进行修饰&#xA;由于我们现在选取了高光部位，所以操作仅仅会针对亮的部分进行。&#xA;通过拖动曲线，让亮的地方更亮，把比较灰的地方拉下来。&#xA;暗部修饰 按着曲线部分的蒙版（曲线）选区，CTRL + ALT +2 选择高光部位后，然后在菜单栏选择 反选，接着再加曲线。</description>
+      
+      <guid>http://localhost:1313/2019/%E9%93%B6%E6%B2%B3%E5%90%8E%E6%9C%9F/</guid>
+      <description>抓住19年拍银河的小尾巴，跟特特还有海王去了 Toronto Barren 拍银河。 俗话说得好：拍摄一时爽，后期火葬场。 用来拍摄的单反是 long time ago 的60D，由于是APS-C</description>
     </item>
+    
   </channel>
 </rss>

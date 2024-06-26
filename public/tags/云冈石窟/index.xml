@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>云冈石窟 on </title>
-    <link>//localhost:1313/tags/%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F/</link>
-    <description>Recent content in 云冈石窟 on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 06 May 2019 13:56:37 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F/index.xml" rel="self" type="application/rss+xml" />
+    <title>云冈石窟 on 在云端</title>
+    <link>http://localhost:1313/tags/%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F/</link>
+    <description>Recent content in 云冈石窟 on 在云端</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 May 2019 13:56:37 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>悬空寺：危楼高百尺</title>
-      <link>//localhost:1313/post/2019/shanxi-day2/</link>
+      <link>http://localhost:1313/2019/%E6%82%AC%E7%A9%BA%E5%AF%BA%E5%8D%B1%E6%A5%BC%E9%AB%98%E7%99%BE%E5%B0%BA/</link>
       <pubDate>Mon, 06 May 2019 13:56:37 -0400</pubDate>
-      <guid>//localhost:1313/post/2019/shanxi-day2/</guid>
-      <description>早上6点30左右在华林新天地靠城墙上车，对比起飞猪上的图案，马蜂窝这个团的车子显得有点一言难尽……例如还有座位是坏了的……&#xA;路上是一路睡过去的，就不多说了。&#xA;悬空寺 一直以来关于悬空寺都流传着这样的俚语：悬空寺，半天高，三根马尾空中吊。&#xA;悬空寺建于公元419年（北魏），是佛、道、儒三教合一的独特寺庙。悬空寺原本叫玄空阁，玄取自于中国传统宗教道教教理，空则来源于佛教的教理。&#xA;在唐开元23年（公元735年），李白留下壮观二字，现存建筑是明清两代时修缮的遗物。悬空寺乃一院两楼布局，楼阁殿宇40间，总长约32米。总体布局有寺院、禅房、佛堂、三佛殿、太乙殿、关帝庙、鼓楼、钟楼、珈蓝殿、送子观音殿、释迦殿、雷音殿、三宫殿、纯阳宫、栈道、三教殿、五佛殿等……&#xA;给皮皮瘦来一张游客照，感觉自从有了皮皮瘦，我对于用嘴唇去对焦这事情已经越发娴熟了……&#xA;去悬空寺的时候由于错开了五一高峰，基本不需要排队。然而真正站在上面时腿都在抖。因为真的很！晃！！！啊！！&#xA;悬空寺全死初看上去只有几十根大约碗口粗的木柱支撑，最高处距离地面50来米；以半插横梁为基础，借助岩石的托付，回廊栏杆上下梁柱左右紧密相连成一整个木质框架式结构。&#xA;一样是跟了一个不大靠谱的导游，一路上半知半解。回来照旧 google 一下你就知道，于是找到了以上解析，而且还来自于导游词稿；互联网万岁。&#xA;楼梯还超级陡的，几乎成90度的楼梯需要手脚并用才得去，上得时候因为背着书包，还差点一个不小心就卡在楼梯口。&#xA;这个也不知道是什么佛像，但是眼睛位置特别明亮，应该是用了琉璃之类的镶嵌上去的。&#xA;这座纯阳宫是去了山西以后第一次看到，当时十分兴奋拍了下来准备发给岚狗看的，到了后来越发审美疲劳。&#xA;对了，悬空寺山下，不对应该是恒山山脚下还有一座小悬空寺，但目前由于路况问题已经暂时关闭了。一路走着的时候宗让我想起某不知名小说就是关于大小悬空寺的。&#xA;恒山 </description>
+      
+      <guid>http://localhost:1313/2019/%E6%82%AC%E7%A9%BA%E5%AF%BA%E5%8D%B1%E6%A5%BC%E9%AB%98%E7%99%BE%E5%B0%BA/</guid>
+      <description>早上6点30左右在华林新天地靠城墙上车，对比起飞猪上的图案，马蜂窝这个团的车子显得有点一言难尽……例如还有座位是坏了的…… 路上是一路睡过去的</description>
     </item>
+    
   </channel>
 </rss>

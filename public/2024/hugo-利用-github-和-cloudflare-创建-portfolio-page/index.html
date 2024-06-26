@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Hugo | 利用 github 和 cloudflare 创建 portfolio page | 在云端</title>
+<meta name="keywords" content="hugo">
+<meta name="description" content="萌生创建 portfolio 的想法来自于在 indeed 上投简历后，招聘方（国人）说岗位要求有 coding skill，要求把自己的网站发送给对方看。但在那之前我的日常记录也好，做数">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/2024/hugo-%E5%88%A9%E7%94%A8-github-%E5%92%8C-cloudflare-%E5%88%9B%E5%BB%BA-portfolio-page/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bf5f9f73cf17311d52cedbcda82c922e91b2f566d88a85ad9f5b5a08b586bd5f.css" integrity="sha256-v1&#43;fc88XMR1SztvNqCySLpGy9WbYioWtn1taCLWGvV8=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/2024/hugo-%E5%88%A9%E7%94%A8-github-%E5%92%8C-cloudflare-%E5%88%9B%E5%BB%BA-portfolio-page/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="在云端 (Alt + H)">在云端</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Posts</a></div>
+    <h1 class="post-title">
+      Hugo | 利用 github 和 cloudflare 创建 portfolio page
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2024-06-18 05:15:04 -0700 PDT&#39;&gt;2024-06-18&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min
+
+<div class="article-read-time"> 🐈‍ 1309 words</div>
+    </div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%9e%b6%e8%ae%be" aria-label="架设">架设</a><ul>
+                        
+                <li>
+                    <a href="#%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2" aria-label="本地部署">本地部署</a></li>
+                <li>
+                    <a href="#%e5%88%a9%e7%94%a8-github-desktop-%e6%8e%a8%e9%80%81" aria-label="利用 github desktop 推送">利用 github desktop 推送</a></li>
+                <li>
+                    <a href="#%e5%9c%a8-cloudflare-%e4%b8%8a%e5%88%9b%e5%bb%ba-page" aria-label="在 cloudflare 上创建 page">在 cloudflare 上创建 page</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%b0%86content---post-%e4%b8%ad%e7%9a%84%e8%b7%af%e5%be%84%e7%95%a5%e5%8e%bb" aria-label="将content - post 中的路径略去">将content - post 中的路径略去</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>萌生创建 portfolio 的想法来自于在 indeed 上投简历后，招聘方（国人）说岗位要求有 coding skill，要求把自己的网站发送给对方看。但在那之前我的日常记录也好，做数据等方面遇到的问题及解决方式也有，通通都方在了这个blog上了，如果将这个 blog 发给对方，会让自己有一种 ”底裤都被看光了“ 的感觉。因此决定新建一个 hugo site 作为展示 portfolio 的地方，同时也将其全英文化。</p>
+<p>在这的过程中看到了 github repo + github action 的形式，也有 github repo + cloudflare 的形式。在网上搜了一下，发现即使国内访问 cloudflare 的速度也不低，且同时能接触一些新的东西，遂用后者方案。</p>
+<h1 id="架设">架设<a hidden class="anchor" aria-hidden="true" href="#架设">#</a></h1>
+<h2 id="本地部署">本地部署<a hidden class="anchor" aria-hidden="true" href="#本地部署">#</a></h2>
+<p>由于是 Mac，所以需要安装 git、go 等，一切都跟着 hugo 网站走即可。
+跟创建这个 blog 不一样的时，安装主题的代码从 git clone 变成了 git submodule add</p>
+<p>在这里由于我选了 hugo-coder 这个主题，因此直接将代码替换成如下：</p>
+<pre tabindex="0"><code>git init
+git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
+echo &#34;theme = &#39;hugo-coder&#39;&#34; &gt;&gt; hugo.toml
+hugo server
+</code></pre><p>替换完毕以后利用 hugo server 在本地观察了一下，发现 hugo-coder 的 hugo.toml 基本是空白，一切均需要自己自定义。利用了作者提供的 minimal configuration 作为模版，按照自己的需求修改了一下，作者的 hugo.toml 代码如下：</p>
+<pre tabindex="0"><code>baseurl = &#34;http://www.example.com&#34;
+title = &#34;johndoe&#34;
+theme = &#34;hugo-coder&#34;
+languagecode = &#34;en&#34;
+defaultcontentlanguage = &#34;en&#34;
+
+paginate = 20
+
+[services]
+[services.disqus]
+disqusShortname = &#34;yourdiscussshortname&#34;
+
+[markup.highlight]
+style = &#34;github-dark&#34;
+
+[params]
+  author = &#34;John Doe&#34;
+  info = &#34;Full Stack DevOps and Magician&#34;
+  description = &#34;John Doe&#39;s personal website&#34;
+  keywords = &#34;blog,developer,personal&#34;
+  avatarurl = &#34;images/avatar.jpg&#34;
+  #gravatar = &#34;john.doe@example.com&#34;
+
+  faviconSVG = &#34;/img/favicon.svg&#34;
+  favicon_32 = &#34;/img/favicon-32x32.png&#34;
+  favicon_16 = &#34;/img/favicon-16x16.png&#34;
+
+  since = 2019
+
+  enableTwemoji = true
+
+  colorScheme = &#34;auto&#34;
+  hidecolorschemetoggle = false
+
+  # customCSS = [&#34;css/custom.css&#34;]
+  # customSCSS = [&#34;scss/custom.scss&#34;]
+  # customJS = [&#34;js/custom.js&#34;]
+
+[taxonomies]
+  category = &#34;categories&#34;
+  series = &#34;series&#34;
+  tag = &#34;tags&#34;
+  author = &#34;authors&#34;
+
+# Social links
+[[params.social]]
+  name = &#34;Github&#34;
+  icon = &#34;fa-brands fa-github fa-2x&#34;
+  weight = 1
+  url = &#34;https://github.com/johndoe/&#34;
+[[params.social]]
+  name = &#34;Gitlab&#34;
+  icon = &#34;fa-brands fa-gitlab fa-2x&#34;
+  weight = 2
+  url = &#34;https://gitlab.com/johndoe/&#34;
+[[params.social]]
+  name = &#34;Twitter&#34;
+  icon = &#34;fa-brands fa-x-twitter fa-2x&#34;
+  weight = 3
+  url = &#34;https://twitter.com/johndoe/&#34;
+
+# Menu links
+[[menu.main]]
+  name = &#34;Blog&#34;
+  weight = 1
+  url  = &#34;posts/&#34;
+[[menu.main]]
+  name = &#34;About&#34;
+  weight = 2
+  url = &#34;about/&#34;
+</code></pre><h2 id="利用-github-desktop-推送">利用 github desktop 推送<a hidden class="anchor" aria-hidden="true" href="#利用-github-desktop-推送">#</a></h2>
+<p>按照 hugo 网站的说明，本地创建好文件后需要 push 到 github 上，但 hugo 本身提供的 push 方法会提示 GitHub 在 2021 年以后不再支持在 terminal 输入账号密码，需要用其他方法设置。</p>
+<p>于是我选择了最简单的去代码法法：GitHub desktop
+在 github desktop 中选择 add repo - 选择 portfolio 文件夹， 选择 publish，默认勾选上设为 private repo 确认便会在 GitHub 自动新建 repo 并上传文件。</p>
+<h2 id="在-cloudflare-上创建-page">在 cloudflare 上创建 page<a hidden class="anchor" aria-hidden="true" href="#在-cloudflare-上创建-page">#</a></h2>
+<p>登陆 cloudflare 后，选择 workers and pages -&gt; create page -&gt; connect to github 并选择 portfolio repo 如下图：</p>
+<p><img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2024/cloudflare-1.png" alt=""  />
+</p>
+<ul>
+<li>framework preset: Hugo</li>
+<li>Build command: hugo</li>
+<li>Build output directory: 默认为 public</li>
+</ul>
+<p>以上均是默认的，在这里的重点是需要在 environment variables 添加 HUGO_VERSION 及对应版本。截止到目前为止的 hugo version 为 0.127.0，因此我设置如下图：</p>
+<p><img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2024/cloudflare-2.png" alt=""  />
+</p>
+<p>最后就是等部署成功了
+<img loading="lazy" src="https://raw.githubusercontent.com/Gilgamel/img-host/main/hugo/2024/cloudflare-3.png" alt=""  />
+</p>
+<h1 id="将content---post-中的路径略去">将content - post 中的路径略去<a hidden class="anchor" aria-hidden="true" href="#将content---post-中的路径略去">#</a></h1>
+<p>由于 portfolio 我主要想通过 menu 的方式来展示自己，例如有 projects page， experiences page，但像 projects 的话有考虑要不要在里面根据不同的 projects 创建不同的 post，因此在 contents 文件夹下创建了不同的文件，如 about、experiences、projects</p>
+<p>当在about文件夹下创建 about.md 后浏览路径就会变成 xxxx/about/about，十分奇怪。找了许多方法，在这个过程中也了解了 leaf bundle是什么，index.md 跟 _index.md 的区别等等，最后参考了 stack overflow 上的解决方法，在 content/_index.md 写上以下代码：</p>
+<pre tabindex="0"><code>---
+cascade:
+  _build:
+    render: always
+    list: always
+
+_build:
+  render: never
+  list: never
+---
+</code></pre><p>过后发现成功缩短了文件路径，但会出现了 render 失效的情况，也就是在修改完内容后不管是 hugo server，还是直接推送，public/index.html 的内容都不会修改。经过 GPT DEBUG，发现了在 content/_index.md 加入以上代码会导致子页面可刷新，但主页无法刷新，因此将代码重新改：</p>
+<pre tabindex="0"><code>---
+title: &#34;Home&#34;
+_build:
+  render: always
+  list: always
+---
+</code></pre><p>至此，问题解决</p>
+<p>Ref:
+<a href="https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/">Cloudflare Framework Guide - Hugo</a>
+<a href="https://tutuis.me/deploy-blog-to-cloudflare-pages/">将Hugo博客部署到Cloudflare Pages上的体验与踩坑小记</a>
+<a href="https://gohugo.io/content-management/page-bundles/">Hugo Page bundles</a>
+<a href="https://gohugo.io/content-management/urls/#permalinks">Hugo URL management</a>
+<a href="https://discourse.gohugo.io/t/creating-a-layout-for-content-with-multiple-subfolders/45618">Creating a Layout for Content with multiple Subfolders?</a>
+<a href="https://discourse.gohugo.io/t/trying-to-get-rid-of-some-index-pages/41855">Trying to get rid of some index pages</a>
+<a href="https://stackoverflow.com/questions/67076616/subpages-without-index-md-file">Subpages without _index.md file</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/2024/bioinfo/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Bioinfo | </span>
+  </a>
+  <a class="next" href="http://localhost:1313/2024/weekly-mar.25-mar.31-%E5%9D%9A%E6%8C%81%E7%9C%9F%E7%9A%84%E5%BE%88%E4%B8%8D%E5%AE%B9%E6%98%93/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Weekly | Mar.25 - Mar.31 坚持真的很不容易</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <span>&copy; 2019 - 2024 <a href="http://localhost:1313/">在云端</a> · 
+            <i class="fas fa-bell"></i> <a id="days">0</a>Days</br></span>
+        共书写了50.8k字 · 共 49篇文章</br><span>
+        <span>
+            Powered by
+            <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+            <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></br>
+        </span>
+    
+        <script>
+            var s1 = '2019-04-05';
+            s1 = new Date(s1.replace(/-/g, "/"));
+            s2 = new Date();
+            var days = s2.getTime() - s1.getTime();
+            var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+            document.getElementById('days').innerHTML = number_of_days;
+        </script>
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

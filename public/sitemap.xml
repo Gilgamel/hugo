@@ -2,248 +2,254 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>http://localhost:1313/2024/bioinfo/</loc>
+    <lastmod>2024-06-23T17:48:53-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/bioinformatics/</loc>
+    <lastmod>2024-06-23T17:48:53-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-06-23T17:48:53-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-06-23T17:48:53-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-06-23T17:48:53-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2024-06-18T05:15:04-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2024/cloudflare-hugo/</loc>
+    <loc>http://localhost:1313/2024/hugo-%E5%88%A9%E7%94%A8-github-%E5%92%8C-cloudflare-%E5%88%9B%E5%BB%BA-portfolio-page/</loc>
     <lastmod>2024-06-18T05:15:04-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-06-18T05:15:04-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/tags/weekly/</loc>
     <lastmod>2024-03-30T22:19:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/2024/weekly-mar.25-mar.31-%E5%9D%9A%E6%8C%81%E7%9C%9F%E7%9A%84%E5%BE%88%E4%B8%8D%E5%AE%B9%E6%98%93/</loc>
     <lastmod>2024-03-30T22:19:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/weekly/</loc>
+    <loc>http://localhost:1313/categories/%E6%B7%B1%E6%9E%97%E4%BA%BA%E4%B8%8D%E7%9F%A5/</loc>
     <lastmod>2024-03-30T22:19:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2024/mar.25-mar.31/</loc>
-    <lastmod>2024-03-30T22:19:00-08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/%E6%B7%B1%E6%9E%97%E4%BA%BA%E4%B8%8D%E7%9F%A5/</loc>
-    <lastmod>2024-03-30T22:19:00-08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/2024/mar.3-mar.10/</loc>
+    <loc>http://localhost:1313/2024/weekly-mar.3-mar.10-%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E5%AE%8C%E6%88%90/</loc>
     <lastmod>2024-03-10T21:39:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2024/feb.19-feb.25/</loc>
+    <loc>http://localhost:1313/2024/weekly-feb.19-feb.25-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E5%8F%AF%E8%83%BD%E4%B8%8D%E4%BC%9A%E7%88%B1%E4%BD%A0/</loc>
     <lastmod>2024-02-25T20:39:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2024/feb.5-feb.11/</loc>
+    <loc>http://localhost:1313/2024/weekly-jan.5-feb.11-%E5%8E%86%E5%8F%B2%E6%80%BB%E6%98%AF%E7%9B%B8%E4%BC%BC%E7%9A%84/</loc>
     <lastmod>2024-02-11T23:08:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2024/jan.29-feb.4/</loc>
+    <loc>http://localhost:1313/2024/weekly-jan.29-feb.4-%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E5%AF%BB%E6%89%BE%E6%9B%B4%E5%8A%A0%E4%BE%BF%E5%88%A9%E7%9A%84%E8%AE%B0%E5%BD%95%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2024-02-04T23:08:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2024/jan.22-jan.28/</loc>
+    <loc>http://localhost:1313/2024/weekly-jan.22-jan.28-%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E5%B2%9B%E6%80%A5%E8%AF%8A%E7%AD%89%E5%BE%85%E6%97%B6%E9%95%BF%E5%B9%B3%E5%9D%87%E4%B8%BA6%E5%B0%8F%E6%97%B6-/</loc>
     <lastmod>2024-01-28T23:19:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2024/jan.15-jan.21/</loc>
+    <loc>http://localhost:1313/2024/weekly-jan.15-jan.21-%E6%9F%B4%E7%B1%B3%E6%B2%B9%E7%9B%90%E4%BC%9A%E5%B0%86%E4%B8%80%E4%B8%AA%E4%BA%BA%E8%B9%89%E8%B7%8E%E5%BE%97%E5%A4%B1%E5%8E%BB%E5%8E%9F%E6%9D%A5%E7%9A%84%E6%A8%A1%E6%A0%B7/</loc>
     <lastmod>2024-01-21T23:19:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2024/jan.8-jan.14/</loc>
+    <loc>http://localhost:1313/2024/weekly-jan.8-jan.14-%E7%BB%88%E4%BA%8E%E5%8E%BB%E5%8A%9E%E4%B8%AD%E5%9B%BD%E7%AD%BE%E8%AF%81%E5%95%A6/</loc>
     <lastmod>2024-01-14T23:55:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2024/jan.1-jan.7/</loc>
+    <loc>http://localhost:1313/2024/weekly-jan.1-jan.7-%E6%96%B0%E7%9A%84%E4%B8%80%E5%B9%B4%E6%96%B0%E7%9A%84%E8%BF%B7%E8%8C%AB/</loc>
     <lastmod>2024-01-07T23:55:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2023/dec.18-dec24/</loc>
+    <loc>http://localhost:1313/2023/weekly-dec.18-dec.24-%E5%9C%A3%E8%AF%9E%E5%BF%AB%E4%B9%90/</loc>
     <lastmod>2023-12-24T23:55:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2023/dec.25-dec.31/</loc>
+    <loc>http://localhost:1313/2023/weekly-dec.25-dec.31-%E5%83%8F%E5%B9%B3%E5%B8%B8%E4%B8%80%E6%A0%B7%E5%BA%A6%E8%BF%87%E8%B7%A8%E5%B9%B4/</loc>
     <lastmod>2023-12-24T23:55:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2023/dec.11-dec.17/</loc>
+    <loc>http://localhost:1313/2023/weekly-dec.11-dec.17-%E7%AB%8B%E4%B8%AA-cfop-%E7%9A%84-flag/</loc>
     <lastmod>2023-12-17T19:55:00-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2023/dec.4-dec.10/</loc>
+    <loc>http://localhost:1313/2023/weekly-dec.4-dec.10-%E5%B1%A1%E6%88%98%E5%B1%A1%E8%B4%A5%E5%B1%A1%E8%B4%A5%E5%B1%A1%E6%88%98/</loc>
     <lastmod>2023-12-10T19:05:00-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2023/adguard/</loc>
+    <loc>http://localhost:1313/2023/adguard-vps-%E5%AE%89%E8%A3%85-adguard-home-%E4%B8%BA%E5%85%A8%E5%B1%8B%E8%AE%BE%E5%A4%87%E8%BF%87%E6%BB%A4%E5%B9%BF%E5%91%8A/</loc>
     <lastmod>2023-07-01T02:32:27-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/adguard-home/</loc>
+    <loc>http://localhost:1313/tags/adguard-home/</loc>
     <lastmod>2023-07-01T02:32:27-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/%E6%96%B0%E5%BB%BA%E5%B0%B1%E6%98%AF%E6%88%90%E5%8A%9F/</loc>
+    <loc>http://localhost:1313/categories/%E6%96%B0%E5%BB%BA%E5%B0%B1%E6%98%AF%E6%88%90%E5%8A%9F/</loc>
     <lastmod>2023-07-01T02:32:27-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2023/jun.12-jun.30/</loc>
+    <loc>http://localhost:1313/2023/weekly-jun.12-jun.30-%E7%BB%88%E4%BA%8E%E6%AF%95%E4%B8%9A%E5%95%A6/</loc>
     <lastmod>2023-06-30T23:46:04-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2023/jun.5-jun.11/</loc>
+    <loc>http://localhost:1313/2023/weekly-jun.5-jun.11-%E9%87%8D%E5%A4%B4%E5%86%8D%E6%9D%A5/</loc>
     <lastmod>2023-06-11T17:48:56-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/hugo/</loc>
+    <loc>http://localhost:1313/2023/hugo-%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%E5%8F%8A%E4%B8%BB%E4%BD%93%E7%89%88%E6%9C%AC%E8%A7%A3%E5%86%B3%E4%B8%80%E4%BA%9B%E5%B0%8F-bug/</loc>
     <lastmod>2023-06-09T02:20:40-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2023/hugo_papermod_socialicons/</loc>
-    <lastmod>2023-06-09T02:20:40-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/2023/capstone/</loc>
+    <loc>http://localhost:1313/2023/capstone/</loc>
     <lastmod>2023-06-09T02:19:56-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2023/yuan-qin-happy-birthday/</loc>
+    <loc>http://localhost:1313/2023/genshin-%E4%BA%91%E9%81%87%E4%BB%8E%E4%BA%91%E8%8A%B1%E9%81%87%E5%92%8C%E9%A3%8E%E4%BB%8A%E6%99%9A%E5%A4%9C%E8%89%B2%E5%BE%88%E7%BE%8E/</loc>
     <lastmod>2023-01-10T03:27:10-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/nfc-%E6%A0%87%E7%AD%BE/</loc>
+    <loc>http://localhost:1313/tags/nfc-%E6%A0%87%E7%AD%BE/</loc>
     <lastmod>2023-01-10T03:27:10-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/nov.22-dec.3/</loc>
+    <loc>http://localhost:1313/2022/weekly-nov.22-dec.24-%E7%A4%BE%E4%BA%A4%E5%90%AB%E9%87%8F%E7%88%86%E6%A3%9A%E7%9A%84%E4%B8%89%E5%91%A8%E4%B8%94%E6%8B%96%E5%BB%B6/</loc>
     <lastmod>2022-12-24T00:21:40-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/oct.20-nov.21/</loc>
+    <loc>http://localhost:1313/2022/weekly-oct.20-nov.22-%E6%98%AF%E8%8D%92%E5%BA%9F%E7%9A%84%E4%B8%80%E4%B8%AA%E6%9C%88%E5%91%80/</loc>
     <lastmod>2022-11-22T16:48:05-05:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/oct.1-oct.19/</loc>
+    <loc>http://localhost:1313/2022/weekly-oct.1-oct-19-%E5%A5%BD%E4%B9%85%E4%B8%8D%E5%86%99%E5%86%99%E5%88%B0%E5%93%AA%E5%84%BF%E5%B0%B1%E7%AE%97%E5%93%AA%E5%84%BF/</loc>
     <lastmod>2022-10-19T22:54:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/papermod-theme-mod/</loc>
+    <loc>http://localhost:1313/2022/hugo-hugo-papermod-%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/</loc>
     <lastmod>2022-09-17T22:24:59-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/jul.16-aug.1/</loc>
+    <loc>http://localhost:1313/2022/weekly-jul.16-aug.1-%E5%A6%82%E6%84%BF/</loc>
     <lastmod>2022-08-02T14:31:14-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/jul.1-jul.15/</loc>
+    <loc>http://localhost:1313/2022/weekly-jul.1-jul.15-%E8%BF%99%E4%B8%AA%E7%9B%9B%E5%A4%8F%E5%BC%80%E6%BB%A1%E4%BA%86%E8%8A%B1/</loc>
     <lastmod>2022-07-16T14:30:53-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/jun.15-jun.30/</loc>
+    <loc>http://localhost:1313/2022/weekly-june.15-june.30-project-management-%E6%88%91%E7%9C%9F%E7%9A%84%E4%BC%9A%E8%B0%A2/</loc>
     <lastmod>2022-06-30T14:30:30-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/may.10-jun.14/</loc>
+    <loc>http://localhost:1313/2022/weekly-may.10-june.14-%E8%AE%B0%E5%8D%81%E6%A2%A6%E5%9B%9B/</loc>
     <lastmod>2022-06-14T00:48:00-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/apr.19-may.9/</loc>
+    <loc>http://localhost:1313/2022/weekly-apr.19-may.9-%E6%A8%B1%E8%8A%B1%E6%AD%A3%E6%98%AF%E7%81%BF%E7%83%82%E6%97%B6/</loc>
     <lastmod>2022-05-09T16:25:22-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/apr.5-apr.18/</loc>
+    <loc>http://localhost:1313/2022/weekly-apr.5-apr.18-%E5%8F%88%E5%A4%A7%E4%B8%80%E5%B2%81%E5%95%A6/</loc>
     <lastmod>2022-04-18T13:06:50-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/aph/</loc>
+    <loc>http://localhost:1313/tags/aph/</loc>
     <lastmod>2022-04-14T12:34:02-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/excel/</loc>
+    <loc>http://localhost:1313/tags/excel/</loc>
     <lastmod>2022-04-14T12:34:02-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/ahp/</loc>
+    <loc>http://localhost:1313/2022/project-debrief-workcation-recommandation-via-analytic-hierarchy-process/</loc>
     <lastmod>2022-04-14T12:34:02-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2022/mar.21-apr.4/</loc>
+    <loc>http://localhost:1313/2022/weekly-mar.21-apr.4-%E5%BF%BD%E7%84%B6%E5%B0%B1%E4%B8%80%E5%B9%B4%E4%BA%86/</loc>
     <lastmod>2022-04-04T16:07:46-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/analysis/</loc>
+    <loc>http://localhost:1313/tags/analysis/</loc>
     <lastmod>2021-10-25T01:57:05-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2021/excel-da-001/</loc>
+    <loc>http://localhost:1313/2021/excel-%E7%94%A8-excel-%E8%BF%9B%E8%A1%8C%E6%97%B6%E9%97%B4%E5%88%86%E7%B1%BB%E7%BB%9F%E8%AE%A1/</loc>
     <lastmod>2021-10-25T01:57:05-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/assessment/</loc>
+    <loc>http://localhost:1313/tags/assessment/</loc>
     <lastmod>2021-10-04T08:26:35-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/google-analytics/</loc>
+    <loc>http://localhost:1313/tags/google-analytics/</loc>
     <lastmod>2021-10-04T08:26:35-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2021/advanced-google-analytics-assessment-2/</loc>
+    <loc>http://localhost:1313/2021/google-analytics-advanced-assessment-2/</loc>
     <lastmod>2021-10-04T08:26:35-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2021/advanced-google-analytics-assessment-1/</loc>
+    <loc>http://localhost:1313/2021/google-analytics-advanced-assessment-1/</loc>
     <lastmod>2021-10-02T01:08:05-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-4/</loc>
+    <loc>http://localhost:1313/2021/google-analytics-beginners-assessment-4/</loc>
     <lastmod>2021-09-14T00:18:26-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-3/</loc>
+    <loc>http://localhost:1313/2021/google-analytics-beginners-assessment-3/</loc>
     <lastmod>2021-09-13T22:37:36-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-2/</loc>
+    <loc>http://localhost:1313/2021/google-analytics-beginners-assessment-2/</loc>
     <lastmod>2021-09-13T19:45:11-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-1/</loc>
+    <loc>http://localhost:1313/2021/google-analytics-beginners-assessment-1/</loc>
     <lastmod>2021-09-12T10:53:56-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2021/first-jump-skydive-in-trt/</loc>
+    <loc>http://localhost:1313/2021/first-jump-skydive-in-toronto/</loc>
     <lastmod>2021-09-04T11:35:29-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/skydive/</loc>
+    <loc>http://localhost:1313/tags/skydive/</loc>
     <lastmod>2021-09-04T11:35:29-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/toronto/</loc>
+    <loc>http://localhost:1313/tags/toronto/</loc>
     <lastmod>2021-09-04T11:35:29-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/google-sheets/</loc>
+    <loc>http://localhost:1313/tags/google-sheets/</loc>
     <lastmod>2021-04-04T04:20:46-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2021/google-sheets-merge-multiple-sheets/</loc>
+    <loc>http://localhost:1313/2021/google-sheets-%E9%80%9A%E8%BF%87-queryimportrangeselectwhere-%E5%B0%86%E5%A4%9A%E5%BC%A0-google-sheets-%E5%90%88%E5%B9%B6%E5%88%B0%E4%B8%80%E8%B5%B7/</loc>
     <lastmod>2021-04-04T04:20:46-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/pbi/</loc>
+    <loc>http://localhost:1313/tags/pbi/</loc>
     <lastmod>2021-04-04T04:20:46-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/query/</loc>
+    <loc>http://localhost:1313/tags/query/</loc>
     <lastmod>2021-04-04T04:20:46-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/github/</loc>
+    <loc>http://localhost:1313/tags/github/</loc>
     <lastmod>2021-02-21T05:25:53-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/gridea/</loc>
+    <loc>http://localhost:1313/tags/gridea/</loc>
     <lastmod>2021-02-21T05:25:53-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2021/gridea-github-page-ssl/</loc>
+    <loc>http://localhost:1313/2021/gridea-%E4%B8%BA-gridea-github-page-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%BC%80%E5%90%AF-https/</loc>
     <lastmod>2021-02-21T05:25:53-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/ssl/</loc>
+    <loc>http://localhost:1313/tags/ssl/</loc>
     <lastmod>2021-02-21T05:25:53-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/lightroom/</loc>
+    <loc>http://localhost:1313/tags/lightroom/</loc>
     <lastmod>2019-08-25T22:00:40-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/%E9%93%B6%E6%B2%B3/</loc>
+    <loc>http://localhost:1313/tags/%E9%93%B6%E6%B2%B3/</loc>
     <lastmod>2019-08-25T22:00:40-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2019/milky-way-editing/</loc>
+    <loc>http://localhost:1313/2019/%E9%93%B6%E6%B2%B3%E5%90%8E%E6%9C%9F/</loc>
     <lastmod>2019-08-25T22:00:40-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2019/removedupliate/</loc>
+    <loc>http://localhost:1313/2019/excel-remove-duplicate/</loc>
     <lastmod>2019-08-20T11:25:00-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/vba/</loc>
+    <loc>http://localhost:1313/tags/vba/</loc>
     <lastmod>2019-08-20T11:25:00-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2019/google-sheet-query/</loc>
+    <loc>http://localhost:1313/2019/google-sheets-%E5%9C%A8google-sheets-%E4%B8%8A%E4%BD%BF%E7%94%A8queryifisna%E5%B0%86%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%88%86%E8%A1%A8%E6%95%B0%E6%8D%AE%E6%B1%87%E6%80%BB%E5%88%B0%E6%80%BB%E8%A1%A8/</loc>
     <lastmod>2019-08-18T12:35:27-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F/</loc>
+    <loc>http://localhost:1313/tags/%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F/</loc>
     <lastmod>2019-05-06T13:56:37-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/%E5%B1%B1%E8%A5%BF/</loc>
+    <loc>http://localhost:1313/tags/%E5%B1%B1%E8%A5%BF/</loc>
     <lastmod>2019-05-06T13:56:37-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/%E6%81%92%E5%B1%B1/</loc>
+    <loc>http://localhost:1313/tags/%E6%81%92%E5%B1%B1/</loc>
     <lastmod>2019-05-06T13:56:37-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/%E6%82%AC%E7%A9%BA%E5%AF%BA/</loc>
+    <loc>http://localhost:1313/tags/%E6%82%AC%E7%A9%BA%E5%AF%BA/</loc>
     <lastmod>2019-05-06T13:56:37-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2019/shanxi-day2/</loc>
+    <loc>http://localhost:1313/2019/%E6%82%AC%E7%A9%BA%E5%AF%BA%E5%8D%B1%E6%A5%BC%E9%AB%98%E7%99%BE%E5%B0%BA/</loc>
     <lastmod>2019-05-06T13:56:37-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/%E5%B4%87%E5%96%84%E5%AF%BA/</loc>
+    <loc>http://localhost:1313/tags/%E5%B4%87%E5%96%84%E5%AF%BA/</loc>
     <lastmod>2019-05-04T01:41:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2019/shanxi-day1/</loc>
+    <loc>http://localhost:1313/2019/%E5%B4%87%E5%96%84%E5%AF%BA%E4%BD%9B%E9%A6%99%E9%9D%92%E7%83%9F%E8%A2%85%E8%A2%85/</loc>
     <lastmod>2019-05-04T01:41:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/2019/aga-khan-meseum/</loc>
+    <loc>http://localhost:1313/2019/aga-khan-meseum/</loc>
     <lastmod>2019-04-12T10:38:36-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/meseum/</loc>
+    <loc>http://localhost:1313/tags/meseum/</loc>
     <lastmod>2019-04-12T10:38:36-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
   </url><url>
-    <loc>//localhost:1313/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>

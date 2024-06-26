@@ -1,54 +1,66 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Google Analytics on </title>
-    <link>//localhost:1313/tags/google-analytics/</link>
-    <description>Recent content in Google Analytics on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 04 Oct 2021 08:26:35 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/google-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <title>Google Analytics on 在云端</title>
+    <link>http://localhost:1313/tags/google-analytics/</link>
+    <description>Recent content in Google Analytics on 在云端</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Oct 2021 08:26:35 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/google-analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Analytics | Advanced Assessment 2</title>
-      <link>//localhost:1313/post/2021/advanced-google-analytics-assessment-2/</link>
+      <link>http://localhost:1313/2021/google-analytics-advanced-assessment-2/</link>
       <pubDate>Mon, 04 Oct 2021 08:26:35 -0400</pubDate>
-      <guid>//localhost:1313/post/2021/advanced-google-analytics-assessment-2/</guid>
-      <description>limits of numbers of custom dimensions&#xA;stadnard: 20 analytics 360: 200 Ref https://support.google.com/analytics/answer/7165564?hl=en</description>
+      
+      <guid>http://localhost:1313/2021/google-analytics-advanced-assessment-2/</guid>
+      <description>limits of numbers of custom dimensions
+stadnard: 20 analytics 360: 200 Ref https://support.google.com/analytics/answer/7165564?hl=en</description>
     </item>
+    
     <item>
       <title>Google Analytics | Advanced Assessment 1</title>
-      <link>//localhost:1313/post/2021/advanced-google-analytics-assessment-1/</link>
+      <link>http://localhost:1313/2021/google-analytics-advanced-assessment-1/</link>
       <pubDate>Sat, 02 Oct 2021 01:08:05 -0400</pubDate>
-      <guid>//localhost:1313/post/2021/advanced-google-analytics-assessment-1/</guid>
+      
+      <guid>http://localhost:1313/2021/google-analytics-advanced-assessment-1/</guid>
       <description>If default Google Analytics tracking code is installed on pages with different domains, Analytics will count these users and sessions separately. True False What does Google Analytics call a URL that passes data parameters for reporting? A tag A hit A dimension A metric When does the Google Analytics tracking code send a pageview hit to Analytics? Every time a user clicks a video Every time a user adds an item to a shopping cart Every time a user performs a search on a website Every time a user loads a webpage When does the Google Analytics tracking code send an event hit to Analytics?</description>
     </item>
+    
     <item>
       <title>Google Analytics | Beginners Assessment 4</title>
-      <link>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-4/</link>
+      <link>http://localhost:1313/2021/google-analytics-beginners-assessment-4/</link>
       <pubDate>Tue, 14 Sep 2021 00:18:26 -0400</pubDate>
-      <guid>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-4/</guid>
+      
+      <guid>http://localhost:1313/2021/google-analytics-beginners-assessment-4/</guid>
       <description>Which three tags does Google Analytics require for accurate campaign tracking? Medium, Source, and Content Medium, Source, and Campaign Campaign, Content, and Term Source, Content, and Term Which tags are standard Google Analytics campaign parameters? utm_adgroup utm_source utm_medium utm_content To quickly generate campaign tags, what tool should be used? The Measurement Protocol The Segment Builder The URL Builder The Goal Selector Which formats may be used to add a custom campaign parameter to a URL?</description>
     </item>
+    
     <item>
       <title>Google Analytics | Beginners Assessment 3</title>
-      <link>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-3/</link>
+      <link>http://localhost:1313/2021/google-analytics-beginners-assessment-3/</link>
       <pubDate>Mon, 13 Sep 2021 22:37:36 -0400</pubDate>
-      <guid>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-3/</guid>
+      
+      <guid>http://localhost:1313/2021/google-analytics-beginners-assessment-3/</guid>
       <description>What setting must be enabled to view data in Demographics and Interests Reports? Content Grouping Advertising features User permissions on the view In-Page Analytics What report would best help identify potential browser issues with website traffic? The Active Users report The New vs Returning report The Browser &amp;amp; OS report The Source/Medium report What report shows what mobile devices were used to view a website? The Exit Pages report under “Site Content” The Landing Page report under “Site Content” The Engagement report under “Behavior” The Devices report under “Mobile” Which Traffic Source dimensions does Google Analytics automatically capture for each user who comes to your site?</description>
     </item>
+    
     <item>
       <title>Google Analytics | Beginners Assessment 2</title>
-      <link>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-2/</link>
+      <link>http://localhost:1313/2021/google-analytics-beginners-assessment-2/</link>
       <pubDate>Mon, 13 Sep 2021 19:45:11 -0400</pubDate>
-      <guid>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-2/</guid>
+      
+      <guid>http://localhost:1313/2021/google-analytics-beginners-assessment-2/</guid>
       <description>What feature would be used to compare two date ranges in a report? Hourly, Day, Week, Month views in the time graph Real-time reports Date range comparison Account selector What does the “Users” metric measure? The total number of visits to your website Users that had at least one session on your site in the given date range Users that landed on the homepage of your website Users who have signed up to an email newsletter on your website What is the “Bounce Rate” in Google Analytics?</description>
     </item>
+    
     <item>
       <title>Google Analytics | Beginners Assessment 1</title>
-      <link>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-1/</link>
+      <link>http://localhost:1313/2021/google-analytics-beginners-assessment-1/</link>
       <pubDate>Sun, 12 Sep 2021 10:53:56 -0400</pubDate>
-      <guid>//localhost:1313/post/2021/google-analytics-for-beginners-assessment-1/</guid>
-      <description>Using tracking code, Google Analytics can report on data from which systems? E-commerce platforms Mobile Applications Online point-of-sales systems Systems not connected to the Internet To collect data using Google Analytics, which steps must be completed? Install Google Analytics desktop software Create an Analytics account Add Analytics tracking code to each webpage Download the Analytics app The Analytics tracking code can collect which of the following? Language the browser is set to Type of browser User’s favorite website Device and operating system When will Google Analytics end a session by default?</description>
+      
+      <guid>http://localhost:1313/2021/google-analytics-beginners-assessment-1/</guid>
+      <description>Using tracking code, Google Analytics can report on data from which systems? E-commerce platforms Mobile Applications Online point-of-sales systems Systems not connected to the Internet To collect data using Google Analytics, which steps must be completed? Install Google Analytics desktop software Create an Analytics account Add Analytics tracking code to each webpage Download the Analytics app The Analytics tracking code can collect which of the following? Language the browser is</description>
     </item>
+    
   </channel>
 </rss>

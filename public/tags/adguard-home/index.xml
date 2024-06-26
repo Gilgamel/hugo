@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Adguard Home on </title>
-    <link>//localhost:1313/tags/adguard-home/</link>
-    <description>Recent content in Adguard Home on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 01 Jul 2023 02:32:27 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/adguard-home/index.xml" rel="self" type="application/rss+xml" />
+    <title>Adguard Home on 在云端</title>
+    <link>http://localhost:1313/tags/adguard-home/</link>
+    <description>Recent content in Adguard Home on 在云端</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jul 2023 02:32:27 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/adguard-home/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adguard | VPS 安装 AdGuard Home 为全屋设备过滤广告</title>
-      <link>//localhost:1313/post/2023/adguard/</link>
+      <link>http://localhost:1313/2023/adguard-vps-%E5%AE%89%E8%A3%85-adguard-home-%E4%B8%BA%E5%85%A8%E5%B1%8B%E8%AE%BE%E5%A4%87%E8%BF%87%E6%BB%A4%E5%B9%BF%E5%91%8A/</link>
       <pubDate>Sat, 01 Jul 2023 02:32:27 -0400</pubDate>
-      <guid>//localhost:1313/post/2023/adguard/</guid>
-      <description>楼下的电视APP更新以后开始出现广告了，于是一直在思考着有没有什么办法能够过滤全屋设备的广告，做了一番搜索以后再次将 AdGuard 翻了出来。之前已经购买过 AdGuard Ad Blocker，这次看上的是开源的 AdGuard Home。AdGuard Home 作为一款全网广告拦截与反跟踪软件，可以在一次安装完成后，通过修改路由DNS从而让连接上特定网络的设备均受到保护。&#xA;关于安装 AdGuard Home 的位置，一开始选择的是在 QNAP NAS 上进行，但后来反复试了很多次均失败。于是趁着美国独立日，在 RackNerd 上购入年费约为 $16 加币的廉价 VPS。&#xA;安装 根据 AdGuard Home Github 的教程，在连接 VPS 以后直接输入以下代码：&#xA;curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v 在显示安装完成后，输入以下代码启动 AdGuard&#xA;sudo /opt/AdGuardHome/AdGuardHome -s start 接着就可以在浏览器输入 VPS IP:3000 进行配置&#xA;配置 AdGuard Home 将网页监听端口改成3000，或许是其他自己喜欢的端口。比较重要的是 DNS 服务器端口。DNS 服务器端口默认是 53，如果想要设置双 AdGuard 进行国内外分流的话，需要用两个端口。但由于家里使用的是 BELL 自带的路由，无法修改具体端口，因此只创建一个 AdGuard，使用默认端口 53。&#xA;而在使用默认端口 53时，经常会出现“validating ports: listen tcp 0.0.0.0:53: bind: address already in use” 的情况（如下图）</description>
+      
+      <guid>http://localhost:1313/2023/adguard-vps-%E5%AE%89%E8%A3%85-adguard-home-%E4%B8%BA%E5%85%A8%E5%B1%8B%E8%AE%BE%E5%A4%87%E8%BF%87%E6%BB%A4%E5%B9%BF%E5%91%8A/</guid>
+      <description>楼下的电视APP更新以后开始出现广告了，于是一直在思考着有没有什么办法能够过滤全屋设备的广告，做了一番搜索以后再次将 AdGuard 翻了出来。之前已经购买</description>
     </item>
+    
   </channel>
 </rss>
