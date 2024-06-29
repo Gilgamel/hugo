@@ -57,7 +57,7 @@ pkg:
 
 1. 利用"limma"确认与ICD相关的基因表达
 2. 用lasso regression进一步缩小ICD相关的基因表达
-3. 利用cox回归分析计算风险指数（IPGs model）
+3. 利用cox回归分析计算风险指数（IPGs model）**IPGs model coef让他们决定深入分析PDIA3）**
 4. 绘制ROC、AUC
 5. 结合临床数据跟IPGs分数进行单因素Cox分析以及多因素Cox分析，以确定风险评分是否可以作为宫颈癌患者预后的独立预测因子。
 6. 利用"maxstat"确定高风险组跟低风险组
