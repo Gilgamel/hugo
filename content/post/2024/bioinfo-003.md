@@ -1,5 +1,5 @@
 ---
-title: "Bioinfo | 003. 文献通读参考-2"
+title: "Bioinfo | 003. 文献通读参考 - 2"
 description: 
 date: 2024-06-28T18:28:41-07:00
 image: 
